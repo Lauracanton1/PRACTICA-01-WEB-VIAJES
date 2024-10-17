@@ -218,7 +218,22 @@ footer p {
 }
 
 
+/* Botón personalizado para la sección de Francia (París, Niza, Lyon) */
+.btn-ciudades-francia {
+    background-color: #C4E6FF; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 25px; /* Botones redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease; /* Animación suave en hover */
+}
 
+.btn-ciudades-francia:hover {
+    background-color: #92cef9; /* Color de fondo al pasar el mouse */
+    color: white; /* Asegura que el texto siga siendo blanco */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
 
 
 /* Sección de Italia */
@@ -243,7 +258,68 @@ footer p {
 
 
 
+/* Botón personalizado para la sección de Italia (Venecia, Florencia, Roma) */
+.btn-ciudades-italia {
+    background-color: #EFE8C1; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 25px; /* Botones redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease; /* Animación suave en hover */
+}
 
+.btn-ciudades-italia:hover {
+    background-color: #f0e39b; /* Color de fondo al pasar el mouse */
+    color: white; /* Asegura que el texto siga siendo blanco */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+
+
+/* Ajustes para uniformar los tamaños y espaciado */
+#mochila-italia, #mochila-francia {
+    padding: 50px 0;
+}
+
+
+.mochila-item-italia, .mochila-item-francia {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 14px;
+    color: #333;
+    height: 150px;  /* Un tamaño consistente para todos los post-its */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mochila-item-italia strong, .mochila-item-francia strong {
+    color: #d35400;
+}
+
+.mochila-item-francia {
+    background-color: #aed6f1;
+}
+
+.mochila-item-italia {
+    background-color: #f7cac9;
+}
+
+/* Imagen más pequeña y centrada */
+.mochila-imagen {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.row.g-3 {
+    gap: 10px;  /* Un pequeño espacio entre los elementos */
+}
 
 
 
