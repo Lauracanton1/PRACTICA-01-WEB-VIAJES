@@ -9,77 +9,82 @@ body {
     color: #333;
     text-align: center;
 }
-
-/* Hero Section */
-#hero {
+.header {
     position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    background-image: url('/Users/lauracanton/Documents/GitHub/PRACTICA-01-WEB-VIAJES/IMG/IMAGEN INICIO.png'); /* Imagen de fondo */
+    height: 100vh; /* Altura del header */
+    background-size: cover; /* Ajustar la imagen */
+    background-position: center; /* Centrar la imagen */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center; /* Centrar el texto */
 }
 
-.content h1 {
-    font-size: 3em;
-    font-weight: bold;
-    color: #FFC857; /* Color amarillo suave */
-    margin: 0.2em;
-}
-
-.content p {
-    font-size: 1.5em;
-    color: #4A5568; /* Gris oscuro suave */
-    margin-bottom: 2em;
-}
-
-/* Estilos para las pegatinas */
-.pegatina {
+/* Overlay para el texto */
+.overlay {
     position: absolute;
-    background-color: #FFC857; /* Amarillo para resaltar */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar el posicionamiento */
+    color: #ffffff; /* Color blanco para el texto */
+}
+
+/* Estilo del título */
+.overlay h1 {
+    font-size: 6rem; /* Tamaño grande del título */
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Sin márgenes */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+}
+
+/* Estilo del subtítulo */
+.overlay p {
+    font-size: 2rem; /* Tamaño del subtítulo */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+
+/* Sección de Introducción */
+.intro-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.5s ease;
+}
+
+.intro-section:hover {
+    transform: translateY(-10px); /* Efecto de desplazamiento en hover */
+}
+
+.intro-text {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Pacifico', cursive; /* Tipografía script */
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1e3799;
+}
+
+.intro-text p {
+    font-family: 'Open Sans', sans-serif; /* Tipografía para el párrafo */
+    font-size: 1.1rem;
     color: #333;
-    padding: 10px 15px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-    font-size: 1em;
-    transition: transform 0.3s ease;
+    line-height: 1.6;
 }
 
-.pegatina:hover {
-    transform: scale(1.1);
+.intro-image {
+    flex: 1;
+    text-align: center;
 }
 
-.pegatina-1 {
-    background-color: #FF6B6B; /* Rojo pastel */
-    top: 20%;
-    left: 10%;
-}
 
-.pegatina-2 {
-    background-color: #6BCB77; /* Verde pastel */
-    top: 25%;
-    right: 15%;
-}
-
-.pegatina-3 {
-    background-color: #FFE66D; /* Amarillo pastel */
-    bottom: 20%;
-    left: 15%;
-}
-
-.pegatina-4 {
-    background-color: #4D96FF; /* Azul pastel */
-    bottom: 30%;
-    right: 10%;
-}
-
-.pegatina-5 {
-    background-color: #F7B801; /* Naranja pastel */
-    top: 70%;
-    right: 35%;
-}
 
 /* Sección de Bienvenida */
 #bienvenida {
@@ -322,6 +327,55 @@ footer p {
 }
 
 
+/* Sección de Restaurantes */
+.lugares-section {
+    padding: 50px 20px;
+    background-color: #ffebf2; /* Color de fondo */
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    color: #c0392b;
+    margin-bottom: 40px;
+}
+
+.lugares-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tarjetas circulares más grandes */
+.lugar-card {
+    width: 350px; /* Tamaño aumentado */
+    height: 350px;
+    border-radius: 50%; /* Círculo perfecto */
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.lugar-card:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+}
+
+/* Ajuste de imagen al contenedor circular */
+.lugar-imagen {
+    width: 120%; /* Aumenta el tamaño de la imagen */
+    height: 120%; /* Aumenta el tamaño de la imagen */
+    object-fit: cover; /* La imagen llena el círculo sin distorsionarse */
+    position: absolute; /* Para poder centrar la imagen */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para estar centrada */
+    border-radius: 50%; /* Círculo completo */
+}
 
 
 
@@ -337,5 +391,44 @@ footer p {
     .pegatina {
         font-size: 0.8em;
         padding: 8px 12px;
+    }
+}
+
+
+
+
+/* Adaptabilidad para móviles */
+@media (max-width: 768px) {
+    .lugares-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lugar-card {
+        width: 250px; /* Tamaño ajustado para móviles */
+        height: 250px;
+    }
+
+    .lugar-imagen {
+        width: 150%; /* Aumenta más el tamaño en móviles para que se vea grande */
+        height: 150%;
+    }
+}
+
+
+
+
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 4rem; /* Tamaño ajustado en móviles */
+    }
+
+    .overlay p {
+        font-size: 1.5rem; /* Tamaño ajustado en móviles */
+    }
+
+    .btn-custom {
+        padding: 10px 20px; /* Tamaño del botón en móviles */
     }
 }
