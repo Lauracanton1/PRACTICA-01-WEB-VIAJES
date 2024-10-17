@@ -1,0 +1,246 @@
+/* Importamos varias fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255); /* Fondo suave */
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFC857; /* Color amarillo suave */
+    margin: 0.2em;
+}
+
+.content p {
+    font-size: 1.5em;
+    color: #4A5568; /* Gris oscuro suave */
+    margin-bottom: 2em;
+}
+
+/* Estilos para las pegatinas */
+.pegatina {
+    position: absolute;
+    background-color: #FFC857; /* Amarillo para resaltar */
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1em;
+    transition: transform 0.3s ease;
+}
+
+.pegatina:hover {
+    transform: scale(1.1);
+}
+
+.pegatina-1 {
+    background-color: #FF6B6B; /* Rojo pastel */
+    top: 20%;
+    left: 10%;
+}
+
+.pegatina-2 {
+    background-color: #6BCB77; /* Verde pastel */
+    top: 25%;
+    right: 15%;
+}
+
+.pegatina-3 {
+    background-color: #FFE66D; /* Amarillo pastel */
+    bottom: 20%;
+    left: 15%;
+}
+
+.pegatina-4 {
+    background-color: #4D96FF; /* Azul pastel */
+    bottom: 30%;
+    right: 10%;
+}
+
+.pegatina-5 {
+    background-color: #F7B801; /* Naranja pastel */
+    top: 70%;
+    right: 35%;
+}
+
+/* Sección de Bienvenida */
+#bienvenida {
+    background-color: #EFE8C1; /* Beige suave */
+    padding: 50px;
+    text-align: center;
+}
+
+#bienvenida h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #003366; /* Azul Marca */
+}
+
+#bienvenida p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Sección de Destinos */
+#destinos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#destinos-destacados h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #003366; /* Azul para Marca */
+}
+/* Sección de Italia */
+#italia-section {
+    background-color: #EFE8C1; /* Beige suave */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#italia-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #E9724C; /* Naranja vibrante */
+}
+
+#italia-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #8BC3B5; /* Verde azulado */
+}
+
+/* Sección de Francia */
+#francia-section {
+    background-color: #FFF29D; /* Amarillo claro */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#francia-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #E53B2C; /* Rojo vivo */
+}
+
+#francia-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #D96E71; /* Rosa fuerte */
+}
+
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer con colores vibrantes */
+footer {
+    background-color: #ffb6c1; /* Rosa pastel claro */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Estilos adicionales */
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #F7F5C8; /* Azul Marca */
+}
+
+p {
+    font-family: 'Raleway', sans-serif; /* Texto general con una fuente ligera y simple */
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Botones generales */
+.btn {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #ff6347; /* Rojo tomate */
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500; /* Naranja vibrante al hacer hover */
+    color: white;
+}
+
+
+/* Footer */
+footer {
+    background-color: #003366; /* Azul Marca */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Adaptaciones responsivas */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2em;
+    }
+    .content p {
+        font-size: 1.2em;
+    }
+
+    .pegatina {
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+}

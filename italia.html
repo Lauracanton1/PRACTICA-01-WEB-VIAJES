@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes POP - Italia</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Viajes POP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="italia.html">Italia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="francia.html">Francia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    
+    <section id="italia-section" class="d-flex align-items-center justify-content-center text-center">
+        <div>
+            <h2 data-aos="zoom-in">Bienvenido a Italia</h2>
+            <p data-aos="zoom-in" data-aos-delay="200" >Visita Venecia, Roma, y Florencia.</p>
+            <p data-aos="zoom-in" data-aos-delay="200" >Vive la experiencia única de su arquitectura, arte y gastronomía.</p>
+        </div>
+    </section>
+
+    <!-- Ciudades en Italia -->
+    <section id="ciudades" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Venecia -->
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="card">
+                        <img src="IMG/VENECIA.png" class="card-img-top" alt="Venecia">
+                        <div class="card-body">
+                            <a href="venecia.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Florencia -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card">
+                        <img src="IMG/FLORENCIA.png" class="card-img-top" alt="Florencia">
+                        <div class="card-body">
+                            <h5 class="card-title">Florencia</h5>
+                            <a href="florencia.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roma -->
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="card">
+                        <img src="IMG/ROMA.png" class="card-img-top" alt="Roma">
+                        <div class="card-body">
+                            <h5 class="card-title">Roma</h5>
+                            <a href="roma.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Viajes POP - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
