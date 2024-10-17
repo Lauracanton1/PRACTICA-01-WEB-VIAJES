@@ -111,45 +111,6 @@ body {
     font-size: 3rem;
     color: #003366; /* Azul para Marca */
 }
-/* Sección de Italia */
-#italia-section {
-    background-color: #EFE8C1; /* Beige suave */
-    color: #333;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#italia-section h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    color: #E9724C; /* Naranja vibrante */
-}
-
-#italia-section p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: #8BC3B5; /* Verde azulado */
-}
-
-/* Sección de Francia */
-#francia-section {
-    background-color: #FFF29D; /* Amarillo claro */
-    color: #333;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#francia-section h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    color: #E53B2C; /* Rojo vivo */
-}
-
-#francia-section p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: #D96E71; /* Rosa fuerte */
-}
 
 
 /* Cards */
@@ -222,6 +183,64 @@ footer p {
     font-size: 1.2rem;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección de Francia */
+#francia-section {
+    background-color: #C4E6FF; /* Amarillo claro */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#francia-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #E53B2C; /* Rojo vivo */
+}
+
+#francia-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #FE7C86; /* Rosa fuerte */
+}
+
+
+
+
+
+/* Sección de Italia */
+#italia-section {
+    background-color: #EFE8C1; /* Beige suave */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#italia-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #E9724C; /* Naranja vibrante */
+}
+
+#italia-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #8BC3B5; /* Verde azulado */
+}
+
 
 
 
