@@ -281,51 +281,71 @@ footer p {
 }
 
 
-
-/* Ajustes para uniformar los tamaños y espaciado */
-#mochila-italia, #mochila-francia {
-    padding: 50px 0;
+/* Estilos globales */
+.mochila-section {
+    background-color: #f4f4f9;
+    padding: 60px 0;
 }
 
-
-.mochila-item-italia, .mochila-item-francia {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive;
-    font-size: 14px;
+.mochila-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
     color: #333;
-    height: 150px;  /* Un tamaño consistente para todos los post-its */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.mochila-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.mochila-item-italia strong, .mochila-item-francia strong {
-    color: #d35400;
+/* Estilos de los elementos */
+.mochila-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
 
-.mochila-item-francia {
-    background-color: #aed6f1;
+.mochila-item {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.mochila-item-italia {
-    background-color: #f7cac9;
+.mochila-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen más pequeña y centrada */
 .mochila-imagen {
-    max-width: 520px;
-    margin: 0 auto;
+    max-width: 350px;
+    margin-right: 60px;
+    transition: transform 0.3s ease;
 }
 
-.row.g-3 {
-    gap: 10px;  /* Un pequeño espacio entre los elementos */
+.mochila-imagen:hover {
+    transform: scale(1.1);
 }
 
+/* Variantes de color */
+#mochila-italia .mochila-item {
+    background-color: #FFB17D;
+    border: 2px solid #F1731F;
+}
+
+#mochila-francia .mochila-item {
+    background-color: #FFB17D;
+    border: 2px solid #F1731F;
+}
 
 /* Sección de Restaurantes */
 .lugares-section {
