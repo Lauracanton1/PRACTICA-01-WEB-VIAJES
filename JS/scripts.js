@@ -12,3 +12,15 @@ $('a[href*="#"]').on('click', function (e) {
         scrollTop: $($(this).attr('href')).offset().top
     }, 500);
 });
+
+
+
+// NIZA COMIDA
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "flex"; // Muestra el modal
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none"; // Oculta el modal
+}
