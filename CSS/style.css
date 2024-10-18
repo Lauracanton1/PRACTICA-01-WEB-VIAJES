@@ -1,7 +1,17 @@
-/* Estilos del Header */
+/* Importamos varias fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255); /* Fondo suave */
+    color: #333;
+    text-align: center;
+}
 .header {
     position: relative;
-    background-image: url('/Users/luciacovianvelasco/Documents/GitHub/PRACTICA-01-WEB-VIAJES/img/IMAGEN INICIO.png'); /* Imagen de fondo */
+    background-image: url('/Users/lauracanton/Documents/GitHub/PRACTICA-01-WEB-VIAJES/IMG/IMAGEN INICIO.png'); /* Imagen de fondo */
     height: 100vh; /* Altura del header */
     background-size: cover; /* Ajustar la imagen */
     background-position: center; /* Centrar la imagen */
@@ -36,22 +46,6 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra del texto */
 }
 
-/* Botón personalizado */
-.btn-custom {
-    padding: 15px 30px; /* Espaciado del botón */
-    background-color: #ff69b4; /* Color rosa */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 25px; /* Bordes redondeados */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
-}
-
-.btn-custom:hover {
-    background-color: #ea327c; /* Color rosa más intenso al pasar el mouse */
-    transform: scale(1.05); /* Efecto de agrandamiento */
-}
 
 /* Sección de Introducción */
 .intro-section {
@@ -90,7 +84,269 @@
     text-align: center;
 }
 
-/* Sección de Restaurantes */
+
+
+/* Sección de Bienvenida */
+#bienvenida {
+    background-color: #EFE8C1; /* Beige suave */
+    padding: 50px;
+    text-align: center;
+}
+
+#bienvenida h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #003366; /* Azul Marca */
+}
+
+#bienvenida p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Sección de Destinos */
+#destinos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#destinos-destacados h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #003366; /* Azul para Marca */
+}
+
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer con colores vibrantes */
+footer {
+    background-color: #ffb6c1; /* Rosa pastel claro */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Estilos adicionales */
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #F7F5C8; /* Azul Marca */
+}
+
+p {
+    font-family: 'Raleway', sans-serif; /* Texto general con una fuente ligera y simple */
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Botones generales */
+.btn {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #ff6347; /* Rojo tomate */
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500; /* Naranja vibrante al hacer hover */
+    color: white;
+}
+
+
+/* Footer */
+footer {
+    background-color: #003366; /* Azul Marca */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección de Francia */
+#francia-section {
+    background-color: #C4E6FF; /* Amarillo claro */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#francia-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #E53B2C; /* Rojo vivo */
+}
+
+#francia-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #FE7C86; /* Rosa fuerte */
+}
+
+
+/* Botón personalizado para la sección de Francia (París, Niza, Lyon) */
+.btn-ciudades-francia {
+    background-color: #C4E6FF; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 25px; /* Botones redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease; /* Animación suave en hover */
+}
+
+.btn-ciudades-francia:hover {
+    background-color: #92cef9; /* Color de fondo al pasar el mouse */
+    color: white; /* Asegura que el texto siga siendo blanco */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+
+/* Sección de Italia */
+#italia-section {
+    background-color: #EFE8C1; /* Beige suave */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#italia-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #E9724C; /* Naranja vibrante */
+}
+
+#italia-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #8BC3B5; /* Verde azulado */
+}
+
+
+
+/* Botón personalizado para la sección de Italia (Venecia, Florencia, Roma) */
+.btn-ciudades-italia {
+    background-color: #EFE8C1; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 25px; /* Botones redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease; /* Animación suave en hover */
+}
+
+.btn-ciudades-italia:hover {
+    background-color: #f0e39b; /* Color de fondo al pasar el mouse */
+    color: white; /* Asegura que el texto siga siendo blanco */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+
+/* Estilos globales */
+.mochila-section {
+    background-color: #f4f4f9;
+    padding: 60px 0;
+}
+
+.mochila-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.mochila-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilos de los elementos */
+.mochila-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.mochila-item {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mochila-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mochila-imagen {
+    max-width: 350px;
+    margin-right: 60px;
+    transition: transform 0.3s ease;
+}
+
+.mochila-imagen:hover {
+    transform: scale(1.1);
+}
+
+/* Variantes de color */
+#mochila-italia .mochila-item {
+    background-color: #FFB17D;
+    border: 2px solid #F1731F;
+}
+
+#mochila-francia .mochila-item {
+    background-color: #FFB17D;
+    border: 2px solid #F1731F;
+}
+
 /* Sección de Restaurantes */
 .lugares-section {
     padding: 50px 20px;
@@ -143,16 +399,20 @@
 
 
 
+/* Adaptaciones responsivas */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2em;
+    }
+    .content p {
+        font-size: 1.2em;
+    }
 
-
-
-
-
-
-
-
-
-
+    .pegatina {
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+}
 
 
 
