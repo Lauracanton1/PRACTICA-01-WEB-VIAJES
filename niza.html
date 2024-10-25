@@ -61,47 +61,109 @@
     </div>
 </section>
 
-<!-- Modales de recetas -->
-<!-- Modales de recetas -->
-<div class="modal" id="receta1">
-    <div class="receta-card">
-        <span class="close" onclick="closeModal('receta1')">&times;</span>
-        <div class="receta-header">
-            <img src="img/ CeloRosa.png" alt="Tacos de Pescado" class="receta-imagen">
-            <h2 class="receta-titulo">Tacos de Pescado</h2>
-        </div>
-        <div class="receta-detalle">
-            <h3>Ingredientes</h3>
-            <ul class="receta-ingredientes">
-                <li><i class="fas fa-fish"></i> 500g de pescado blanco</li>
-                <li><i class="fas fa-lemon"></i> 2 limones</li>
-                <li><i class="fas fa-carrot"></i> 1 zanahoria rallada</li>
-                <li><i class="fas fa-pepper-hot"></i> 1 chile jalapeño</li>
-                <li><i class="fas fa-head-side-cabbage"></i> 1 taza de repollo</li>
-                <li><i class="fas fa-tortilla"></i> Tortillas de maíz</li>
+<!-- Modales para recetas -->
+<div id="receta1" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('receta1')">&times;</span>
+        <h2 class="titulo-receta">RATATOUILLE NICOISE</h2>
+        <div class="seccion">
+            <h3 class="titulo-seccion">Ingredientes:</h3>
+            <ul class="lista">
+                <li><span>Berenjena.</li>
+                <li><span>Calabacín.</li>
+                <li><span>Pimiento rojo.</li>
+                <li><span>Pimiento verde.</li>
+                <li><span>Tomates maduros.</li>
+                <li><span>Cebolla.</li>
+                <li><span>Ajo.</li>
+                <li><span>Aceite de oliva.</li>
+                <li><span>Hierbas provenzales.</li>
             </ul>
-            
-            <h3>Instrucciones</h3>
-            <ol class="receta-instrucciones">
-                <li>Marinar el pescado con el jugo de limón, sal y pimienta.</li>
-                <li>Cocinar el pescado a la parrilla o en una sartén hasta que esté dorado.</li>
-                <li>Calentar las tortillas en un comal.</li>
-                <li>En cada tortilla, agregar una porción de pescado, zanahoria, repollo y chile.</li>
-                <li>Servir con rodajas de limón.</li>
-            </ol>
+        </div>
+        <div class="seccion">
+            <h3 class="titulo-seccion">Instrucciones:</h3>
+            <ul class="lista">
+                <li>Corta todas las verduras en rodajas finas. En una sartén grande,
+                calienta el aceite de oliva y saltea la cebolla y el ajo hasta que
+                estén dorados. Agrega los pimientos y cocina hasta que estén tiernos.
+                Añade la berenjena y el calabacín y cocina hasta que estén dorados.
+                Agrega los tomates y las hierbas provenzales, y cocina a fuego lento 
+                hasta que las verduras estén tiernas y se forme una salsa espesa.
+                Sirve caliente.</li>
+            </ul>
         </div>
     </div>
 </div>
 
+<div id="receta2" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('receta2')">&times;</span>
+        <h2 class="titulo-receta">SALADE NIÇOISE</h2>
+        <div class="seccion">
+            <h3 class="titulo-seccion">Ingredientes:</h3>
+            <ul class="lista">
+                <li><span>Lechuga.</li>
+                <li><span>Tomates cherry.</li>
+                <li><span>Atún en lata.</li>
+                <li><span>Aceitunas Negras.</li>
+                <li><span>Huevos duros.</li>
+                <li><span>Anchoas.</li>
+                <li><span>Judías verdes cocidas.</li>
+                <li><span>Patatas cocidas.</li>
+                <li><span>Aceite de oliva.</li>
+                <li><span>Vinagre de vino tinto.</li>
 
+            </ul>
+        </div>
+        <div class="seccion">
+            <h3 class="titulo-seccion">Instrucciones:</h3>
+            <ul class="lista">
+                <li>Coloca la lechuga en un plato grande y distribuye los tomates cherry,
+                las aceitunas negras, las anchoas, las judías verdes y las patatas alrededor.
+                Decora con el atún en lata y los huevos duros cortados en rodajas. Aliña 
+                la ensalada con aceite de oliva y vinagre de vino tinto al gusto. Sirve
+                fresca..</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-<!-- Repite el mismo patrón para receta2 y receta3 -->
-
-
-
-
-
-
+<div id="receta3" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('receta3')">&times;</span>
+        <h2 class="titulo-receta">MACARONS</h2>
+        <div class="seccion">
+            <h3 class="titulo-seccion">Ingredientes:</h3>
+            <ul class="lista">
+                <li><span>150g de almendra molida.</li>
+                <li><span>150g de azúcar glas.</li>
+                <li><span>120g de claras de huevo, 3-4 huevos.</li>
+                <li><span>75g de azúcar granulada.</li>
+                <li><span>150g de mantequilla sin sal, a temperatura
+                ambiente.</li>
+                <li><span>150g de azúcar glas.</li>
+                <li><span>1 cucharadita de extracto de vainilla .</li>
+            </ul>
+        </div>
+        <div class="seccion">
+            <h3 class="titulo-seccion">Instrucciones:</h3>
+            <ul class="lista">
+                <li>Tamiza la almendra molida y el azúcar glas juntos en un tazón grande para
+                lograr una textura suave. Bate las claras de huevo hasta obtener picos firmes, 
+                añadiendo gradualmente azúcar granulada.Opcionalmente, agrega colorante
+                alimentario a las claras. Incorpora suavemente la mezcla de almendra y azúcar
+                glas a las claras, evitando sobre mezclar. Coloca la masa en una manga pastelera
+                y forma círculos en una bandeja para hornear. Golpea la bandeja suavemente para
+                eliminar burbujas de aire. Deja reposar los macarons hasta que forme una costra 
+                en la superficie. Hornea a 150°C durante 12-15 minutos hasta que estén firmes.
+                Prepara el relleno batiendo mantequilla, azúcar glas y extracto de vainilla. 
+                Una vez horneados, deja enfriar los macarons en la bandeja.
+                Únelos de dos en dos con relleno entre ellos. Guarda en el refrigerador durante
+                al menos 24 horas antes de servir.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <!-- Footer -->
 <footer>
     <p>Europa 360° - Tu guía de viajes 2024</p>

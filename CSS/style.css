@@ -350,14 +350,14 @@ footer p {
 /* Sección de Restaurantes */
 .lugares-section {
     padding: 50px 20px;
-    background-color: #ffebf2; /* Color de fondo */
+    background-color:  #ffebf2; /* Color de fondo */
     text-align: center;
 }
 
 .section-title {
     font-family: 'Roboto Slab', serif;
     font-size: 3rem;
-    color: #c0392b;
+    color: #912938;
     margin-bottom: 40px;
 }
 
@@ -379,6 +379,7 @@ footer p {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
 }
 
 .lugar-card:hover {
@@ -387,8 +388,8 @@ footer p {
 
 /* Ajuste de imagen al contenedor circular */
 .lugar-imagen {
-    width: 120%;
-    height: 120%;
+    width: 140%;
+    height: 140%;
     object-fit: cover;
     position: absolute;
     top: 50%;
@@ -397,217 +398,61 @@ footer p {
     border-radius: 50%;
 }
 
-
-
-/* Estilo general para la receta */
-.receta-card {
-    background: #ffffff; /* Fondo blanco */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    width: 90%; /* Ancho máximo del contenedor */
-    max-width: 600px; /* Limitar el ancho máximo */
-    margin: 20px auto; /* Centrar el contenedor */
-    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
-    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
-}
-
-/* Encabezado de la receta */
-.receta-header {
-    position: relative;
-}
-
-/* Título de la receta */
-.receta-titulo {
-    font-size: 2rem;
-    color: #c0392b; /* Color atractivo */
+/* Estilo para el título de la receta */
+.titulo-receta {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:  #f9c7d8;
+    font-size: 2.5rem;
     text-align: center;
-    margin: 20px 0; /* Espaciado superior e inferior */
+    margin-bottom: 15px;
 }
 
-/* Imagen de la receta */
-.receta-imagen {
-    width: 100%; /* Ocupa el 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-bottom: 5px solid #c0392b; /* Línea decorativa inferior */
-}
-
-/* Detalles de la receta */
-.receta-detalle {
-    padding: 20px; /* Espaciado interno */
-}
-
-/* Secciones de ingredientes e instrucciones */
-.receta-detalle h3 {
-    font-size: 1.5rem;
-    color: #333; /* Color del encabezado */
-    margin-bottom: 10px; /* Espaciado inferior */
-    border-bottom: 2px solid #c0392b; /* Línea decorativa inferior */
-    padding-bottom: 5px; /* Espaciado inferior */
-}
-
-/* Lista de ingredientes */
-.receta-ingredientes {
-    list-style: none; /* Sin viñetas */
-    padding: 0; /* Sin padding */
-    margin: 0; /* Sin margen */
-}
-
-.receta-ingredientes li {
-    background-color: #f9f9f9; /* Fondo claro para cada ingrediente */
-    padding: 10px; /* Espaciado interno */
-    margin: 5px 0; /* Espaciado entre ingredientes */
-    border-radius: 8px; /* Bordes redondeados */
-    display: flex; /* Para alinear iconos y texto */
-    align-items: center; /* Centrar verticalmente */
-    transition: background-color 0.3s; /* Efecto suave al pasar el ratón */
-}
-
-.receta-ingredientes li:hover {
-    background-color: #ecf0f1; /* Color de fondo al pasar el ratón */
-}
-
-/* Iconos para los ingredientes */
-.receta-ingredientes i {
-    margin-right: 10px; /* Espaciado a la derecha */
-    color: #c0392b; /* Color de los iconos */
-}
-
-/* Lista de instrucciones */
-.receta-instrucciones {
-    list-style: decimal; /* Viñetas numéricas */
-    padding-left: 20px; /* Espaciado a la izquierda */
-    margin-top: 10px; /* Espaciado superior */
-}
-
-.receta-instrucciones li {
-    margin-bottom: 10px; /* Espaciado entre instrucciones */
-}
-
-/* Estilos de Modal */
+/* Estilo del modal */
 .modal {
     display: none; /* Oculto por defecto */
-    position: fixed; /* Fijo en la pantalla */
-    z-index: 10; /* Enfrente de otros elementos */
-    left: 0; /* En el borde izquierdo */
-    top: 0; /* En el borde superior */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Alto completo */
-    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro transparente */
-    justify-content: center; /* Centrado en la pantalla */
-    align-items: center; /* Centrado verticalmente */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
-/* Estilo general para la receta */
-.receta-card {
-    background: #ffffff; /* Fondo blanco */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    width: 90%; /* Ancho más pequeño */
-    max-width: 350px; /* Limitar el ancho máximo */
-    margin: 20px auto; /* Centrar el contenedor */
-    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
-    font-family: 'Open Sans', sans-serif; /* Tipografía moderna */
-    position: relative; /* Para posicionar la imagen sobresaliente */
+.modal-content {
+    position: relative;
+    background-color: #ffffe0; /* Color de fondo del modal */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; /* Ancho máximo */
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra */
+    animation: fadeIn 0.5s; /* Animación de aparición */
 }
 
-/* Imagen de la receta */
-.receta-imagen {
-    width: 100%; /* Ocupa el 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    position: absolute; /* Posición absoluta para sobresalir */
-    top: -30px; /* Ajustar la posición para que sobresalga */
-    left: 0; /* Alineación a la izquierda */
-    border-radius: 15px 15px 0 0; /* Bordes redondeados en la parte superior */
-    z-index: 1; /* Para asegurarnos de que la imagen esté por encima */
+/* Estilo del botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #444; /* Color del botón */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s; /* Efecto de transición */
 }
 
-/* Título de la receta */
-.receta-titulo {
-    font-family: 'Lobster', cursive; /* Tipografía original */
-    font-size: 1.6rem; /* Tamaño más pequeño */
-    color: #c0392b; /* Color atractivo */
-    text-align: center;
-    margin: 60px 0 10px; /* Ajustar el margen superior para la imagen */
+.close-btn:hover {
+    color:#f9c7d8; /* Color al pasar el cursor */
 }
 
-/* Botón de cierre (X) */
-.close {
-    position: absolute; /* Posición absoluta dentro del modal */
-    top: 10px; /* Espaciado superior */
-    right: 15px; /* Espaciado derecho */
-    font-size: 24px; /* Tamaño del texto */
-    color: #e74c3c; /* Color del botón */
-    cursor: pointer; /* Cambia el cursor */
-    transition: color 0.3s; /* Efecto suave al pasar el ratón */
-    z-index: 2; /* Para que la X esté por encima */
-}
-
-.close:hover {
-    color: #c0392b; /* Cambio de color al pasar el ratón */
-}
-
-/* Detalles de la receta */
-.receta-detalle {
-    padding: 10px; /* Espaciado interno */
-    margin-top: 30px; /* Espacio arriba para las instrucciones */
-}
-
-/* Secciones de ingredientes e instrucciones */
-.receta-detalle h3 {
-    font-size: 1.4rem; /* Reducir tamaño de subtítulos */
-    color: #333; /* Color del encabezado */
-    margin-bottom: 10px; /* Espaciado inferior */
-}
-
-/* Lista de ingredientes */
-.receta-ingredientes {
-    list-style: none; /* Sin viñetas */
-    padding: 0; /* Sin padding */
-    margin: 0; /* Sin margen */
-}
-
-.receta-ingredientes li {
-    background-color: #f9f9f9; /* Fondo claro para cada ingrediente */
-    padding: 8px; /* Espaciado interno */
-    margin: 5px 0; /* Espaciado entre ingredientes */
-    border-radius: 5px; /* Bordes redondeados */
-    display: flex; /* Para alinear iconos y texto */
-    align-items: center; /* Centrar verticalmente */
-    transition: background-color 0.3s; /* Efecto suave al pasar el ratón */
-}
-
-.receta-ingredientes li:hover {
-    background-color: #ecf0f1; /* Color de fondo al pasar el ratón */
-}
-
-/* Lista de instrucciones */
-.receta-instrucciones {
-    list-style: decimal; /* Viñetas numéricas */
-    padding-left: 20px; /* Espaciado a la izquierda */
-    margin-top: 10px; /* Espaciado superior */
-}
-
-.receta-instrucciones li {
-    margin-bottom: 5px; /* Espaciado entre instrucciones */
-}
-
-/* Responsivo para pantallas pequeñas */
-@media (max-width: 768px) {
-    .receta-card {
-        width: 90%; /* Ancho completo en pantallas pequeñas */
-    }
-
-    .receta-titulo {
-        font-size: 1.4rem; /* Reducir tamaño del título */
-    }
-
-    .receta-detalle h3 {
-        font-size: 1.2rem; /* Reducir tamaño de subtítulos */
-    }
-
-    .close {
-        font-size: 20px; /* Reducir tamaño del botón de cierre */
-    }
+/* Estilo de la lista */
+.lista {
+    list-style-type: none; /* Sin viñetas */
+    padding-left: 0; /* Sin padding */
 }
 
 
@@ -615,24 +460,6 @@ footer p {
 
 
 
-
-/* Adaptabilidad para móviles */
-@media (max-width: 768px) {
-    .lugares-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .lugar-card {
-        width: 250px; /* Tamaño ajustado para móviles */
-        height: 250px;
-    }
-
-    .lugar-imagen {
-        width: 150%; /* Aumenta más el tamaño en móviles para que se vea grande */
-        height: 150%;
-    }
-}
 
 
 

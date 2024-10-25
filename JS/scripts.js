@@ -18,9 +18,19 @@ $('a[href*="#"]').on('click', function (e) {
 // NIZA COMIDA
 
 function openModal(modalId) {
-    document.getElementById(modalId).style.display = "flex"; // Muestra el modal
+    document.getElementById(modalId).style.display = 'flex';
 }
 
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none"; // Oculta el modal
+    document.getElementById(modalId).style.display = 'none';
 }
+
+// Cerrar el modal al hacer clic fuera de él
+window.onclick = function(event) {
+    const modals = document.getElementsByClassName('modal');
+    for (let modal of modals) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+};
