@@ -106,88 +106,96 @@ body {
 }
 
 /* Sección de Destinos */
-#destinos-destacados {
+#destinos {
     padding: 40px 20px;
     text-align: center;
 }
 
-#destinos-destacados h2 {
+#destinos h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
-    color: #003366; /* Azul para Marca */
+    color: #003366; /* Color del título */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Sombra del texto */
 }
 
-
-/* Cards */
-.card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    border-radius: 15px;
-    overflow: hidden;
-    margin: 20px;
+/* Estilo para las tarjetas de destinos */
+.destino-card {
+    position: relative;
+    display: block;
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar partes desbordadas */
+    margin: 15px; /* Espacio entre tarjetas */
+    transition: transform 0.3s ease; /* Efecto de transformación */
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* Efecto de escala y brillo en hover */
+.destino-card:hover {
+    transform: scale(1.05); /* Aumentar ligeramente al pasar el cursor */
 }
 
-/* Footer con colores vibrantes */
-footer {
-    background-color: #ffb6c1; /* Rosa pastel claro */
-    color: #333;
-    padding: 20px 0;
+/* Estilo para las imágenes de los destinos */
+.destino-imagen {
+    width: 100%; /* Asegúrate de que la imagen llene el contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 20px; /* Bordes redondeados en las imágenes */
+    transition: filter 0.5s ease; /* Efecto de transición suave */
+}
+
+.destino-imagen:hover {
+    filter: brightness(1.2); /* Aumentar el brillo al hacer hover */
+}
+
+/* Información sobre el destino */
+.destino-info {
+    position: absolute;
+    bottom: 10px; /* Posiciona la información hacia la parte inferior */
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
     text-align: center;
+    transform: translateY(20px); /* Mover hacia abajo */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones de opacidad y movimiento */
+    opacity: 0; /* Inicialmente invisible */
+    font-family: 'Great Vibes', cursive; /* Tipografía estilo script */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra del texto para mayor visibilidad */
 }
 
-footer p {
-    font-family: 'Baloo 2', sans-serif;
-    font-size: 1.2rem;
-    color: #333;
+/* Hacer visible la información al hacer hover */
+.destino-card:hover .destino-info {
+    transform: translateY(0); /* Mover a la posición original */
+    opacity: 1; /* Hacer visible */
 }
 
-/* Estilos adicionales */
-h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    color: #F7F5C8; /* Azul Marca */
+/* Títulos de destino */
+.destino-info h3 {
+    margin: 0;
+    font-size: 1.8rem; /* Tamaño del título de destino */
 }
 
-p {
-    font-family: 'Raleway', sans-serif; /* Texto general con una fuente ligera y simple */
-    font-size: 1.2rem;
-    color: #333;
+/* Párrafo descriptivo */
+.destino-info p {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem; /* Tamaño del texto descriptivo */
+    margin-top: 5px; /* Espacio superior del párrafo */
 }
 
-/* Botones generales */
-.btn {
-    font-family: 'Baloo 2', sans-serif;
-    background-color: #ff6347; /* Rojo tomate */
-    color: white;
-    border-radius: 30px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
+/* Efecto de fondo en movimiento */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.btn:hover {
-    background-color: #ff4500; /* Naranja vibrante al hacer hover */
-    color: white;
+/* Aplicar animación de fondo */
+#destinos {
+    background: linear-gradient(135deg, #fceec7, #d2ca99);
+    background-size: 400% 400%; /* Aumentar el tamaño del fondo */
+    animation: gradientAnimation 15s ease infinite; /* Animación del fondo */
 }
 
 
-/* Footer */
-footer {
-    background-color: #003366; /* Azul Marca */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    color: #fff;
-}
 
 
 
