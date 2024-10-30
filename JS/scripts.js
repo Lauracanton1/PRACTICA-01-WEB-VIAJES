@@ -5,6 +5,7 @@ AOS.init({
     once: true
 });
 
+
 // Smooth scrolling para los enlaces
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
@@ -13,7 +14,44 @@ $('a[href*="#"]').on('click', function (e) {
     }, 500);
 });
 
+// seccion index. sobre nosotros
+document.addEventListener("DOMContentLoaded", function () {
+    const introSection = document.querySelector(".intro-section");
 
+    function handleScroll() {
+        const sectionPosition = introSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (sectionPosition < screenPosition) {
+            introSection.classList.add("show");
+            window.removeEventListener("scroll", handleScroll); // Solo ejecuta una vez
+        }
+    }
+    
+    window.addEventListener("scroll", handleScroll);
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const introSection = document.querySelector(".intro-section");
+    const accordionToggle = document.querySelector(".accordion-toggle");
+    const accordionContent = document.querySelector(".accordion-content");
+
+    function handleScroll() {
+        const sectionPosition = introSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (sectionPosition < screenPosition) {
+            introSection.classList.add("show");
+            window.removeEventListener("scroll", handleScroll); // Ejecuta una vez
+        }
+    }
+
+    // Función para manejar el acordeón
+    accordionToggle.addEventListener("click", function () {
+        accordionContent.style.maxHeight = accordionContent.style.maxHeight ? null : `${accordionContent.scrollHeight}px`;
+    });
+
+    window.addEventListener("scroll", handleScroll);
+});
 
 // NIZA COMIDA
 
@@ -34,3 +72,18 @@ window.onclick = function(event) {
         }
     }
 };
+
+
+
+
+
+
+
+// Efecto de hover en el footer
+$(document).ready(function() {
+    $(".social-icons .btn-floating").hover(function() {
+        $(this).css("transform", "scale(1.3)");
+    }, function() {
+        $(this).css("transform", "scale(1)");
+    });
+});

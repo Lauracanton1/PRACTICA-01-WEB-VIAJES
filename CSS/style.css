@@ -1,94 +1,170 @@
 /* Importamos varias fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 /* Estilos básicos */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(255, 255, 255); /* Fondo suave */
     color: #333;
     text-align: center;
 }
-.header {
+
+
+
+/* Contenedor de la imagen de fondo */
+.header-background {
     position: relative;
-    background-image: url('/Users/lauracanton/Documents/GitHub/PRACTICA-01-WEB-VIAJES/IMG/IMAGEN INICIO.png'); /* Imagen de fondo */
-    height: 100vh; /* Altura del header */
-    background-size: cover; /* Ajustar la imagen */
-    background-position: center; /* Centrar la imagen */
-    display: flex; /* Usar flexbox para centrar el contenido */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    text-align: center; /* Centrar el texto */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
 }
 
-/* Overlay para el texto */
-.overlay {
+.background-image {
     position: absolute;
-    top: 50%; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Ajustar el posicionamiento */
-    color: #ffffff; /* Color blanco para el texto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* para que no cambie de tamaño poner auto */
+    object-fit: cover; 
+    z-index: 0;
+}
+
+/* Contenido superpuesto */
+.overlay-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 90%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Estilo del título */
-.overlay h1 {
-    font-size: 6rem; /* Tamaño grande del título */
-    font-family: 'Poppins', sans-serif;
-    margin: 0; /* Sin márgenes */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+.overlay-content h1 {
+    font-size: 2.8rem;
+    color: #ff5b68;
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 15px;
 }
 
-/* Estilo del subtítulo */
-.overlay p {
-    font-size: 2rem; /* Tamaño del subtítulo */
-    margin: 20px 0; /* Espaciado arriba y abajo */
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra del texto */
-}
-
-
-/* Sección de Introducción */
-.intro-section {
-    display: flex;
-    align-items: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    transition: transform 0.5s ease;
-}
-
-.intro-section:hover {
-    transform: translateY(-10px); /* Efecto de desplazamiento en hover */
-}
-
-.intro-text {
-    flex: 1;
-    padding: 20px;
-    font-family: 'Pacifico', cursive; /* Tipografía script */
-}
-
-.intro-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #1e3799;
-}
-
-.intro-text p {
-    font-family: 'Open Sans', sans-serif; /* Tipografía para el párrafo */
-    font-size: 1.1rem;
+/* Estilo del texto */
+.overlay-content p {
+    font-size: 1.2rem;
     color: #333;
-    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.intro-image {
-    flex: 1;
-    text-align: center;
+/* Estilo del formulario */
+.search-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
 }
+
+.form-control-lg {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.btn-search {
+    background-color: #F1731F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+.btn-search:hover {
+    background-color: rgb(248, 180, 55);
+}
+
+/* Botón de acción */
+.btn-explora {
+    display: inline-block;
+    background-color: #8B962D;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-explora:hover {
+    background-color: #CDDD42;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    .overlay-content {
+        align-items: center;
+        padding: 15px;
+    }
+
+    .overlay-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .overlay-content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .search-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-control-lg {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .btn-search {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .btn-explora {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
+
+
 
 
 
 /* Sección de Bienvenida */
 #bienvenida {
-    background-color: #EFE8C1; /* Beige suave */
+    background-color: #CDDD42; /* Beige suave */
     padding: 50px;
     text-align: center;
 }
@@ -110,11 +186,151 @@ body {
 
 
 
+/* Sección introductoria */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    gap: 40px;
+    overflow: hidden;
+    position: relative;
+    background: #f3f4f6;
+}
+
+/* Contenedor de contenido de texto */
+.intro-content {
+    flex: 1;
+    max-width: 550px;
+    background-color: #D8FAFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    color: #333;
+    font-family: Arial, sans-serif;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.intro-section.show .intro-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Título */
+.intro-content h2 {
+    font-size: 2.5rem;
+    color: #48B3CC;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.intro-content h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #FEBAC2;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+/* Párrafo */
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos del acordeón */
+.info-accordion {
+    margin-top: 20px;
+}
+
+.accordion-toggle {
+    background-color: #FE7C86;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.accordion-toggle:hover {
+    background-color: #FEBAC2;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Contenedor de la imagen */
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+}
+
+.intro-section.show .intro-image {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Efectos responsivos */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        padding: 30px 5%;
+        text-align: center;
+    }
+    
+    .intro-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .intro-image img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    
+    .accordion-toggle {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+
+
+
+
 /* Sección de Destinos */
 #destinos {
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    background: #F7F5C8;
     background-size: 200% 200%;
     animation: gradientAnimation 12s ease infinite;
 }
@@ -194,6 +410,55 @@ body {
 
 
 
+/* Estilo general del footer */
+.custom-footer {
+    background-color: #1C4998;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+/* Títulos del footer */
+.custom-footer h4, .custom-footer h5 {
+    font-weight: 600;
+}
+
+/* Efecto hover en los enlaces */
+.link-hover:hover {
+    color: #ffcb47;
+    transition: color 0.3s;
+}
+
+/* Iconos sociales */
+.social-icons .btn-floating {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons .btn-floating:hover {
+    background-color: #CDDD42;
+    color: #0D324D;
+    transform: scale(1.2);
+}
+
+/* Efecto de opacidad en el texto */
+.custom-footer p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.custom-footer p:hover {
+    opacity: 1;
+}
+
 
 
 
@@ -248,6 +513,16 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* Sección de Italia */
 #italia-section {
     background-color: #EFE8C1; /* Beige suave */
@@ -286,6 +561,18 @@ body {
     color: white; /* Asegura que el texto siga siendo blanco */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Estilos globales */
@@ -353,6 +640,20 @@ body {
     background-color: #FFB17D;
     border: 2px solid #F1731F;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Sección de Restaurantes */
 .lugares-section {
