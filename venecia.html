@@ -10,7 +10,7 @@
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -40,36 +40,202 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero-venecia" class="d-flex align-items-center justify-content-center text-center">
-        <div class="container">
-            <h1 data-aos="zoom-in">Venecia</h1>
-            <p data-aos="zoom-in" data-aos-delay="200">Descubre la ciudad de los canales y su encanto único.</p>
-        </div>
-    </section>
 
-    <!-- Secciones específicas -->
-    <section id="secciones" class="py-5">
-        <div class="container">
-            <!-- Dónde ir -->
-            <div class="mb-5" data-aos="fade-up">
-                <h2>Dónde ir en Venecia</h2>
-                <p>Explora el Gran Canal, la Plaza de San Marcos, y mucho más.</p>
-            </div>
-
-            <!-- Qué hacer -->
-            <div class="mb-5" data-aos="fade-up">
-                <h2>Qué hacer en Venecia</h2>
-                <p>Disfruta de un paseo en góndola, visita museos y experimenta la cultura veneciana.</p>
-            </div>
-
-            <!-- Recetas típicas -->
-            <div data-aos="fade-up">
-                <h2>Recetas típicas de Venecia</h2>
-                <p>Prueba el "Sarde in saor", un plato clásico de Venecia.</p>
+<!-- Sección de Entrada a Venecia -->
+<section id="entrada-venecia" class="d-flex align-items-center justify-content-center p-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center">
+        <img src="img/VENECIA.png" alt="Venecia" class="imagen-lado"> <!-- Imagen de Venecia -->
+        <div class="texto-contenedor">
+            <h1 class="titulo">¡Bienvenido a Venecia!</h1>
+            <p class="descripcion">
+                “Embárcate en un viaje a través de los canales de ensueño de Venecia,
+                la ciudad de los sueños flotantes. Sumérgete en la magia de sus estrechas 
+                calles adoquinadas y los misteriosos callejones que te llevan a encantadoras 
+                plazas escondidas. Déjate llevar por la elegancia atemporal de sus palacios 
+                venecianos y la belleza etérea de la Basílica de San Marcos. Explora la riqueza 
+                cultural de esta joya del Adriático, donde el arte, la historia y la tradición 
+                se entrelazan en cada esquina. Disfruta de la exquisita cocina veneciana y déjate 
+                llevar por el romance único de esta ciudad flotante, donde cada góndola es un 
+                poema y cada vista es una obra maestra.”</p>
+            <div class="botones">
+                <a href="#donde-ir" class="btn btn-primary">Dónde Ir</a>
+                <a href="#que-hacer" class="btn btn-secondary">Actividades</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+<!-- Sección "A Dónde Ir" -->
+<section id="donde-ir" class="donde-ir-section">
+    <h2 class="titulo">¿A Dónde Ir?</h2>
+    <div class="lugares">
+        <div class="lugar" onclick="openModal('img/La Escuela Grande de San Rocco.jpg')">
+            <img src="img/Ángel.png" alt="Plaza San Marcos" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">La Escuela Grande de San Rocco</h3>
+                <p class="descripcion">
+                    La Scuola Grande di San Rocco en Venecia es un tesoro artístico y 
+                    cultural que atrae a viajeros de todo el mundo. Construida en el siglo XVI, 
+                    esta institución no solo sirvió como sede de una cofradía religiosa, sino 
+                    también como un centro de arte y caridad. Su principal atractivo son las 
+                    obras maestras de Tintoretto que adornan sus paredes, incluyendo el 
+                    impresionante ciclo de pinturas que representa la vida de Cristo y de la 
+                    Virgen María. Además, la Scuola alberga una impresionante colección de arte 
+                    y objetos litúrgicos. Una curiosidad interesante es que, a pesar de los daños 
+                    sufridos durante siglos, el edificio ha sido cuidadosamente restaurado para 
+                    preservar su esplendor original, ofreciendo a los visitantes la oportunidad 
+                    de maravillarse con la grandeza del Renacimiento veneciano.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/La basílica de San Marcos.jpg')">
+            <img src="img/veneciaPalacio.png" alt="Canal Grande" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">La basílica de San Marcos</h3>
+                <p class="descripcion">
+                    La Basílica de San Marcos, imponente símbolo de Venecia, combina los estilos 
+                    bizantino, gótico y renacentista en una obra arquitectónica incomparable. 
+                    Con más de 8,000 metros cuadrados de mosaicos dorados, cuenta historias 
+                    religiosas y escenas bíblicas que fascinan a los visitantes. Entre sus 
+                    tesoros destacan los famosos Caballos de San Marcos y la deslumbrante Pala 
+                    d’Oro, un retablo adornado con gemas y esmaltes preciosos. Además, las 
+                    Puertas de Bronce y el relicario de la columna de mármol agregan un valor 
+                    histórico invaluable. Curiosidades como los patos que predicen las 
+                    inundaciones añaden un toque de encanto único a este lugar. Sin duda, 
+                    la Basílica de San Marcos es una parada imprescindible para aquellos que
+                    buscan sumergirse en la historia.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('https://via.placeholder.com/400x250')">
+            <img src="https://via.placeholder.com/400x250" alt="Puente de Rialto" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">El puente Rialto</h3>
+                <p class="descripcion">
+                    El Puente de Rialto en Venecia es mucho más que un puente; es un ícono 
+                    de la ciudad que ha cautivado a viajeros durante siglos. Construido en el 
+                    siglo XVI, este puente arqueado sobre el Gran Canal es uno de los más 
+                    antiguos y famosos de Venecia. Una curiosidad interesante es que originalmente
+                    tenía tiendas a ambos lados, lo que lo convertía en un bullicioso mercado
+                    y centro comercial en el corazón de la ciudad. Además, su diseño único y 
+                    su ubicación estratégica han inspirado a artistas y escritores a lo largo 
+                    de los años. Desde el puente, los viajeros pueden disfrutar de vistas 
+                    impresionantes del Gran Canal y de los pintorescos edificios venecianos 
+                    que lo rodean, convirtiéndolo en un lugar imperdible para cualquier visita.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/Palacio Ducal.jpg')">
+            <img src="img/Palacio Ducal.png" alt="Murano" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Palacio Ducal</h3>
+                <p class="descripcion">
+                    El Palacio Ducal de Venecia es una obra maestra arquitectónica que ha sido 
+                    testigo de siglos de historia y poder en la República de Venecia. Construido 
+                    en el siglo IX y renovado en el siglo XIV en el estilo gótico veneciano, 
+                    este palacio fue la residencia oficial de los líderes de Venecia, así como 
+                    el centro del gobierno y la justicia. Una curiosidad que llama la atención 
+                    es el Puente de los Suspiros, que conecta el palacio con las antiguas 
+                    prisiones. Se dice que los prisioneros suspiraban al pasar por este puente 
+                    al contemplar por última vez la belleza de Venecia antes de ser encarcelados, 
+                    lo que le otorgó su nombre. Además, el palacio alberga una rica colección de 
+                    arte, incluyendo obras de Tintoretto y Veronese, que reflejan la opulencia 
+                    y el esplendor de la Venecia renacentista. Los viajeros pueden explorar sus 
+                    elaboradas salas y aprender sobre la intrigante historia de este símbolo 
+                    emblemático de la ciudad flotante.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar imagen ampliada -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close-button" onclick="closeModal()">✖</span>
+        <img class="modal-content" id="modal-img" src="">
+    </div>
+</section>
+
+
+
+
+<!-- Sección "Actividades" -->
+<div class="actividades-section">
+    <h2 class="section-title">Actividades</h2>
+    <img class="section-decorative-image" src="img/PositActividades.png" alt="Imagen decorativa">
+    <div class="actividades-grid">
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/Góndola.png" alt="Actividad 1">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Paseo en góndola por los canales</h3>
+                <p class="actividad-descripcion">Recorrer los canales de Venecia en góndola es más que 
+                una simple travesía; es una inmersión en la magia y la historia de esta icónica ciudad. 
+                Mientras deslizas suavemente por el agua, podrás admirar los majestuosos palacios y edificios 
+                que se reflejan en las tranquilas aguas de los canales, cada uno con su propia historia y encanto.</p>
+            </div>
+        </div>
+
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/Vino.png" alt="Actividad 2">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Visita a Cannaregio y degustación de Cichcheti</h3>
+                <p class="actividad-descripcion">El barrio de Cannaregio ofrece una experiencia 
+                auténtica de la vida veneciana, alejada del bullicio turístico. Sus calles 
+                tranquilas invitan a pasear y sumergirse en la atmósfera local, donde se pueden 
+                descubrir rincones encantadores y detalles de la vida cotidiana. Una de las 
+                experiencias culinarias más destacadas de este barrio son los cicchetti, 
+                deliciosos bocados venecianos que se pueden degustar en los bàcari locales.</p>
+            </div>
+        </div>
+
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/Taller Vidreo.png" alt="Actividad 3">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Visita a la Isla de Murano y taller de vidrio</h3>
+                <p class="actividad-descripcion">La Isla de Murano, conocida por su artesanía 
+                en vidrio, es un tesoro artístico en la laguna de Venecia. Sus talleres ofrecen 
+                una experiencia fascinante al observar a los hábiles maestros vidrieros en plena 
+                acción, creando obras de arte únicas con siglos de tradición.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
     <!-- Footer -->
     <footer>
@@ -81,7 +247,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="JS/scripts.js"></script>
 </body>
 
 
