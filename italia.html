@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes POP - Italia</title>
+    <title>Europa360º</title>
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- tipografias -->
+     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Playfair+Display:wght@700&family=Righteous&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -87,30 +91,111 @@
     </section>
 
     <section id="mochila-italia" class="mochila-section py-5">
-        <div class="container text-center">
-            <h2>¡No te olvides esto en tu mochila para Italia!</h2>
-            <div class="row justify-content-center align-items-center mochila-container">
-                <div class="col-md-4 mochila-items">
-                    <div class="mochila-item">DNI y documentos importantes, dinero...</div>
-                    <div class="mochila-item">Outfits elegantes (pañuelo y gafas imprescindibles)</div>
-                    <div class="mochila-item">Paraguas plegable y ligero</div>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mochila-title text-uppercase">¿Qué llevar en tu mochila para Italia?</h2>
+                <p class="mochila-subtitle">No olvides estos esenciales para disfrutar de tu viaje al máximo</p>
+            </div>
+    
+            <div class="row align-items-center justify-content-center">
+                <!-- Tarjetas de Mochila: Parte Izquierda -->
+                <div class="col-md-4 d-flex flex-column gap-4">
+                    <div class="mochila-card shadow-sm p-4 text-center">
+                        <i class="fas fa-id-card fa-2x mb-3 mochila-icon"></i>
+                        <h5>Documentos y Dinero</h5>
+                        <p>DNI, pasaporte y efectivo son imprescindibles.</p>
+                    </div>
+    
+                    <div class="mochila-card shadow-sm p-4 text-center">
+                        <i class="fas fa-glasses fa-2x mb-3 mochila-icon"></i>
+                        <h5>Outfits Elegantes</h5>
+                        <p>Pañuelos y gafas, ¡los detalles importan!</p>
+                    </div>
+    
+                    <div class="mochila-card shadow-sm p-4 text-center">
+                        <i class="fas fa-umbrella fa-2x mb-3 mochila-icon"></i>
+                        <h5>Paraguas Plegable</h5>
+                        <p>Ligero y práctico para días lluviosos.</p>
+                    </div>
                 </div>
+    
+                <!-- Imagen Central de Mochila -->
                 <div class="col-md-4 text-center">
-                    <img src="IMG/MOCHILA ITALIA.png" alt="Mochila Italia" class="mochila-imagen">
+                    <img src="IMG/MOCHILA ITALIA.png" alt="Mochila para Italia" class="mochila-imagen img-fluid rounded">
                 </div>
-                <div class="col-md-4 mochila-items">
-                    <div class="mochila-item">Un libro para leer, y gafas de lectura</div>
-                    <div class="mochila-item">Un diario para apuntar cada día</div>
-                    <div class="mochila-item">Ropa que abrigue: jerseys, botas de agua, gorras...</div>
+    
+                <!-- Tarjetas de Mochila: Parte Derecha -->
+                <div class="col-md-4 d-flex flex-column gap-4">
+                    <div class="mochila-card shadow-sm p-4 text-center">
+                        <i class="fas fa-book fa-2x mb-3 mochila-icon"></i>
+                        <h5>Lectura para el Viaje</h5>
+                        <p>Un buen libro y gafas de lectura.</p>
+                    </div>
+    
+                    <div class="mochila-card shadow-sm p-4 text-center">
+                        <i class="fas fa-journal-whills fa-2x mb-3 mochila-icon"></i>
+                        <h5>Diario de Viaje</h5>
+                        <p>Apunta cada detalle de tu aventura.</p>
+                    </div>
+    
+                    <div class="mochila-card shadow-sm p-4 text-center">
+                        <i class="fas fa-socks fa-2x mb-3 mochila-icon"></i>
+                        <h5>Ropa de Abrigo</h5>
+                        <p>Jerseys, botas de agua y gorras.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
+    
+    
 
-    <!-- Footer -->
-<footer>
-    <p>Europa 360° - Tu guía de viajes 2024</p>
+<!-- Footer Section -->
+<footer class="custom-footer text-white">
+    <div class="container py-5">
+        <div class="row text-center text-md-start">
+
+            <!-- Logo y Descripción -->
+            <div class="col-md-4 mb-4" data-aos="fade-right">
+                <h4 class="text-uppercase text-light mb-3">Europa 360º</h4>
+                <p>Explora Europa con nosotros. Encuentra los destinos más espectaculares y experiencias únicas para recordar siempre. Vive la aventura.</p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <h5 class="text-uppercase text-info mb-3">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white link-hover">Inicio</a></li>
+                    <li><a href="italia.html" class="text-white link-hover">Italia</a></li>
+                    <li><a href="francia.html" class="text-white link-hover">Francia</a></li>
+                </ul>
+            </div>
+
+            <!-- Contáctanos -->
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h5 class="text-uppercase text-info mb-3">Contáctanos</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Madrid, España</p>
+                <p><i class="fas fa-envelope me-2"></i> info@europa360.com</p>
+                <p><i class="fas fa-phone me-2"></i> +34 123 456 789</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-md-3 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-delay="300">
+                <h5 class="text-uppercase text-info mb-3">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p>© 2024 Europa 360º. Todos los derechos reservados.</p>
+        </div>
+    </div>
 </footer>
 
 

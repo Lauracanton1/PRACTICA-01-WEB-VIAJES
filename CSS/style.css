@@ -575,75 +575,66 @@ body {
 
 
 
-/* Estilos globales */
+/* Sección de Mochila */
 .mochila-section {
-    background-color: #f4f4f9;
+    background: #F4E3B7;
+    color: #ffffff;
     padding: 60px 0;
+    text-align: center;
 }
 
-.mochila-section h2 {
-    font-size: 32px;
+/* Títulos */
+.mochila-title {
+    color: #43B4A9;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Righteous', sans-serif;
+}
+
+.mochila-subtitle {
+    color: #2d2d2d;
+    font-size: 1.1rem;
     margin-bottom: 40px;
+}
+
+/* Tarjetas de Mochila */
+.mochila-card {
+    background-color: #ffffff;
     color: #333;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-}
-
-.mochila-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-/* Estilos de los elementos */
-.mochila-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-}
-
-.mochila-item {
-    background-color: #f1f1f1;
     border-radius: 15px;
-    padding: 15px 20px;
-    margin: 10px 0;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    color: #444;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mochila-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.mochila-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Iconos */
+.mochila-icon {
+    color: #F1731F;
+}
+
+/* Imagen de Mochila */
 .mochila-imagen {
-    max-width: 350px;
-    margin-right: 60px;
-    transition: transform 0.3s ease;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
 }
 
-.mochila-imagen:hover {
-    transform: scale(1.1);
+/* Texto */
+.mochila-card h5 {
+    font-weight: 600;
+    color: #f08d4b;
 }
 
-/* Variantes de color */
-#mochila-italia .mochila-item {
-    background-color: #FFB17D;
-    border: 2px solid #F1731F;
+.mochila-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
-
-#mochila-francia .mochila-item {
-    background-color: #FFB17D;
-    border: 2px solid #F1731F;
-}
-
-
-
-
 
 
 
