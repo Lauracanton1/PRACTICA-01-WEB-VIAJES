@@ -181,6 +181,138 @@ body {
     color: #333;
 }
 
+/* Sección introductoria */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    gap: 40px;
+    overflow: hidden;
+    position: relative;
+    background: #f3f4f6;
+}
+
+/* Contenedor de contenido de texto */
+.intro-content {
+    flex: 1;
+    max-width: 550px;
+    background-color: #D8FAFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    color: #333;
+    font-family: Arial, sans-serif;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.intro-section.show .intro-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Título */
+.intro-content h2 {
+    font-size: 2.5rem;
+    color: #48B3CC;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.intro-content h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #FEBAC2;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+/* Párrafo */
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos del acordeón */
+.info-accordion {
+    margin-top: 20px;
+}
+
+.accordion-toggle {
+    background-color: #FE7C86;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.accordion-toggle:hover {
+    background-color: #FEBAC2;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Contenedor de la imagen */
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+}
+
+.intro-section.show .intro-image {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Efectos responsivos */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        padding: 30px 5%;
+        text-align: center;
+    }
+    
+    .intro-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .intro-image img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    
+    .accordion-toggle {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
 
 
 
@@ -270,6 +402,54 @@ body {
 
 
 
+/* Estilo general del footer */
+.custom-footer {
+    background-color: #1C4998;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+/* Títulos del footer */
+.custom-footer h4, .custom-footer h5 {
+    font-weight: 600;
+}
+
+/* Efecto hover en los enlaces */
+.link-hover:hover {
+    color: #ffcb47;
+    transition: color 0.3s;
+}
+
+/* Iconos sociales */
+.social-icons .btn-floating {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons .btn-floating:hover {
+    background-color: #CDDD42;
+    color: #0D324D;
+    transform: scale(1.2);
+}
+
+/* Efecto de opacidad en el texto */
+.custom-footer p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.custom-footer p:hover {
+    opacity: 1;
+}
 
 
 
@@ -601,7 +781,7 @@ body {
 .container {
     max-width: 1200px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centrar el contenedor */
-    display: flex; /* Flexbox para alinear imagen y texto */
+    
     flex-direction: row; /* Alinear en fila */
     align-items: center; /* Centrar verticalmente */
     gap: 50px; /* Espacio entre imagen y texto */
