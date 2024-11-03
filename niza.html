@@ -10,7 +10,7 @@
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <!-- TIPOGRAFIA -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
@@ -44,126 +44,98 @@
     </nav>
 
 
+<!-- PLATOS TÍPICOS -->
 
-<!-- Sección 2: Recomendador de Restaurantes -->
-<section class="lugares-section">
-    <h2 class="section-title">Nuestros Platos</h2>
-    <div class="lugares-grid">
-        <div class="lugar-card" onclick="openModal('receta1')">
-            <img src="img/Comida Niza1.png" alt="Plato 1" class="lugar-imagen">
-        </div>
-        <div class="lugar-card" onclick="openModal('receta2')">
-            <img src="img/Comida Niza2.png" alt="Plato 2" class="lugar-imagen">
-        </div>
-        <div class="lugar-card" onclick="openModal('receta3')">
-            <img src="img/Comida Niza3.png" alt="Plato 3" class="lugar-imagen">
+    <div class="delicias-section">
+        <h2 class="delicias-title">Platos Típicos</h2>
+        <div class="delicias-grid">
+            <div class="delicia-card" 
+                 data-title="SALADE NIÇOISE" 
+                 data-ingredients="
+                 INGREDIENTES
+                 1. Lechuga.
+                 2. Tomates cherry.
+                 3. Atún en lata.
+                 4. Aceitunas negras.
+                 5. Huevos duros.
+                 6. Anchoas.
+                 7. Judías verdes cocidas. 8. Patatas cocidas.
+                 9. Aceite de oliva.
+                 10. Vinagre de vino tinto." 
+                 data-instructions="INSTRUCCIONES
+                 Coloca la lechuga en un plato grande y distribuye los tomates cherry, las 
+                 ceitunas negras, las anchoas, las judías verdes y las patatas alrededor. 
+                 Decora con el atún en lata y los huevos duros cortados en rodajas. Aliña 
+                 la ensalada con aceite de oliva y vinagre de vino tinto al gusto, 
+                 Sirve fresca.">
+                <img src="img/Comida Niza1.png" alt="Ensalada César" class="delicia-imagen">
+            </div>
+            <div class="delicia-card" 
+                 data-title="RATATOUILLE NICOISE" 
+                 data-ingredients="INGREDIENTES
+                 1. Berenjena.
+                 2. Calabacín.
+                 3. Pimiento rojo.
+                 4. Pimiento verde. 5. Tomates maduros. 6. Cebolla.
+                 7. Ajo.
+                 8. Aceite de oliva.
+                 9. Hierbas provenzales (tomillo, romero, albahaca)."  
+                 data-instructions="INSTRUCCIONES
+                 Corta todas las verduras en rodajas finas. En una sartén grande, calienta el aceite de oliva 
+                 y saltea la cebolla y el ajo hasta que estén dorados. Agrega los pimientos y cocina hasta 
+                 que estén tiernos. Añade la berenjena y el calabacín y cocina hasta que estén dorados. 
+                 Agrega los tomates y las hierbas provenzales, y cocina a fuego lento hasta que las verduras 
+                 estén tiernas y se forme una salsa espesa.
+                 Sirve caliente.">
+                <img src="img/Comida Niza2.png" alt="Pasta al Pesto" class="delicia-imagen">
+            </div>
+            <div class="delicia-card" 
+                 data-title="MACARONS" 
+                 data-ingredients="INGREDIENTES
+                 1. 150g de almendra molida.
+                 2. 150g de azúcar glas.
+                 3. 120g de claras de huevo (aproximadamente de 3 a 4 huevos).
+                 4. 75g de azúcar granulada.
+                 5. 150g de mantequilla sin sal, a temperatura ambiente.
+                 6. 150g de azúcar glas.
+                 7. 1 cucharadita de extracto de vainilla (o cualquier otro saborizante que desees)." 
+                 data-instructions="
+                 Tamiza la almendra molida y el azúcar glan juntos en un tazón grande para 
+                 lograr una textura suave. Bate las claras de huevo hasta obtener picos 
+                 firmes, añadiendo gradualmente azúcar granulada.Opcionalmente, agrega 
+                 colorante alimentario a las claras. Incorpora suavemente la mezcla de 
+                 almendra y azúcar glas a las claras, evitando sobre mezclar. Coloca la masa 
+                 en una manga pastelera y forma círculos en una bandeja para hornear. 
+                 Golpea la bandeja suavemente para eliminar burbujas de aire. Deja reposar 
+                 los macarons hasta que forme una costra en la superficie. Hornea a 150°C 
+                 durante 12-15 minutos hasta que estén firmes. Prepara el relleno batiendo 
+                 mantequilla, azúcar glas y extracto de vainilla. Una vez horneados, deja 
+                 enfriar los macarons en la bandeja. Únelos de dos en dos con relleno entre 
+                 ellos. Guarda en el refrigerador durante al menos 24 horas antes de servir.">
+                <img src="img/Comida Niza3.png" alt="Tacos de Carnitas" class="delicia-imagen">
+            </div>
+            <!-- Agrega más tarjetas según sea necesario -->
         </div>
     </div>
-</section>
-
-<!-- Modales para recetas -->
-<div id="receta1" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('receta1')">&times;</span>
-        <h2 class="titulo-receta">RATATOUILLE NICOISE</h2>
-        <div class="seccion">
-            <h3 class="titulo-seccion">Ingredientes:</h3>
-            <ul class="lista">
-                <li><span>Berenjena.</li>
-                <li><span>Calabacín.</li>
-                <li><span>Pimiento rojo.</li>
-                <li><span>Pimiento verde.</li>
-                <li><span>Tomates maduros.</li>
-                <li><span>Cebolla.</li>
-                <li><span>Ajo.</li>
-                <li><span>Aceite de oliva.</li>
-                <li><span>Hierbas provenzales.</li>
-            </ul>
-        </div>
-        <div class="seccion">
-            <h3 class="titulo-seccion">Instrucciones:</h3>
-            <ul class="lista">
-                <li>Corta todas las verduras en rodajas finas. En una sartén grande,
-                calienta el aceite de oliva y saltea la cebolla y el ajo hasta que
-                estén dorados. Agrega los pimientos y cocina hasta que estén tiernos.
-                Añade la berenjena y el calabacín y cocina hasta que estén dorados.
-                Agrega los tomates y las hierbas provenzales, y cocina a fuego lento 
-                hasta que las verduras estén tiernas y se forme una salsa espesa.
-                Sirve caliente.</li>
-            </ul>
+    
+    <!-- Modal único -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="close-btn">&times;</div>
+            <h2 class="receta-title"></h2>
+            <ul class="ingredientes-list"></ul>
+            <p class="instructions"></p>
         </div>
     </div>
-</div>
+    
 
-<div id="receta2" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('receta2')">&times;</span>
-        <h2 class="titulo-receta">SALADE NIÇOISE</h2>
-        <div class="seccion">
-            <h3 class="titulo-seccion">Ingredientes:</h3>
-            <ul class="lista">
-                <li><span>Lechuga.</li>
-                <li><span>Tomates cherry.</li>
-                <li><span>Atún en lata.</li>
-                <li><span>Aceitunas Negras.</li>
-                <li><span>Huevos duros.</li>
-                <li><span>Anchoas.</li>
-                <li><span>Judías verdes cocidas.</li>
-                <li><span>Patatas cocidas.</li>
-                <li><span>Aceite de oliva.</li>
-                <li><span>Vinagre de vino tinto.</li>
 
-            </ul>
-        </div>
-        <div class="seccion">
-            <h3 class="titulo-seccion">Instrucciones:</h3>
-            <ul class="lista">
-                <li>Coloca la lechuga en un plato grande y distribuye los tomates cherry,
-                las aceitunas negras, las anchoas, las judías verdes y las patatas alrededor.
-                Decora con el atún en lata y los huevos duros cortados en rodajas. Aliña 
-                la ensalada con aceite de oliva y vinagre de vino tinto al gusto. Sirve
-                fresca..</li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<div id="receta3" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('receta3')">&times;</span>
-        <h2 class="titulo-receta">MACARONS</h2>
-        <div class="seccion">
-            <h3 class="titulo-seccion">Ingredientes:</h3>
-            <ul class="lista">
-                <li><span>150g de almendra molida.</li>
-                <li><span>150g de azúcar glas.</li>
-                <li><span>120g de claras de huevo, 3-4 huevos.</li>
-                <li><span>75g de azúcar granulada.</li>
-                <li><span>150g de mantequilla sin sal, a temperatura
-                ambiente.</li>
-                <li><span>150g de azúcar glas.</li>
-                <li><span>1 cucharadita de extracto de vainilla .</li>
-            </ul>
-        </div>
-        <div class="seccion">
-            <h3 class="titulo-seccion">Instrucciones:</h3>
-            <ul class="lista">
-                <li>Tamiza la almendra molida y el azúcar glas juntos en un tazón grande para
-                lograr una textura suave. Bate las claras de huevo hasta obtener picos firmes, 
-                añadiendo gradualmente azúcar granulada.Opcionalmente, agrega colorante
-                alimentario a las claras. Incorpora suavemente la mezcla de almendra y azúcar
-                glas a las claras, evitando sobre mezclar. Coloca la masa en una manga pastelera
-                y forma círculos en una bandeja para hornear. Golpea la bandeja suavemente para
-                eliminar burbujas de aire. Deja reposar los macarons hasta que forme una costra 
-                en la superficie. Hornea a 150°C durante 12-15 minutos hasta que estén firmes.
-                Prepara el relleno batiendo mantequilla, azúcar glas y extracto de vainilla. 
-                Una vez horneados, deja enfriar los macarons en la bandeja.
-                Únelos de dos en dos con relleno entre ellos. Guarda en el refrigerador durante
-                al menos 24 horas antes de servir.</li>
-            </ul>
-        </div>
-    </div>
-</div>
+
+    
+
+    
+    
 <!-- Footer -->
 <footer>
     <p>Europa 360° - Tu guía de viajes 2024</p>
