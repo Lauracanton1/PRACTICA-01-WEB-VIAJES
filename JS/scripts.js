@@ -131,3 +131,20 @@ $(document).ready(function() {
         $(this).css("transform", "scale(1)");
     });
 });
+
+
+// COMPRA REVISTA FÍSICA
+function confirmPurchase(event) {
+    event.preventDefault(); // Evita el envío del formulario
+    
+    // Oculta el formulario y muestra el mensaje de agradecimiento
+    document.getElementById('purchaseForm').style.display = 'none';
+    document.getElementById('thankYouMessage').style.display = 'block';
+
+    // Cierra el modal después de 3 segundos
+    setTimeout(() => {
+        const modal = new bootstrap.Modal(document.getElementById('purchaseModal'));
+        modal.hide();
+    }, 3000);
+}
+
