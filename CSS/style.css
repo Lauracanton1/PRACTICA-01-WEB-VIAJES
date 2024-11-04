@@ -643,7 +643,7 @@ body {
 
 
 
-/* Sección de Delicias */
+/* COMIDA NIZA */
 .delicias-section {
     padding: 50px 20px;
     background-color: #ffebf2; /* Color de fondo */
@@ -860,11 +860,7 @@ body {
 
 
 
-
-
-
-
-/* Sección "A Dónde Ir" */
+/* SECCIÓN A DONDE IR */
 #donde-ir {
     background-color: #e8f0f2; /* Fondo azul claro para suavizar la sección */
     padding: 60px 20px; /* Espaciado superior e inferior */
@@ -976,16 +972,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-/* Sección de Actividades */
+/* SECCIÓN DE ACTIVIDADES VENECIA */
 .actividades-section {
-    background-color: #e6f7ff; /* Color de fondo suave y fresco */
+    background-color: #e6f7ff;
     padding: 60px 20px;
     text-align: center;
     border-radius: 20px;
@@ -996,46 +985,38 @@ body {
 /* Título de la sección */
 .section-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: #2c3e50; /* Color más oscuro para mejor contraste */
+    font-size: 2.5rem;
+    color: #2c3e50;
     margin-bottom: 40px;
 }
 
-/* Imagen entre secciones */
-.section-between-image {
-    width: 20%; /* Ajusta el ancho de la imagen a 100% */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 20px; /* Bordes redondeados */
-    margin: 40px 0; /* Espacio vertical alrededor de la imagen */
-}
-
-
-/* Imagen decorativa a la derecha de la sección */
+/* Imagen decorativa */
 .section-decorative-image {
     position: absolute;
     right: 20px;
     top: -40px;
-    width: 470px;
+    width: 300px;
     height: auto;
 }
 
 /* Cuadrícula de actividades */
 .actividades-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
     gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajusta automáticamente */
 }
 
 /* Tarjeta de actividad */
 .actividad-card {
     position: relative;
-    width: 350px; /* Tarjeta de un tamaño fijo */
-    height: 450px; /* Altura ajustada para más espacio */
+    width: 100%; /* Tamaño flexible */
+    max-width: 350px;
+    height: 450px;
     overflow: hidden;
-    border-radius: 30px; /* Bordes redondeados */
+    border-radius: 30px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    margin: auto; /* Centrado automático */
 }
 
 .actividad-card:hover {
@@ -1046,35 +1027,33 @@ body {
 /* Imagen de actividad */
 .actividad-imagen {
     width: 100%;
-    height: 100%; /* Ajustar altura de la imagen */
+    height: 100%;
     object-fit: cover;
-    border-radius: 15px 15px 0 0; /* Bordes redondeados en la parte superior */
+    border-radius: 15px 15px 0 0;
 }
 
 /* Información de actividad */
 .actividad-info {
     position: absolute;
-    bottom: 10px; /* Ajusta esta propiedad para mover la caja un poco más arriba */
+    bottom: 10px;
     left: 50%;
-    
-    transform: translate(-50%, 0);
-    background-color: rgba(44, 62, 80, 0.9); /* Fondo oscuro con transparencia */
+    transform: translateX(-50%);
+    background-color: rgba(44, 62, 80, 0.9);
     color: #ffffff;
     padding: 20px;
-    border-radius: 10px 10px 10px 10px; /* Bordes redondeados en la parte superior */
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.4s ease, bottom 0.4s ease;
-    width: 90%; /* Ancho del 90% de la tarjeta */
+    width: 90%;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    font-size: 0.9rem; /* Tamaño de texto ajustado */
-    line-height: 1.4; /* Mejora la legibilidad */
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
-
 
 .actividad-card:hover .actividad-info {
     opacity: 1;
-    bottom: 20px; /* Mueve la caja de información hacia arriba */
+    bottom: 20px;
 }
 
 /* Títulos de actividades */
@@ -1082,19 +1061,149 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 10px; /* Espacio adicional debajo del título */
+    margin-bottom: 10px;
 }
 
 /* Descripción de actividades */
 .actividad-descripcion {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
-    line-height: 1.5; /* Espaciado entre líneas */
-    text-align: justify; /* Justificado para mejor lectura */
+    line-height: 1.5;
+    text-align: justify;
 }
 
 
 
+/* COMIDA VENECIA */
+.delicias-venecianas-section {
+    padding: 50px 20px;
+    background-color: #b9d4f7;
+    text-align: center;
+}
+
+.delicias-venecianas-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    color: #293291;
+    margin-bottom: 40px;
+}
+
+.delicias-venecianas-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.delicia-veneciana-card {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.delicia-title {
+    position: absolute;
+    bottom: 10px; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff; /* Cambia según el diseño */
+    font-weight: bold;
+    font-size: 1.5rem; /* Cambia el tamaño según sea necesario */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Para mejorar la legibilidad */
+    z-index: 2; /* Asegúrate de que esté por encima de la imagen */
+}
+
+.delicia-veneciana-imagen {
+    width: 140%;
+    height: 140%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1; /* Asegúrate de que la imagen esté detrás del texto */
+}
+
+
+
+
+
+
+
+
+
+
+/* TIEMPO */
+#clima-y-epoca {
+    background:  #f7f5cd;
+    padding: 60px 0;
+    font-family: 'Righteous', sans-serif;
+}
+
+#clima-y-epoca h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#clima-y-epoca .lead {
+    color: #666;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* CSS Grid para una cuadrícula uniforme */
+.clima-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos de la tarjeta de clima */
+.clima-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Uniformiza la altura */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.clima-card:hover {
+    transform: scale(1.05);
+}
+
+.clima-card h3 {
+    background-color: #b4e1e3;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.clima-card .card-body {
+    padding: 20px;
+    color: #333;
+    flex-grow: 1; /* Para estirar el contenido del cuerpo */
+}
+
+.clima-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
 
 
 
@@ -1216,6 +1325,42 @@ h2 {
 
 
 
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-decorative-image {
+        position: relative;
+        width: 250px;
+        margin: 0 auto 20px;
+        top: 0;
+    }
+
+    .actividad-card {
+        height: 400px; /* Altura ajustada para pantallas más pequeñas */
+    }
+
+    .actividad-info {
+        font-size: 0.85rem; /* Tamaño de texto más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .actividad-card {
+        height: 380px;
+    }
+
+    .actividad-info {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+}
 
 
 

@@ -55,46 +55,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // NIZA COMIDA
 
-// Mostrar el modal al hacer clic en la tarjeta
-document.querySelectorAll('.delicia-card').forEach(card => {
-    card.addEventListener('click', () => {
-        // Obtener información de la tarjeta
-        const title = card.getAttribute('data-title');
-        const ingredients = card.getAttribute('data-ingredients').split(',');
-        const instructions = card.getAttribute('data-instructions');
+document.addEventListener("DOMContentLoaded", () => {
+    // Seleccionar todas las tarjetas de recetas venecianas
+    document.querySelectorAll('.delicia-veneciana-card').forEach(card => {
+        card.addEventListener('click', () => {
+            // Obtener la información de los atributos de datos de la tarjeta
+            const title = card.getAttribute('data-title');
+            const ingredients = card.getAttribute('data-ingredients').split(','); // Convertir ingredientes en lista
+            const instructions = card.getAttribute('data-instructions');
 
-        // Llenar el modal con la información
-        document.querySelector('.receta-title').innerText = title;
+            // Insertar el título de la receta en el modal
+            document.querySelector('.receta-title').innerText = title;
 
-        const ingredientesList = document.querySelector('.ingredientes-list');
-        ingredientesList.innerHTML = ''; // Limpiar la lista antes de agregar nuevos ingredientes
-        ingredients.forEach(ingredient => {
-            const li = document.createElement('li');
-            li.innerText = ingredient.trim(); // Agregar cada ingrediente a la lista
-            ingredientesList.appendChild(li);
+            // Llenar la lista de ingredientes en el modal
+            const ingredientesList = document.querySelector('.ingredientes-list');
+            ingredientesList.innerHTML = ''; // Limpiar la lista antes de agregar nuevos ingredientes
+            ingredients.forEach(ingredient => {
+                const li = document.createElement('li');
+                li.innerText = ingredient.trim(); // Agregar cada ingrediente como un elemento de lista
+                ingredientesList.appendChild(li);
+            });
+
+            // Insertar las instrucciones en el modal
+            document.querySelector('.instructions').innerText = instructions;
+
+            // Mostrar el modal
+            const modal = document.querySelector('.modal');
+            modal.style.display = 'flex'; // Usar flex para mostrar el modal
         });
-        document.querySelector('.instructions').innerText = instructions;
+    });
 
-        // Mostrar el modal
+    // Cerrar el modal al hacer clic en el botón "X"
+    const closeButton = document.querySelector('.close-btn');
+    if (closeButton) {
+        closeButton.addEventListener('click', (event) => {
+            event.stopPropagation(); // Detener la propagación del evento
+            const modal = document.querySelector('.modal');
+            modal.style.display = 'none'; // Ocultar el modal
+        });
+    }
+
+    // Cerrar el modal al hacer clic fuera de él
+    document.addEventListener('click', (event) => {
         const modal = document.querySelector('.modal');
-        modal.style.display = 'flex'; // Mostrar el modal
+        if (event.target === modal) {
+            modal.style.display = 'none'; // Ocultar el modal al hacer clic fuera
+        }
     });
 });
 
-// Cerrar el modal al hacer clic en el botón "X"
-document.querySelector('.close-btn').addEventListener('click', (event) => {
-    event.stopPropagation(); // Detener la propagación del evento
-    const modal = document.querySelector('.modal');
-    modal.style.display = 'none'; // Ocultar el modal
-});
 
-// Cerrar el modal al hacer clic fuera de él
-document.addEventListener('click', (event) => {
-    const modal = document.querySelector('.modal');
-    if (event.target === modal) {
-        modal.style.display = 'none'; // Ocultar el modal al hacer clic fuera
-    }
-});
+
+
 
 
 
@@ -133,6 +145,22 @@ $(document).ready(function() {
 });
 
 
+// TIEMPO
+document.addEventListener('DOMContentLoaded', function() {
+    const filterInput = document.getElementById('monthFilter');
+    const cards = document.querySelectorAll('.clima-card');
+    
+    filterInput.addEventListener('input', function(e) {
+        const filter = e.target.value.toLowerCase();
+        
+        cards.forEach(card => {
+            const month = card.querySelector('h3').textContent.toLowerCase();
+            card.style.display = month.includes(filter) ? 'block' : 'none';
+        });
+    });
+});
+
+
 // COMPRA REVISTA FÍSICA
 function confirmPurchase(event) {
     event.preventDefault(); // Evita el envío del formulario
@@ -147,4 +175,6 @@ function confirmPurchase(event) {
         modal.hide();
     }, 3000);
 }
+
+
 
