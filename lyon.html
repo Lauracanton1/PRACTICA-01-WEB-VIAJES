@@ -44,170 +44,310 @@
     </nav>
 
 
- <!-- Sección de Entrada a Lyon -->
- <section id="entrada-paris" class="d-flex align-items-center justify-content-center p-5">
-    <div class="container d-flex flex-column flex-lg-row align-items-center">
-        <img src="IMG/ENTRADALYON.png" alt="Lyon" class="imagen-lado"> 
-        <div class="texto-contenedor">
-            <h1 class="titulo titulo-paris">¡Bienvenido a Lyon!</h1>
-            <p class="descripcion">
-                “El corazón histórico y gastronómico de Francia. Entre sus callejuelas medievales y sus pasajes secretos, llamados 'traboules', Lyon te invita a perderte en su encanto antiguo. Admira la majestuosa Basílica de Notre-Dame de Fourvière y pasea por el Viejo Lyon, Patrimonio de la Humanidad, donde cada esquina cuenta historias de épocas pasadas. Lyon es también la capital culinaria de Francia: disfruta de su cocina en los tradicionales 'bouchons', donde los sabores únicos y auténticos dan vida a la gastronomía local. Sumérgete en una ciudad donde el arte, la historia y la modernidad se mezclan para ofrecerte una experiencia inolvidable.”
-            </p>
-            <div class="botones">
-                <a href="#donde-ir-francia" class="btn btn-primary-francia">Dónde Ir</a>
-                <a href="#actividades-section-lyon" class="btn btn-secondary-francia">Actividades</a>
-            </div>
-        </div>
-    </div>
- </section>
-
- <!-- Sección "A Dónde Ir" para Francia -->
-<section id="donde-ir-francia" class="donde-ir-francia">
-    <h2 class="titulo-francia">¿A Dónde Ir?</h2>
-    <div class="lugares">
-        <div class="lugar" onclick="openModal('IMG/Catedral de San Juan-modal.png')">
-            <img src="img/Catedral de San Juan.png" alt="Catedral de San Juan" class="imagen-lugar">
-            <div class="texto-lugar">
-                <h3 class="subtitulo-francia">Catedral de San Juan</h3>
+    <!-- Sección de Entrada a Lyon -->
+    <section id="entrada-paris" class="d-flex align-items-center justify-content-center p-5">
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <img src="IMG/ENTRADALYON.png" alt="Lyon" class="imagen-lado"> 
+            <div class="texto-contenedor">
+                <h1 class="titulo titulo-paris">¡Bienvenido a Lyon!</h1>
                 <p class="descripcion">
-                    La Catedral de San Juan, una impresionante obra del
-                    gótico que adorna el paisaje de Lyon, Francia, es un tesoro
-                    arquitectónico que cautiva tanto por su belleza como por
-                    su historia. Construida a lo largo de varios siglos, esta
-                    majestuosa catedral alberga en su interior una maravilla
-                    única: un reloj astronómico que data del siglo XIV. Este
-                    reloj, uno de los más antiguos y complejos de Europa,
-                    es una verdadera obra maestra de la ingeniería y la
-                    imaginación humana. Cada día, al mediodía, los visitantes
-                    son testigos de una asombrosa animación mecánica que
-                    cobra vida en el reloj, representando escenas bíblicas y
-                    mitológicas con una precisión y detalle impresionantes.
-                    Esta fascinante combinación de arte, ciencia y fe convierte
-                    a la Catedral de San Juan en un destino imperdible para
-                    quienes buscan sumergirse en la rica historia y el ingenio
-                    creativo de Lyon.
+                    “El corazón histórico y gastronómico de Francia. Entre sus callejuelas medievales y sus pasajes secretos, llamados 'traboules', Lyon te invita a perderte en su encanto antiguo. Admira la majestuosa Basílica de Notre-Dame de Fourvière y pasea por el Viejo Lyon, Patrimonio de la Humanidad, donde cada esquina cuenta historias de épocas pasadas. Lyon es también la capital culinaria de Francia: disfruta de su cocina en los tradicionales 'bouchons', donde los sabores únicos y auténticos dan vida a la gastronomía local. Sumérgete en una ciudad donde el arte, la historia y la modernidad se mezclan para ofrecerte una experiencia inolvidable.”
                 </p>
+                <div class="botones">
+                    <a href="#donde-ir-francia" class="btn btn-primary-francia">Dónde Ir...</a>
+                    <a href="#actividades-paris" class="btn btn-secondary-francia">¿Y ahora que?</a>
+                    <a href="#recetas-comidas" class="btn btn-terciary-francia">Ñam Ñam!!</a>
+                </div>
             </div>
         </div>
-        <div class="lugar" onclick="openModal('IMG/Traboules de Lyon-modal.png')">
-            <img src="img/Traboules de Lyon.png" alt="Traboules de Lyon" class="imagen-lugar">
-            <div class="texto-lugar">
-                <h3 class="subtitulo-francia">Traboules de Lyon</h3>
-                <p class="descripcion">
-                    Las Traboules de Lyon representan un tesoro único y
-                    distintivo en el paisaje urbano de la ciudad. Aunque no
-                    son monumentos en el sentido tradicional, su historia y
-                    su función los convierten en una parte invaluable del
-                    patrimonio cultural de Lyon. Estos pasajes secretos, que
-                    se remontan a la época medieval y eran utilizados por los
-                    comerciantes de seda para transportar sus mercancías,
-                    hoy en día despiertan la curiosidad de los viajeros que
-                    desean adentrarse en los rincones más ocultos y
-                    fascinantes de la ciudad. Recorrer las traboules es como
-                    abrir una puerta hacia el pasado, donde cada callejón
-                    estrecho y cada patio empedrado cuentan historias de
-                    siglos pasados
-                </p>
-            </div>
-        </div>
-        <div class="lugar" onclick="openModal('IMG/Basílica de Notre-Dame de Fourvière-modal.png')">
-            <img src="img/Basílica de Notre-Dame de Fourvière.png" alt="Basílica de Notre-Dame de Fourvière" class="imagen-lugar">
-            <div class="texto-lugar">
-                <h3 class="subtitulo-francia">Basílica de Notre-Dame de Fourvière</h3>
-                <p class="descripcion">
-                    La Basílica de Notre-Dame de Fourvière, una imponente
-                    estructura que domina el horizonte de Lyon, Francia, es
-                    mucho más que un simple edificio religioso. Construida
-                    entre 1872 y 1896 en estilos arquitectónicos que van desde
-                    el neobizantino hasta el romano-bizantino, esta basílica es
-                    un símbolo de gratitud y esperanza para la ciudad. Surgió
-                    como un voto de agradecimiento a la Virgen María por
-                    proteger a Lyon de una plaga de cólera en el siglo XIX.
-                    Su interior deslumbra con mosaicos dorados y pinturas
-                    vívidas que narran historias religiosas, sumergiendo a los
-                    visitantes en una atmósfera de devoción y fe. Además de
-                    su belleza interior, la basílica ofrece vistas panorámicas
-                    impresionantes de Lyon y el río Ródano desde sus terrazas
-                    superiores, añadiendo una dimensión adicional a su
-                    significado espiritual y cultural.
-                </p>
-            </div>
-        </div>
-        <div class="lugar" onclick="openModal('IMG/Teatro Romano de Fourvière-modal.png')">
-            <img src="img/Teatro Romano de Fourvière.png" alt="Teatro Romano de Fourvière" class="imagen-lugar">
-            <div class="texto-lugar">
-                <h3 class="subtitulo-francia">Teatro Romano de Fourvière</h3>
-                <p class="descripcion">
-                    El Teatro Romano de Fourvière, con sus más de 2,000 años de historia, se erige como un monumento imponente
-                    que nos conecta con el pasado glorioso de Lyon, Francia. A pesar del paso de los siglos, este teatro ha resistido
-                    el paso del tiempo y se mantiene como uno de los vestigios mejor conservados de la antigua
-                    Roma en la región. Lo que lo hace aún más fascinante es que, a pesar de su antigüedad,
-                    el teatro sigue siendo un lugar vibrante y lleno de vida. Hoy en día, se utiliza como
-                    escenario para eventos culturales, conciertos y espectáculos, lo que permite a los visitantes
-                    experimentar la historia de Lyon en un entorno contemporáneo.
-                </p>
-            </div>
-        </div>
-        
-    </div>
+    </section>
 
-    <!-- Modal para mostrar imagen ampliada -->
-    <div id="modal" class="modal" onclick="closeModal()">
-        <span class="close-button" onclick="closeModal()">✖</span>
-        <img class="modal-content" id="modal-img" src="">
-    </div>
-</section>
+    <!-- Sección "A Dónde Ir" para Francia -->
+    <section id="donde-ir-francia" class="donde-ir-francia">
+        <h2 class="titulo-francia">Dónde Ir...</h2>
+        <div class="lugares">
+            <div class="lugar" onclick="openModal('IMG/Catedral de San Juan-modal.png')">
+                <img src="img/Catedral de San Juan.png" alt="Catedral de San Juan" class="imagen-lugar">
+                <div class="texto-lugar">
+                    <h3 class="subtitulo-francia">Catedral de San Juan</h3>
+                    <p class="descripcion">
+                        La Catedral de San Juan, una impresionante obra del
+                        gótico que adorna el paisaje de Lyon, Francia, es un tesoro
+                        arquitectónico que cautiva tanto por su belleza como por
+                        su historia. Construida a lo largo de varios siglos, esta
+                        majestuosa catedral alberga en su interior una maravilla
+                        única: un reloj astronómico que data del siglo XIV. Este
+                        reloj, uno de los más antiguos y complejos de Europa,
+                        es una verdadera obra maestra de la ingeniería y la
+                        imaginación humana. Cada día, al mediodía, los visitantes
+                        son testigos de una asombrosa animación mecánica que
+                        cobra vida en el reloj, representando escenas bíblicas y
+                        mitológicas con una precisión y detalle impresionantes.
+                        Esta fascinante combinación de arte, ciencia y fe convierte
+                        a la Catedral de San Juan en un destino imperdible para
+                        quienes buscan sumergirse en la rica historia y el ingenio
+                        creativo de Lyon.
+                    </p>
+                </div>
+            </div>
+            <div class="lugar" onclick="openModal('IMG/Traboules de Lyon-modal.png')">
+                <img src="img/Traboules de Lyon.png" alt="Traboules de Lyon" class="imagen-lugar">
+                <div class="texto-lugar">
+                    <h3 class="subtitulo-francia">Traboules de Lyon</h3>
+                    <p class="descripcion">
+                        Las Traboules de Lyon representan un tesoro único y
+                        distintivo en el paisaje urbano de la ciudad. Aunque no
+                        son monumentos en el sentido tradicional, su historia y
+                        su función los convierten en una parte invaluable del
+                        patrimonio cultural de Lyon. Estos pasajes secretos, que
+                        se remontan a la época medieval y eran utilizados por los
+                        comerciantes de seda para transportar sus mercancías,
+                        hoy en día despiertan la curiosidad de los viajeros que
+                        desean adentrarse en los rincones más ocultos y
+                        fascinantes de la ciudad. Recorrer las traboules es como
+                        abrir una puerta hacia el pasado, donde cada callejón
+                        estrecho y cada patio empedrado cuentan historias de
+                        siglos pasados
+                    </p>
+                </div>
+            </div>
+            <div class="lugar" onclick="openModal('IMG/Basílica de Notre-Dame de Fourvière-modal.png')">
+                <img src="img/Basílica de Notre-Dame de Fourvière.png" alt="Basílica de Notre-Dame de Fourvière" class="imagen-lugar">
+                <div class="texto-lugar">
+                    <h3 class="subtitulo-francia">Basílica de Notre-Dame de Fourvière</h3>
+                    <p class="descripcion">
+                        La Basílica de Notre-Dame de Fourvière, una imponente
+                        estructura que domina el horizonte de Lyon, Francia, es
+                        mucho más que un simple edificio religioso. Construida
+                        entre 1872 y 1896 en estilos arquitectónicos que van desde
+                        el neobizantino hasta el romano-bizantino, esta basílica es
+                        un símbolo de gratitud y esperanza para la ciudad. Surgió
+                        como un voto de agradecimiento a la Virgen María por
+                        proteger a Lyon de una plaga de cólera en el siglo XIX.
+                        Su interior deslumbra con mosaicos dorados y pinturas
+                        vívidas que narran historias religiosas, sumergiendo a los
+                        visitantes en una atmósfera de devoción y fe. Además de
+                        su belleza interior, la basílica ofrece vistas panorámicas
+                        impresionantes de Lyon y el río Ródano desde sus terrazas
+                        superiores, añadiendo una dimensión adicional a su
+                        significado espiritual y cultural.
+                    </p>
+                </div>
+            </div>
+            <div class="lugar" onclick="openModal('IMG/Teatro Romano de Fourvière-modal.png')">
+                <img src="img/Teatro Romano de Fourvière.png" alt="Teatro Romano de Fourvière" class="imagen-lugar">
+                <div class="texto-lugar">
+                    <h3 class="subtitulo-francia">Teatro Romano de Fourvière</h3>
+                    <p class="descripcion">
+                        El Teatro Romano de Fourvière, con sus más de 2,000 años de historia, se erige como un monumento imponente
+                        que nos conecta con el pasado glorioso de Lyon, Francia. A pesar del paso de los siglos, este teatro ha resistido
+                        el paso del tiempo y se mantiene como uno de los vestigios mejor conservados de la antigua
+                        Roma en la región. Lo que lo hace aún más fascinante es que, a pesar de su antigüedad,
+                        el teatro sigue siendo un lugar vibrante y lleno de vida. Hoy en día, se utiliza como
+                        escenario para eventos culturales, conciertos y espectáculos, lo que permite a los visitantes
+                        experimentar la historia de Lyon en un entorno contemporáneo.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Modal para mostrar imagen ampliada -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close-button" onclick="closeModal()">✖</span>
+            <img class="modal-content" id="modal-img" src="">
+        </div>
+    </section>
 
 
+    <!-- Sección Actividades en Lyon -->
+    <section id="actividades-paris" class="actividades-paris-section">
+        <h2 class="titulo-paris">¿Y ahora que?</h2>
+        <div class="tarjetas-actividades">
+
+            <!-- Tarjeta 1: gastronomía-Local -->
+            <div class="tarjeta" onclick="openModal('IMG/gastronomia-modal.png')">
+                <div class="imagen-overlay">
+                    <img src="img/gastronomía-Local.png" alt="gastronomía-Local" class="imagen-actividad">
+                    <div class="overlay-text">
+                        <p>Descubre los sabores únicos de Lyon en
+                            nuestro tour gastronómico local.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: museo-finearts -->
+            <div class="tarjeta" onclick="openModal('IMG/finearts-modal.png')">
+                <div class="imagen-overlay">
+                    <img src="img/museo-finearts.png" alt="museo-finearts" class="imagen-actividad">
+                    <div class="overlay-text">
+                        <p>El Museo de Bellas Artes de Lyon es una joya cultural
+                            que alberga una impresionante colección de arte que
+                            abarca desde la Antigüedad hasta el siglo XX.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3:tete d´Or -->
+            <div class="tarjeta" onclick="openModal('IMG/Tête d´Or-modal.png')">
+                <div class="imagen-overlay">
+                    <img src="img/Tête d´Or.png" alt="tete d´Or" class="imagen-actividad">
+                    <div class="overlay-text">
+                        <p>Disfrutar de un picnic en el Parque
+                            de la Tête d’Or es una experiencia
+                            encantadora que combina la belleza
+                            natural con la tranquilidad urbana.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PLATOS TÍPICOS -->
+    <section id="recetas-comidas" class="recetas-comidas-section">
+        <h2 class="titulo-recetas">Ñam Ñam!!</h2>
+    
+        <div class="contenedor-tarjetas">
+            <!-- Tarjeta 1: Quenelle de Brochet -->
+            <div class="tarjeta-receta" onclick="abrirReceta('recetaQuenelledeBrochet')">
+                <div class="frente">
+                    <img src="img/Comida Lyon3.png" alt="Quenelle de Brochet" class="imagen-receta">
+                </div>
+                <div class="reverso">
+                    <p>La Quenelle de Brochet es una especialidad suave y delicada, que destaca por su sabor refinado y textura esponjosa, perfecta para una experiencia culinaria sofisticada.</p>
+                </div>
+            </div>
+            <div class="modal-receta" id="recetaQuenelledeBrochet">
+                <div class="contenido-modal">
+                    <span class="cerrar-modal" onclick="cerrarReceta('recetaQuenelledeBrochet')">✖</span>
+                    <h3 class="titulo-modal">Quenelle de Brochet</h3>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de filete de lucio fresco, sin piel ni espinas.</li>
+                        <li>100g de mantequilla.</li>
+                        <li>3 huevos.</li>
+                        <li>100g de harina.</li>
+                        <li>500ml de leche.</li>
+                        <li>Sal, pimienta y nuez moscada al gusto.</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1.Corta el lucio en trozos pequeños y tritúralo en un procesador de alimentos.</p>
+                    <p>2. Agrega la mantequilla, los huevos, la harina y la leche al pescado triturado y mezcla bien hasta obtener una masa suave. </p>
+                    <p>3. Cuece al vapor durante unos 20 minutos, hasta que estén cocidas por completo.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 1: Tablier de Sapeur -->
+            <div class="tarjeta-receta" onclick="abrirReceta('recetaTablierdeSapeur')">
+                <div class="frente">
+                    <img src="img/Comida Lyon2.png" alt="Tablier de Sapeur" class="imagen-receta">
+                </div>
+                <div class="reverso">
+                    <p>El Tablier de Sapeur es un plato robusto y lleno de carácter, ideal para aquellos que buscan descubrir los sabores auténticos y contundentes de la gastronomía tradicional de Lyon.</p>
+                </div>
+            </div>
+            <div class="modal-receta" id="recetaTablierdeSapeur">
+                <div class="contenido-modal">
+                    <span class="cerrar-modal" onclick="cerrarReceta('recetaTablierdeSapeur')">✖</span>
+                    <h3 class="titulo-modal">Tablier de Sapeur</h3>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de tripa de ternera.</li>
+                        <li>500ml de vino blanco seco.</li>
+                        <li>2 huevos batidos.</li>
+                        <li>100g de pan rallado.</li>
+                        <li>Aceite para freír.</li>
+                        <li>Sal y pimienta al gusto.</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Remoja la tripa de ternera en el vino blanco durante al menos 24 horas en el refrigerador.</p>
+                    <p>2. Sazona los trozos de tripa con sal y pimienta al gusto. </p>
+                    <p>3. Fríe los trozos de tripa empanizados en aceite caliente hasta que estén dorados y crujientes.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 1: Tarte aux Pralines -->
+            <div class="tarjeta-receta" onclick="abrirReceta('recetaTarteauxPralines')">
+                <div class="frente">
+                    <img src="img/Comida Lyon1.png" alt="Tarte aux Pralines" class="imagen-receta">
+                </div>
+                <div class="reverso">
+                    <p>La Tarte aux Pralines es una tarta dulce y crujiente, con un vibrante toque de praliné rosa, ideal para añadir un final irresistible a cualquier comida especial.</p>
+                </div>
+            </div>
+            <div class="modal-receta" id="recetaTarteauxPralines">
+                <div class="contenido-modal">
+                    <span class="cerrar-modal" onclick="cerrarReceta('recetaTarteauxPralines')">✖</span>
+                    <h3 class="titulo-modal">Tarte aux Pralines</h3>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 base de masa quebrada.</li>
+                        <li>200g de praliné rosa.</li>
+                        <li>100g de almendras molidas.</li>
+                        <li>100g de azúcar.</li>
+                        <li>150g de mantequilla.</li>
+                        <li>100ml de crema para batir.</li>
+                    </ul>
+                    <h4>Instrucciones:</h4>
+                    <p>1. Precalienta el horno a 180°C. Coloca la masa quebrada en un molde para tarta y pincha el fondo con un tenedor.</p>
+                    <p>2. Mientras tanto, prepara el relleno: en un bol, mezcla el praliné rosa, las almendras molidas, el azúcar, la crema para batir, los huevos y la mantequilla derretida. </p>
+                    <p>3. Hornea la tarta durante unos 30-35 minutos, hasta que esté dorada y firme. </p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
 
 
 
     <!-- Footer Section -->
-<footer class="custom-footer text-white">
-    <div class="container py-5">
-        <div class="row text-center text-md-start">
+    <footer class="custom-footer text-white">
+        <div class="container py-5">
+            <div class="row text-center text-md-start">
 
-            <!-- Logo y Descripción -->
-            <div class="col-md-4 mb-4" data-aos="fade-right">
-                <h4 class="text-uppercase text-light mb-3">Europa 360º</h4>
-                <p>Explora Europa con nosotros. Encuentra los destinos más espectaculares y experiencias únicas para recordar siempre. Vive la aventura.</p>
-            </div>
+                <!-- Logo y Descripción -->
+                <div class="col-md-4 mb-4" data-aos="fade-right">
+                    <h4 class="text-uppercase text-light mb-3">Europa 360º</h4>
+                    <p>Explora Europa con nosotros. Encuentra los destinos más espectaculares y experiencias únicas para recordar siempre. Vive la aventura.</p>
+                </div>
 
-            <!-- Enlaces rápidos -->
-            <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <h5 class="text-uppercase text-info mb-3">Enlaces</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-white link-hover">Inicio</a></li>
-                    <li><a href="italia.html" class="text-white link-hover">Italia</a></li>
-                    <li><a href="francia.html" class="text-white link-hover">Francia</a></li>
-                </ul>
-            </div>
+                <!-- Enlaces rápidos -->
+                <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="text-uppercase text-info mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white link-hover">Inicio</a></li>
+                        <li><a href="italia.html" class="text-white link-hover">Italia</a></li>
+                        <li><a href="francia.html" class="text-white link-hover">Francia</a></li>
+                    </ul>
+                </div>
 
-            <!-- Contáctanos -->
-            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <h5 class="text-uppercase text-info mb-3">Contáctanos</h5>
-                <p><i class="fas fa-map-marker-alt me-2"></i> Madrid, España</p>
-                <p><i class="fas fa-envelope me-2"></i> info@europa360.com</p>
-                <p><i class="fas fa-phone me-2"></i> +34 123 456 789</p>
-            </div>
+                <!-- Contáctanos -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="text-uppercase text-info mb-3">Contáctanos</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Madrid, España</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@europa360.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +34 123 456 789</p>
+                </div>
 
-            <!-- Redes Sociales -->
-            <div class="col-md-3 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-delay="300">
-                <h5 class="text-uppercase text-info mb-3">Síguenos</h5>
-                <div class="social-icons">
-                    <a href="#" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn-floating"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn-floating"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn-floating"><i class="fab fa-youtube"></i></a>
+                <!-- Redes Sociales -->
+                <div class="col-md-3 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-delay="300">
+                    <h5 class="text-uppercase text-info mb-3">Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-floating"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-floating"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-floating"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="text-center mt-4">
-            <p>© 2024 Europa 360º. Todos los derechos reservados.</p>
+            <div class="text-center mt-4">
+                <p>© 2024 Europa 360º. Todos los derechos reservados.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -754,6 +754,20 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-terciary-francia {
+    background-color: #a5d7fb; /* Color de fondo del botón terciario */
+    color: #333; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.btn-terciary-francia:hover {
+    background-color: #a3d1ff; /* Color de fondo al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
 
 
 
@@ -782,76 +796,99 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-/* COMIDA NIZA */
-.delicias-section {
-    padding: 50px 20px;
-    background-color: #ffebf2; /* Color de fondo */
+/* Sección Actividades en París */
+.actividades-paris-section {
+    background: #FEBAC2;
+    padding: 60px 10%;
     text-align: center;
 }
 
-.delicias-title {
-    font-family: 'Roboto Slab', serif;
-    font-size: 3rem;
-    color: #912938;
+/* Título de la sección */
+.titulo-paris {
+    font-family: 'Righteous', sans-serif;
+    font-size: 3.5rem;
+    color: #FE7C86;
     margin-bottom: 40px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px #FE3334;
 }
 
-.delicias-grid {
+/* Contenedor de tarjetas */
+.tarjetas-actividades {
     display: flex;
-    justify-content: space-around; /* Centra el contenido */
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+    justify-content: space-evenly;
 }
 
-/* Tarjetas redondas más grandes */
-.delicia-card {
-    width: 350px; /* Tamaño aumentado */
-    height: 350px;
-    border-radius: 50%; /* Círculo perfecto */
+/* Tarjetas */
+.tarjeta {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    
+}
+
+/* Imagen de la actividad */
+.imagen-overlay {
     overflow: hidden;
     position: relative;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
 }
 
-.delicia-card:hover {
-    transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
-}
-
-/* Ajuste de imagen al contenedor circular */
-.delicia-imagen {
-    width: 140%;
-    height: 140%;
+.imagen-actividad {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover .imagen-actividad {
+    transform: scale(0.80);
+}
+
+/* Overlay de texto */
+.overlay-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    color: white;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    text-align: left;
 }
 
-/* Estilo para el título de la receta */
-.receta-title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #f5cde1; /* Color del título */
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 15px;
+
+.overlay-text p {
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
-/* Estilo del modal */
+.tarjeta:hover .overlay-text {
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo del modal de las imagenes*/
 .modal {
     display: none; /* Oculto por defecto */
     position: fixed;
@@ -872,41 +909,186 @@ body {
     padding: 20px;
     border-radius: 10px;
     max-width: 400px; /* Ancho máximo */
-    width: 30%; /* Ancho responsive */
+    width: auto; /* Ancho responsive */
     font-family: 'Dancing Script', cursive;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra */
     animation: fadeIn 0.5s; /* Animación de aparición */
 }
 
-/* Estilo del botón de cierre */
-.close-btn {
+
+
+
+
+/* Estilos Generales */
+.recetas-comidas-section {
+    padding: 50px 20px;
+    background-color: #FFF4E1;
+    text-align: center;
+}
+
+.titulo-recetas {
+    font-size: 3.5rem; /* Aumentamos un poco más el tamaño */
+    color: #FEBAC2; 
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif;
+    text-align: center; /* Centrado */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.titulo-recetas::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px; /* Grosor de la línea */
+    background-color: #ffe9a6; /* Color de línea de contraste */
+    top: -15px; /* Línea encima del título */
+    left: 0;
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+
+
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-receta {
+    perspective: 1000px;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.frente, .reverso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    transition: transform 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9dfe2;
+    font-family: 'Lato', sans-serif;
+}
+
+.frente {
+    background: #ffe9a6;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-receta {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.nombre-receta {
+    padding: 10px 0;
+    font-size: 1.4rem;
+    color: #FFDE7B;
+    font-weight: bold;
+}
+
+.reverso {
+    background: #FEBAC2;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.tarjeta-receta:hover .frente {
+    transform: rotateY(180deg);
+}
+
+.tarjeta-receta:hover .reverso {
+    transform: rotateY(0);
+}
+
+/* Modal */
+.modal-receta {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.modal-receta.active {
+    display: flex;
+    animation: fadeIn 0.4s ease;
+}
+
+.contenido-modal {
+    background: #FEF8F5;
+    padding: 35px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 550px;
+    text-align: left;
+    color: #333;
+    font-family: 'Merriweather', serif;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-top: 8px solid #FE3334;
+    
+}
+
+.cerrar-modal {
     position: absolute;
     top: 10px;
-    right: 15px;
-    color: #444; /* Color del botón */
-    font-size: 24px;
-    font-weight: bold;
+    right: 10px;
+    font-size: 1.8rem;
+    color: #FE3334;
     cursor: pointer;
-    transition: color 0.3s; /* Efecto de transición */
 }
 
-.close-btn:hover {
-    color: #f9c7d8; /* Color al pasar el cursor */
+.titulo-modal {
+    font-size: 2rem;
+    color: #FE7C86;
+    margin-bottom: 20px;
 }
 
-/* Estilo de la lista */
-.ingredientes-list {
-    list-style-type: none; /* Sin viñetas */
-    padding-left: 0; /* Sin padding */
+.contenido-modal h4 {
+    font-size: 1.2rem;
+    color: #3e2723;
+    margin-top: 15px;
 }
 
-/* Animación de aparición */
+.contenido-modal ul, .contenido-modal p {
+    color: #4e342e;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Animación */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
-
-
 
 
 

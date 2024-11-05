@@ -177,4 +177,11 @@ function confirmPurchase(event) {
 }
 
 
+function abrirReceta(id) {
+    document.getElementById(id).classList.add('active');
+}
+
+function cerrarReceta(id) {
+    document.getElementById(id).classList.remove('active');
+}
 
