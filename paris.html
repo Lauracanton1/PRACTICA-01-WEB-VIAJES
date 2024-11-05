@@ -44,7 +44,123 @@
     </nav>
 
 
+ <!-- Sección de Entrada a París -->
+ <section id="entrada-paris" class="d-flex align-items-center justify-content-center p-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center">
+        <img src="IMG/ENTRADAPARIS.png" alt="París" class="imagen-lado"> <!-- Imagen de París -->
+        <div class="texto-contenedor">
+            <h1 class="titulo titulo-paris">¡Bienvenido a París!</h1>
+            <p class="descripcion">
+                “Descubre la Ciudad de la Luz, donde la historia y la modernidad se unen en perfecta armonía. Pasea por los
+                majestuosos Campos Elíseos, contempla la icónica Torre Eiffel y piérdete en el encanto de Montmartre. 
+                París es una ciudad donde cada esquina guarda una historia, y cada café invita a una pausa en medio de su
+                vibrante atmósfera. Explora los museos, sumérgete en la cultura y vive la sofisticación y la belleza que 
+                solo París puede ofrecer.”
+            </p>
+            <div class="botones">
+                <a href="#donde-ir-francia" class="btn btn-primary-francia">Dónde Ir</a>
+                <a href="#actividades-section-paris" class="btn btn-secondary-francia">Actividades</a>
+            </div>
+        </div>
+    </div>
+ </section>
 
+ <!-- Sección "A Dónde Ir" para Francia -->
+<section id="donde-ir-francia" class="donde-ir-francia">
+    <h2 class="titulo-francia">¿A Dónde Ir?</h2>
+    <div class="lugares">
+        <div class="lugar" onclick="openModal('IMG/TorreEiffel-modal.png')">
+            <img src="img/Torre Eiffel.png" alt="Tour Eiffel" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">La Torre Eiffel</h3>
+                <p class="descripcion">
+                    Este ícono de la arquitectura moderna fue construido para
+                    la Exposición Universal de 1889 por Gustave Eiffel. Lo
+                    que muchos no saben es que inicialmente se enfrentó a
+                    críticas, incluso de algunos artistas famosos de la época
+                    como Guy de Maupassant, quien solía almorzar en la Torre
+                    Eiffel porque era el único lugar en París desde donde no se
+                    veía la torre. Sin embargo, con el tiempo, se ha convertido
+                    en uno de los monumentos más visitados del mundo. Una
+                    curiosidad interesante es que su altura varía hasta 15
+                    centímetros debido a la expansión y contracción del metal
+                    con los cambios de temperatura.
+                </p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('IMG/Catedral de Notre-Dame-modal.png')">
+            <img src="img/Catedral de Notre-Dame.png" alt="Catedral de Notre-Dame" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">Catedral de Notre-Dame</h3>
+                <p class="descripcion">
+                    La Catedral de Notre-Dame de París, además de ser
+                    un magnífico ejemplo de la arquitectura gótica, es un
+                    importante centro de la vida religiosa y cultural de la ciudad.
+                    Su construcción comenzó en el siglo XII y se extendió a
+                    lo largo de varios siglos, reflejando así la evolución del
+                    estilo gótico. En su interior, los visitantes pueden admirar
+                    no solo la impresionante nave central y sus imponentes
+                    arcos, sino también una gran cantidad de obras de arte
+                    religioso, incluyendo esculturas, pinturas y vitrales
+                    de gran belleza y valor histórico. La catedral también
+                    es conocida por su magnífico órgano, uno de los más
+                    grandes de Francia, y por albergar importantes eventos
+                    religiosos y culturales, como coronaciones y conciertos.
+                    La restauración de Notre-Dame tras el incendio ha sido
+                    un esfuerzo monumental que ha involucrado a expertos
+                    de todo el mundo y ha despertado un renovado interés y
+                    aprecio por este icónico monumento parisino.
+                </p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('IMG/Museo del Louvre-modal.png')">
+            <img src="img/Museo del Louvre.png" alt="Museo del Louvre" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">Museo del Louvre</h3>
+                <p class="descripcion">
+                    El Museo del Louvre, situado en el corazón de París, es famoso por su impresionante colección de arte que
+                    abarca desde la antigüedad hasta el siglo XIX. Entre sus obras más
+                    destacadas se encuentran la Mona Lisa de Leonardo da
+                    Vinci y la Venus de Milo. Además de su importancia
+                    artística, el museo también es conocido por su historia
+                    fascinante, reflejada en la arquitectura del antiguo
+                    palacio real y en las marcas de balas de la Segunda
+                    Guerra Mundial que aún se conservan en una de
+                    sus salas cerradas. Este emblemático museo es
+                    una visita imprescindible para quienes desean
+                    sumergirse en la cultura y el arte de Francia.
+                </p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('IMG/Arco del Triunfo-modal.png')">
+            <img src="img/Arco del Triunfo.png" alt="Arco del Triunfo" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">Arco del Triunfo</h3>
+                <p class="descripcion">
+                    El Arco de Triunfo es uno de los monumentos más
+                    emblemáticos de París, encargado por Napoleón en
+                    1806 para conmemorar las victorias militares del ejército
+                    francés. Situado en el extremo oeste de los Campos
+                    Elíseos, ofrece impresionantes vistas panorámicas de la
+                    ciudad desde su plataforma de observación. Además de
+                    su imponente arquitectura, el arco alberga la Tumba del
+                    Soldado Desconocido, donde se enciende la Llama Eterna
+                    en honor a los caídos durante la Primera Guerra Mundial.
+                    Esta estructura monumental es un símbolo de la historia y
+                    la grandeza de Francia, y una visita obligada para quienes
+                    exploran la capital francesa.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Modal para mostrar imagen ampliada -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close-button" onclick="closeModal()">✖</span>
+        <img class="modal-content" id="modal-img" src="">
+    </div>
+</section>
 
 
 

@@ -467,7 +467,7 @@ body {
 
 /* Sección de Francia */
 #francia-section {
-    background-color: #C4E6FF; /* Amarillo claro */
+    background-color: #C4E6FF; 
     color: #333;
     padding: 40px 20px;
     text-align: center;
@@ -503,6 +503,71 @@ body {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
 }
 
+
+
+
+
+/* Sección de Mochila de Francia */
+.mochila-section-francia {
+    background: #C4E6FF; /* Fondo en un tono azul muy suave */
+    color: #2B2D42;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Títulos */
+.mochila-section-francia .mochila-title {
+    color: #3eacfa; /* Tono azul suave */
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Righteous', sans-serif;
+}
+
+.mochila-section-francia .mochila-subtitle {
+    color: #2d2d2d;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas de Mochila para Francia */
+.mochila-card-francia {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mochila-card-francia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos en Mochila de Francia */
+.mochila-icon-francia {
+    color: #f44352; 
+}
+
+/* Imagen de Mochila para Francia */
+.mochila-imagen-francia {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+/* Texto en Tarjetas de Mochila para Francia */
+.mochila-card-francia h5 {
+    font-weight: 600;
+    color: #FE7C86;
+}
+
+.mochila-card-francia p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
 
 
 
@@ -561,12 +626,7 @@ body {
 
 
 
-
-
-
-
-
-/* Sección de Mochila */
+/* Sección de Mochila ITALIA */
 .mochila-section {
     background: #F4E3B7;
     color: #ffffff;
@@ -629,8 +689,96 @@ body {
 
 
 
+/* PARIS */
 
 
+/* Sección de Entrada a París */
+#entrada-paris {
+    background-color: #d8efff; /* Fondo azul suave */
+    padding: 60px 20px; /* Espaciado superior e inferior */
+}
+
+
+/* Estilos del Título */
+/* Estilo de Título para París */
+#entrada-paris .titulo {
+    color: #FE3334; 
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    margin: 0 0 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos del Texto Descriptivo */
+.descripcion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #4a4e69; /* Gris suave */
+}
+
+/* Estilo de los Botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary-francia {
+    background-color: #FFDE7B; 
+}
+
+.btn-primary-francia:hover {
+    background-color: #ffcd39; 
+    transform: translateY(-2px);
+}
+
+.btn-secondary-francia {
+    background-color: #FEBAC2; 
+}
+
+.btn-secondary-francia:hover {
+    background-color: #ff9faa; 
+    transform: translateY(-2px);
+}
+
+
+
+
+/* SECCIÓN A DÓNDE IR - FRANCIA */
+#donde-ir-francia {
+    background-color: #f8f1e8; /* Fondo en tono cálido pastel */
+    padding: 60px 20px; /* Espaciado superior e inferior */
+    position: relative; /* Posicionamiento relativo para efectos */
+}
+/* Título de la Sección para Francia */
+.donde-ir-francia .titulo-francia {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografía moderna */
+    font-size: 3.5rem; /* Tamaño del título */
+    color: #C4E6FF; /* Color cálido personalizado */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+/* Subtítulo de los Lugares en Francia */
+.subtitulo-francia {
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+    font-size: 1.8rem; /* Tamaño del subtítulo */
+    color: #FFDE7B; /* Color rojo oscuro personalizado */
+    margin: 0 0 10px; /* Espacio inferior */
+}
 
 
 

@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Europa 360º</title>
+    <title>Europa360º</title>
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- tipografias -->
+     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Playfair+Display:wght@700&family=Righteous&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css">
-    <!-- TIPOGRAFIA -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -42,6 +42,116 @@
             </div>
         </div>
     </nav>
+
+
+ <!-- Sección de Entrada a Niza -->
+ <section id="entrada-paris" class="d-flex align-items-center justify-content-center p-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center">
+        <img src="IMG/ENTRADANIZA.png" alt="Niza" class="imagen-lado"> <!-- Imagen de París -->
+        <div class="texto-contenedor">
+            <h1 class="titulo titulo-paris">¡Bienvenido a Niza!</h1>
+            <p class="descripcion">
+                “La perla de la Riviera Francesa. Sumérgete en el esplendor del Mediterráneo mientras paseas por el famoso Paseo de los Ingleses, con vistas al mar azul intenso y palmeras que evocan un paraíso. Explora el casco antiguo, donde las calles empedradas y los mercados vibrantes te transportan a una Francia auténtica y colorida. Déjate maravillar por la arquitectura Belle Époque, los jardines perfumados y las colinas que ofrecen vistas inolvidables de la ciudad. Niza te invita a disfrutar de un estilo de vida relajado, una gastronomía exquisita y la belleza natural de la Costa Azul, un lugar donde la cultura y la naturaleza se encuentran en perfecta armonía.”
+            </p>
+            <div class="botones">
+                <a href="#donde-ir-francia" class="btn btn-primary-francia">Dónde Ir</a>
+                <a href="#actividades-section-niza" class="btn btn-secondary-francia">Actividades</a>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!-- Sección "A Dónde Ir" para Francia -->
+<section id="donde-ir-francia" class="donde-ir-francia">
+    <h2 class="titulo-francia">¿A Dónde Ir?</h2>
+    <div class="lugares">
+        <div class="lugar" onclick="openModal('IMG/Paseo de los Ingleses-modal.png')">
+            <img src="img/Paseo de los Ingleses.png" alt="Paseo de los Ingleses" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">Paseo de los Ingleses</h3>
+                <p class="descripcion">
+                    El Paseo de los Ingleses en Niza, Francia, es un emblemático
+                    paseo marítimo que ofrece vistas espectaculares del mar
+                    Mediterráneo. Este paseo, inaugurado en 1824, atrajo a la
+                    alta sociedad británica durante sus vacaciones invernales
+                    en la Riviera Francesa, de ahí su nombre. Además de ser un
+                    lugar ideal para pasear y disfrutar del clima mediterráneo,
+                    el Paseo de los Ingleses alberga puntos de interés
+                    histórico como el Hotel Negresco y es sede de eventos
+                    culturales como el famoso Carnaval de Niza. Es un símbolo
+                    de elegancia y sofisticación que sigue cautivando a los
+                    visitantes con su encanto atemporal.
+                </p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('IMG/Plaza Masséna-modal.png')">
+            <img src="img/Plaza Masséna.png" alt="Plaza Masséna" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">Plaza Masséna</h3>
+                <p class="descripcion">
+                    La Plaza Masséna, ubicada en el corazón de Niza, Francia, es una joya urbana que fusiona historia,
+                    cultura y belleza arquitectónica. Conocida por sus elegantes edificios de estilo neoclásico y su
+                    distintivo suelo de mosaico en blanco y negro, la plaza es un punto focal tanto para los residentes
+                    locales como para los visitantes. Una curiosidad fascinante sobre la Plaza Masséna
+                    es su transformación nocturna: al caer la noche, sus fuentes y esculturas se iluminan
+                    con una espectacular exhibición de luces de colores, creando un ambiente mágico y animado que atrae a multitudes.
+                </p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('IMG/Catedral de San Nicolas-modal.png')">
+            <img src="img/Catedral de San Nicolas.png" alt="Catedral de San Nicolas" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">Catedral de San Nicolas</h3>
+                <p class="descripcion">
+                    La Catedral de San Nicolás, ubicada en la ciudad
+                    de Nantes, Francia, es un impresionante ejemplo de
+                    arquitectura gótica que cautiva a los visitantes con su
+                    majestuosidad y su historia intrigante. Construida entre los
+                    siglos XV y XIX, esta catedral es conocida por su fachada
+                    adornada con detalles escultóricos y por su imponente
+                    altura, que la convierte en una presencia dominante en el
+                    horizonte de la ciudad. Una curiosidad fascinante sobre
+                    la Catedral de San Nicolás es que alberga una réplica del
+                    Gran Reloj de la ciudad en su fachada occidental, el cual
+                    es famoso por su complejidad y precisión.
+                </p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('IMG/Colina del Castillo-modal.png')">
+            <img src="img/Colina del Castillo.png" alt="Colina del Castillo" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo-francia">Colina del Castillo</h3>
+                <p class="descripcion">
+                    La Colina del Castillo, situada en Francia, es una atracción
+                    cautivadora que ofrece a los visitantes una combinación
+                    única de historia, paisajes impresionantes y curiosidades
+                    fascinantes. En lo alto de esta colina se encuentra una
+                    fortaleza medieval que una vez fue un importante bastión
+                    defensivo y ahora es un símbolo emblemático de la región.
+                    Los visitantes pueden disfrutar de vistas panorámicas
+                    espectaculares desde lo alto de las murallas, además
+                    de explorar los pasillos y salas de la fortaleza que aún
+                    conservan su encanto histórico. Una curiosidad intrigante
+                    es la presencia de antiguos túneles subterráneos que
+                    se rumorea que conducen a lugares secretos. Además,
+                    la colina alberga jardines exuberantes y senderos
+                    pintorescos que invitan a pasear y disfrutar de la belleza
+                    natural del entorno. Con su combinación de historia,
+                    paisajes y secretos ocultos, la Colina del Castillo ofrece
+                    una experiencia inolvidable para los viajeros ávidos de
+                    aventuras y descubrimientos.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Modal para mostrar imagen ampliada -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close-button" onclick="closeModal()">✖</span>
+        <img class="modal-content" id="modal-img" src="">
+    </div>
+</section>
 
 
 <!-- PLATOS TÍPICOS -->
@@ -136,9 +246,51 @@
 
     
     
-<!-- Footer -->
-<footer>
-    <p>Europa 360° - Tu guía de viajes 2024</p>
+<!-- Footer Section -->
+<footer class="custom-footer text-white">
+    <div class="container py-5">
+        <div class="row text-center text-md-start">
+
+            <!-- Logo y Descripción -->
+            <div class="col-md-4 mb-4" data-aos="fade-right">
+                <h4 class="text-uppercase text-light mb-3">Europa 360º</h4>
+                <p>Explora Europa con nosotros. Encuentra los destinos más espectaculares y experiencias únicas para recordar siempre. Vive la aventura.</p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <h5 class="text-uppercase text-info mb-3">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white link-hover">Inicio</a></li>
+                    <li><a href="italia.html" class="text-white link-hover">Italia</a></li>
+                    <li><a href="francia.html" class="text-white link-hover">Francia</a></li>
+                </ul>
+            </div>
+
+            <!-- Contáctanos -->
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h5 class="text-uppercase text-info mb-3">Contáctanos</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Madrid, España</p>
+                <p><i class="fas fa-envelope me-2"></i> info@europa360.com</p>
+                <p><i class="fas fa-phone me-2"></i> +34 123 456 789</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-md-3 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-delay="300">
+                <h5 class="text-uppercase text-info mb-3">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p>© 2024 Europa 360º. Todos los derechos reservados.</p>
+        </div>
+    </div>
 </footer>
 
 
