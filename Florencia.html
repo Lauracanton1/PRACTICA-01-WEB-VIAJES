@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes POP - Venecia</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="IMG/LogoEuropa360º.png" alt="Logo Viajes POP" width="120" height="auto"> <!-- Ajusta el tamaño del logo aquí -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="italia.html">Italia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="francia.html">Francia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Sección de Entrada a Venecia -->
+<section id="entrada-venecia" class="d-flex align-items-center justify-content-center p-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center">
+        <img src="img/EntradaFlorencia.png" alt="Venecia" class="imagen-lado"> <!-- Imagen de Venecia -->
+        <div class="texto-contenedor">
+            <h1 class="titulo">¡Bienvenido a Florencia!</h1>
+            <p class="descripcion">
+            “Descubre la cuna del Renacimiento: Florencia, una ciudad donde el arte, 
+            la historia y la belleza convergen en una sinfonía de colores y formas. 
+            Déjate envolver por la majestuosidad de la catedral de Santa María del 
+            Fiore y la gracia del Ponte Vecchio sobre el río Arno. Sumérgete en las 
+            galerías de arte que albergan las obras maestras de genios como Leonardo da 
+            Vinci y Michelangelo, mientras te pierdes en las callejuelas empedradas que 
+            respiran historia. Saborea la auténtica cocina toscana en trattorias acogedoras
+            y deléitate con los sabores y aromas de la región. Bienvenido a Florencia, 
+            donde cada piedra cuenta una historia y cada rincón es una oda al arte y la 
+            cultura.”</p>
+            <div class="botones">
+                <a href="#donde-ir" class="btn btn-primary">Dónde Ir</a>
+                <a href="#actividades-section" class="btn btn-secondary">Actividades</a>
+                <a href="#platos-tipicos" class="btn btn-secondary">Platos Típicos</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección "A Dónde Ir" -->
+<section id="donde-ir" class="donde-ir-section">
+    <h2 class="titulo">¿A Dónde Ir?</h2>
+    <div class="lugares">
+        <div class="lugar" onclick="openModal('img/Galería UffiziIMG.png')">
+            <img src="img/Galería Uffizi.png" alt="Plaza San Marcos" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Galería Uffizi</h3>
+                <p class="descripcion">
+                    La Galería de la Academia en Florencia es un destino imperdible 
+                    para los amantes del arte y la cultura. Una curiosidad que 
+                    seguramente interesará a los viajeros es que alberga una de las 
+                    esculturas más famosas del mundo: el David de Miguel Ángel. 
+                    Esta majestuosa obra maestra de mármol blanco es una 
+                    representación icónica del Renacimiento y una muestra 
+                    impresionante del genio artístico de Miguel Ángel. Además del 
+                    David, la galería también exhibe otras obras importantes del 
+                    artista, así como una colección de pinturas de la escuela 
+                    florentina. Una visita a la Galería de la Academia ofrece una 
+                    experiencia única para sumergirse en la historia y el arte de 
+                    Florencia.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/Catedral de Santa María del FioreIMG.png')">
+            <img src="img/Catedral de Santa María del Fiore.png" alt="Canal Grande" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Catedral de Santa María del Fiore</h3>
+                <p class="descripcion">
+                    El Duomo de Florencia, es una maravilla arquitectónica que ha 
+                    cautivado a los viajeros durante siglos. Su cúpula, diseñada por
+                    Filippo Brunelleschi en el siglo XV, fue un logro técnico sin 
+                    precedentes en su época y sigue siendo la más grande de su tipo 
+                    en el mundo. Además, la fachada del Duomo está decorada con 
+                    intrincados detalles de mármol y cuenta con impresionantes 
+                    esculturas de artistas como Donatello y Giotto. Otro aspecto 
+                    interesante es que el Duomo alberga la tumba de Brunelleschi, 
+                    en reconocimiento a su genio creativo. La visita al Duomo ofrece 
+                    a los viajeros una experiencia inolvidable, tanto por su belleza 
+                    arquitectónica como por su importancia histórica en el panorama 
+                    del arte renacentista.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/Galería de la AcademiaIMG.png')">
+            <img src="img/Galería de la Academia.png" alt="Puente de Rialto" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Galería de la Academia</h3>
+                <p class="descripcion">
+                    La Galería Uffizi en Florencia es uno de los museos más famosos del 
+                    mundo, conocido por su impresionante colección de arte renacentista. 
+                    Una curiosidad fascinante es que fue diseñada originalmente por Giorgio 
+                    Vasari en el siglo XVI como oficinas gubernamentales para los 
+                    magistrados florentinos (“uffizi” en italiano significa “oficinas”). 
+                    Sin embargo, fue convertida en museo por orden de los Medici en el 
+                    siglo XVIII. Entre sus tesoros se encuentran obras maestras de artistas
+                    como Leonardo da Vinci, Miguel Ángel, Botticelli y Rafael. Además, 
+                    la galería ofrece a los visitantes una vista única del río Arno y del 
+                    famoso Ponte Vecchio desde sus ventanas, añadiendo un toque extra de 
+                    belleza a la experiencia artística.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/Ponte VecchioIMG.png')">
+            <img src="img/Ponte Vecchio.png" alt="Murano" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Ponte Vecchio</h3>
+                <p class="descripcion">
+                    El Ponte Vecchio en Florencia es uno de los puentes más famosos y 
+                    pintorescos del mundo, con una historia que se remonta al menos al 
+                    siglo XIV. Una curiosidad que cautiva a los viajeros es que está 
+                    flanqueado por encantadoras tiendas de joyas y souvenirs desde hace 
+                    siglos. Sin embargo, lo que hace al Ponte Vecchio verdaderamente 
+                    único es su pasarela superior, llamada el “Corredor Vasariano”, 
+                    construido en el siglo XVI para que los Medici pudieran moverse 
+                    discretamente entre el Palazzo Vecchio y el Palazzo Pitti sin 
+                    mezclarse con la gente común. Además, el puente ofrece vistas 
+                    impresionantes del río Arno y de la ciudad de Florencia, 
+                    convirtiéndolo en un lugar mágico para pasear y disfrutar del encanto 
+                    de esta ciudad renacentista.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar imagen ampliada -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close-button" onclick="closeModal()">✖</span>
+        <img class="modal-content" id="modal-img" src="">
+    </div>
+</section>
+
+
+
+
+<!-- Sección "Actividades" -->
+<section id="actividades-section" class=""></section>
+<div class="actividades-section">
+    <h2 class="section-title">Actividades</h2>
+    <img class="section-decorative-image" src="img/PositFlorencia.png" alt="Imagen decorativa">
+    <div class="actividades-grid">
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/ActividadesFlorencia1.png" alt="Actividad 1">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Taller de cocina toscana</h3>
+                <p class="actividad-descripcion">Aprende a preparar platos típicos como la ribollita, la pappa al 
+                pomodoro o la pizza, mientras descubres ingredientes locales y técnicas tradicionales. Algunas 
+                clases se realizan en encantadoras villas toscanas, añadiendo un toque especial. Al final, 
+                disfruta de tus creaciones acompañadas de vinos locales. Sumérgete en la riqueza culinaria de 
+                la Toscana y lleva contigo el auténtico sabor de Italia en cada bocado. ¡No te pierdas esta 
+                oportunidad única!</p>
+            </div>
+        </div>
+
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/ActividadesFlorencia2.png" alt="Actividad 2">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Cata de vinos en enoteca Alessi</h3>
+                <p class="actividad-descripcion">La Enoteca Alessi es un lugar encantador 
+                situado en el corazón de Florencia, cerca de la Piazza del Duomo. Ofrece una 
+                experiencia única para los amantes del vino, con una amplia selección de vinos 
+                toscanos de alta calidad. En este ambiente acogedor y auténtico, podrás 
+                participar en catas guiadas por expertos enólogos que te llevarán a un viaje
+                sensorial a través de los sabores y aromas de la región de la Toscana.</p>
+            </div>
+        </div>
+
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/ActividadesFlorencia3.png" alt="Actividad 3">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Visita a la Galería Uffizi</h3>
+                <p class="actividad-descripcion">Descubre una de las galerías de arte más importantes 
+                    del mundo con una visita a la Galería Uffizi en Florencia. Este impresionante museo
+                    alberga una colección incomparable de obras maestras renacentistas, incluyendo 
+                    piezas icónicas de artistas como Botticelli, Rafael, Miguel Ángel y Leonardo
+                    da Vinci.Una experiencia imperdible para los amantes del arte y la historia que visitan Florencia.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Sección de Platos Típicos -->
+<section id="platos-tipicos" class="platos-tipicos-section">
+    <h2 class="titulo-platos-tipicos text-center mb-4">Platos Típicos</h2>
+    <div class="platos-grid d-flex justify-content-center">
+        <!-- Plato 1 -->
+        <div class="plato-item" data-titulo="BISTECCA ALLA FIORENTINA" data-ingredientes="
+        1. Un corte grueso de carne de res (preferiblemente de la raza Chianina), 
+        de aproximadamente 1.5 a 2 pulgadas de grosor.
+        2. Sal gruesa.
+        3. Pimienta negra recién molida." 
+        data-instrucciones="
+        Saca la carne de res del refrigerador y déjala reposar a temperatura ambiente 
+        durante al menos 1 hora antes de cocinar. Precalienta la parrilla a fuego 
+        medio-alto. Sazona generosamente la carne por ambos lados con sal gruesa y 
+        pimienta negra recién molida. Coloca la carne en la parrilla caliente y cocina 
+        durante 5-7 minutos por cada lado, o hasta que alcance el punto de cocción 
+        deseado (usualmente se prefiere al punto o al punto medio). Retira la carne de 
+        la parrilla y deja que repose durante unos minutos antes de cortarla en rodajas 
+        gruesas. Sirve caliente y disfruta de esta deliciosa y jugosa especialidad
+        toscana.">
+            <img src="img/ComidaFlorencia1.png" alt="Sarde in Saor" class="plato-img">
+        </div>
+        <!-- Plato 2 -->
+        <div class="plato-item" data-titulo="PAPPA AL POMODORO" 
+        data-ingredientes="
+        1. 500 g de tomates maduros, pelados y picados.
+        2. 4 tazas de pan toscano duro, cortado en cubos pequeños.
+        3. 3 dientes de ajo, picados.
+        4. 1/4 taza de aceite de oliva virgen
+        extra.
+        5. 1 taza de caldo de verduras.
+        6. 1 manojo de albahaca fresca, picada.
+        7. Sal y pimienta al gusto." 
+        data-instrucciones="En una cacerola grande, calienta el aceite de oliva a 
+        fuego medio. Agrega el ajo picado y saltea hasta que esté fragante, pero no 
+        dorado. Agrega los tomates picados y cocina a fuego medio-alto durante unos 
+        10 minutos, o hasta que los tomates se deshagan y la salsa comience a espesar 
+        ligeramente. Agrega el pan toscano cortado en cubos y mezcla bien con la salsa 
+        de tomate. Añade el caldo de verduras y cocina a fuego lento durante unos 15-20 
+        minutos, o hasta que el pan se haya ablandado y la sopa tenga una consistencia 
+        espesa y reconfortante. Retira la sopa del fuego y agrega la albahaca fresca 
+        picada. Sazona con sal y pimienta al gusto. Sirve caliente, acompañada de un 
+        generoso chorrito de aceite de oliva virgen extra">
+            <img src="img/ComidaFlorencia2.png" alt="Risotto al Nero di Seppia" class="plato-img">
+        </div>
+        <!-- Plato 3 -->
+        <div class="plato-item" data-titulo="GELATO FIORENTINO" data-ingredientes="
+        1. 500 ml de leche entera. 2. 200 ml de nata para montar (crema de leche).
+        3. 150 g de azúcar.
+        4. 4 yemas de huevo.
+        5. 1 cucharadita de extracto de vainilla.
+        6. Opcional: nueces, pistachos, chocolate rallado, frutas confitadas, etc.
+        " data-instrucciones="En una cacerola, calienta la leche y la nata a fuego 
+        medio hasta que estén calientes pero no hirviendo. En un tazón aparte, bate 
+        las yemas de huevo con el azúcar hasta que la mezcla esté suave y cremosa. 
+        Vierte lentamente la mezcla de leche caliente sobre las yemas batidas, 
+        batiendo constantemente para evitar que los huevos se cocinen. Vierte la 
+        mezcla de huevo y leche de nuevo en la cacerola y calienta a fuego lento, 
+        revolviendo constantemente, hasta que la mezcla espese lo suficiente para 
+        cubrir la parte posterior de una cuchara. Retira la mezcla del fuego y añade 
+        el extracto de vainilla. Deja que la mezcla se enfríe por completo, luego 
+        refrigérala durante al menos 4 horas o durante toda la noche. Vierte la 
+        mezcla en tu máquina de hacer helados y sigue las instrucciones del fabricante 
+        para hacer el helado. Una vez que el helado esté listo, puedes servirlo tal 
+        cual o personalizarlo con tus ingredientes favoritos, como nueces, pistachos, 
+        chocolate rallado o frutas confitadas. ¡Disfruta de este cremoso y delicioso 
+        helado fiorentino! ">
+            <img src="img/ComidaFlorencia3.png" alt="Tiramisu" class="plato-img">
+        </div>
+    </div>
+</section>
+
+<!-- Modal para Platos Típicos -->
+<div id="modalPlato" class="modal-plato">
+    <div class="modal-plato-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modalTituloPlato" class="titulo-modal-plato"></h3>
+        <p><strong>INGREDIENTES:</strong></p>
+        <ul id="modalIngredientesPlato" class="ingredientes-lista"></ul>
+        <p><strong>INSTRUCCIONES:</strong></p>
+        <p id="modalInstruccionesPlato" class="instrucciones-modal"></p>
+    </div>
+</div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    <!-- Footer Section -->
+<footer class="custom-footer text-white">
+    <div class="container py-5">
+        <div class="row text-center text-md-start">
+
+            <!-- Logo y Descripción -->
+            <div class="col-md-4 mb-4" data-aos="fade-right">
+                <h4 class="text-uppercase text-light mb-3">Europa 360º</h4>
+                <p>Explora Europa con nosotros. Encuentra los destinos más espectaculares y experiencias únicas para recordar siempre. Vive la aventura.</p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <h5 class="text-uppercase text-info mb-3">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white link-hover">Inicio</a></li>
+                    <li><a href="italia.html" class="text-white link-hover">Italia</a></li>
+                    <li><a href="francia.html" class="text-white link-hover">Francia</a></li>
+                </ul>
+            </div>
+
+            <!-- Contáctanos -->
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h5 class="text-uppercase text-info mb-3">Contáctanos</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Madrid, España</p>
+                <p><i class="fas fa-envelope me-2"></i> info@europa360.com</p>
+                <p><i class="fas fa-phone me-2"></i> +34 123 456 789</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-md-3 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-delay="300">
+                <h5 class="text-uppercase text-info mb-3">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p>© 2024 Europa 360º. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="JS/scripts.js"></script>
+</body>
+
+
+
+</html>

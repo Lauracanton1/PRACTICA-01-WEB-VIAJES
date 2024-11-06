@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes POP - Venecia</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="IMG/LogoEuropa360º.png" alt="Logo Viajes POP" width="120" height="auto"> <!-- Ajusta el tamaño del logo aquí -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="italia.html">Italia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="francia.html">Francia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Sección de Entrada a Venecia -->
+<section id="entrada-venecia" class="d-flex align-items-center justify-content-center p-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center">
+        <img src="img/EntradaRoma.png" alt="Venecia" class="imagen-lado"> <!-- Imagen de Roma -->
+        <div class="texto-contenedor">
+            <h1 class="titulo">¡Bienvenido a Roma!</h1>
+            <p class="descripcion">
+                “Adéntrate en el corazón del Imperio: Roma, una ciudad donde el 
+                pasado glorioso se entrelaza con el bullicio contemporáneo en cada 
+                rincón histórico. Déjate transportar a través de milenios de 
+                historia mientras exploras las majestuosas ruinas del Foro Romano 
+                y te maravillas ante la grandeza del Coliseo. Sumérgete en la 
+                belleza atemporal de la Ciudad Eterna, donde cada calle empedrada 
+                es un viaje en el tiempo y cada plaza es un escenario para la vida 
+                romana. Deléitate con la exquisita cocina italiana y la 
+                hospitalidad cálida de sus habitantes. Bienvenido a Roma, donde 
+                cada piedra cuenta una historia y cada paso es un paso hacia la 
+                eternidad.”</p>
+            <div class="botones">
+                <a href="#donde-ir" class="btn btn-primary">Dónde Ir</a>
+                <a href="#actividades-section" class="btn btn-secondary">Actividades</a>
+                <a href="#platos-tipicos" class="btn btn-secondary">Platos Típicos</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sección "A Dónde Ir" -->
+<section id="donde-ir" class="donde-ir-section">
+    <h2 class="titulo">¿A Dónde Ir?</h2>
+    <div class="lugares">
+        <div class="lugar" onclick="openModal('img/Fontana de TreviIMG.png')">
+            <img src="img/Fontana de Trevi.png" alt="Plaza San Marcos" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Fontana de Trevi</h3>
+                <p class="descripcion">
+                    La Fontana di Trevi en Roma es una de las fuentes más famosas 
+                    del mundo y una atracción icónica para los visitantes de la 
+                    Ciudad Eterna. Una curiosidad cautivadora es que, según la 
+                    tradición, arrojar una moneda a la fuente garantiza que el 
+                    viajero regresará a Roma. Pero hay un ritual adicional: 
+                    arrojar una segunda moneda asegura el romance, y una tercera 
+                    moneda garantiza el matrimonio. Cada día, miles de euros son 
+                    arrojados a la Fontana di Trevi y donados a organizaciones 
+                    benéficas locales. Además, la fuente es un impresionante 
+                    ejemplo de escultura barroca, con la figura central de Neptuno 
+                    en un carro tirado por caballos marinos. La belleza y la 
+                    superstición hacen de la visita a la Fontana di Trevi una 
+                    experiencia mágica y memorable para cualquier viajero.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/Coliseo RomanoIMG.png')">
+            <img src="img/Coliseo Romano.png" alt="Canal Grande" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Coliseo Romano</h3>
+                <p class="descripcion">
+                    El Coliseo Romano en Roma es uno de los monumentos más 
+                    emblemáticos del mundo antiguo y una visita obligada para 
+                    los viajeros. Una curiosidad intrigante es que, a pesar de 
+                    su antigüedad, el Coliseo tenía un sistema avanzado de 
+                    ingeniería que permitía llenar su arena de agua para recrear 
+                    batallas navales conocidas como “naumaquias”. Además, el 
+                    Coliseo podía albergar hasta 50,000 espectadores y era 
+                    escenario de una amplia variedad de eventos, desde combates de 
+                    gladiadores hasta representaciones teatrales. Otro detalle 
+                    interesante es que, aunque el Coliseo ha sufrido daños por 
+                    terremotos y el saqueo de sus materiales a lo largo de los 
+                    siglos, sigue siendo un impresionante testimonio del esplendor 
+                    y la grandeza del Imperio Romano.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/PanteónIMG.png')">
+            <img src="img/Panteon.png" alt="Puente de Rialto" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Panteón</h3>
+                <p class="descripcion">
+                    El Panteón en Roma es un impresionante ejemplo de la arquitectura 
+                    y la ingeniería romanas antiguas que sigue sorprendiendo a los 
+                    visitantes hasta el día de hoy. Una curiosidad intrigante es que el 
+                    Panteón cuenta con la mayor cúpula de hormigón no reforzado en el 
+                    mundo, y ha resistido los elementos durante más de 2,000 años. 
+                    Además, la cúpula tiene un óculo en la parte superior que permite 
+                    la entrada de luz natural, creando un efecto de iluminación mágico 
+                    en su interior. Otro detalle fascinante es que el Panteón alberga 
+                    las tumbas de varios personajes históricos importantes, incluido el 
+                    famoso pintor Rafael. Su combinación de grandiosidad arquitectónica 
+                    y significado histórico lo convierte en un destino imperdible para 
+                    los viajeros que visitan Roma.</p>
+            </div>
+        </div>
+        <div class="lugar" onclick="openModal('img/Plaza de San Pedro, VaticanoIMG.png')">
+            <img src="img/Plaza de San Pedro, Vaticano.png" alt="Murano" class="imagen-lugar">
+            <div class="texto-lugar">
+                <h3 class="subtitulo">Plaza de San Pedro</h3>
+                <p class="descripcion">
+                    La Plaza de San Pedro en el Vaticano es uno de los lugares más sagrados 
+                    y visitados del mundo. Una curiosidad fascinante es que la plaza está 
+                    diseñada para parecer más grande de lo que realmente es: las columnatas 
+                    curvas que rodean la plaza crean una ilusión óptica que da la sensación 
+                    de mayor amplitud. Además, la plaza es el lugar donde el Papa ofrece sus 
+                    bendiciones y audiencias públicas, atrayendo a multitudes de fieles y 
+                    turistas de todo el mundo. Otro detalle interesante es que debajo de la 
+                    plaza hay un vasto complejo de catacumbas y tumbas, incluida la tumba de 
+                    San Pedro, que se pueden visitar en tours especiales. La majestuosidad y 
+                    la historia de la Plaza de San Pedro la convierten en un destino inolvidable
+                    para los viajeros que visitan Roma.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar imagen ampliada -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close-button" onclick="closeModal()">✖</span>
+        <img class="modal-content" id="modal-img" src="">
+    </div>
+</section>
+
+
+
+
+<!-- Sección "Actividades" -->
+<section id="actividades-section" class=""></section>
+<div class="actividades-section">
+    <h2 class="section-title">Actividades</h2>
+    <img class="section-decorative-image" src="img/PositRoma.png" alt="Imagen decorativa">
+    <div class="actividades-grid">
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/Actividades Roma.png" alt="Actividad 1">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Visita al Vaticano y museos</h3>
+                <p class="actividad-descripcion">Explora los impresionantes Museos Vaticanos 
+                    y la majestuosa Basílica de San Pedro en una experiencia inolvidable. 
+                    Sumérgete en la riqueza artística y espiritual del Vaticano mientras 
+                    admiras las obras maestras de artistas como Miguel Ángel y Rafael. 
+                    No te pierdas la oportunidad de maravillarte con la grandiosidad de la 
+                    Capilla Sixtina y la majestuosa Plaza de San Pedro.</p>
+            </div>
+        </div>
+
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/Actividades Roma2.png" alt="Actividad 2">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Tour gastronómico en Vespa</h3>
+                <p class="actividad-descripcion">Un tour gastronómico en Vespa por Italia ofrece 
+                    una experiencia única donde los participantes pueden recorrer las pintorescas 
+                    carreteras italianas en una Vespa clásica mientras degustan la deliciosa 
+                    cocina local. Desde auténticas pizzas hasta exquisitos platos de pasta, cada 
+                    parada ofrece una experiencia culinaria memorable. Además los viajeros tienen 
+                    la oportunidad de aprender sobre la cultura culinaria italiana visitando mercados locales, bodegas de vino
+                    y granjas tradicionales.</p>
+            </div>
+        </div>
+
+        <div class="actividad-card">
+            <img class="actividad-imagen" src="img/Actividades Roma3.png" alt="Actividad 3">
+            <div class="actividad-info">
+                <h3 class="actividad-titulo">Recorrido por Barrio de Trastevere</h3>
+                <p class="actividad-descripcion">Descubre el encanto de Trastevere, un barrio pintoresco y 
+                    lleno de vida que ofrece una experiencia auténtica de la vida romana. Con sus calles 
+                    empedradas y estrechas, Trastevere invita a los visitantes a pasear y perderse entre sus 
+                    encantadoras callejuelas llenas de historia y cultura. Los cafés y trattorias tradicionales 
+                    que bordean las plazas ofrecen una deliciosa variedad de platos italianos, mientras observas 
+                    la vida cotidiana de los romanos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Sección de Platos Típicos -->
+<section id="platos-tipicos" class="platos-tipicos-section">
+    <h2 class="titulo-platos-tipicos text-center mb-4">Platos Típicos</h2>
+    <div class="platos-grid d-flex justify-content-center">
+        <!-- Plato 1 -->
+        <div class="plato-item" data-titulo="CACIO E PEPE" data-ingredientes="
+        1. 350 g de espaguetis.
+        2. 150 g de queso Pecorino Romano rallado.
+        3. 1 cucharada de pimienta negra recién molida.
+        4. Sal." 
+        data-instrucciones="
+        Hierve agua en una olla grande y añade sal generosamente. Cocina 
+        los espaguetis siguiendo las instrucciones del paquete hasta que 
+        estén al dente. Mientras tanto, en una sartén grande, tuesta la 
+        pimienta negra molida a fuego medio durante 1-2 minutos hasta que 
+        esté fragante. Cuando los espaguetis estén listos, reserva una taza 
+        del agua de cocción y escúrrelos. Transfiere los espaguetis a la 
+        sartén con la pimienta tostada y agrega aproximadamente 3/4 de taza 
+        de agua de cocción reservada. Agrega el queso Pecorino Romano rallado 
+        y mezcla bien hasta que se derrita y se forme una salsa cremosa. Ajusta 
+        la consistencia de la salsa agregando más agua de cocción si es 
+        necesario. Sirve caliente con un poco más de pimienta negra molida por 
+        encima y queso Pecorino Romano rallado adicional.">
+            <img src="img/ComidaRoma1.png" alt="Sarde in Saor" class="plato-img">
+        </div>
+        <!-- Plato 2 -->
+        <div class="plato-item" data-titulo="SPAGHETTI ALLE VONGALE" 
+        data-ingredientes="
+        1. 350 g de espaguetis.
+        2. 500 g de almejas frescas.
+        3. 4 dientes de ajo, picados.
+        4. 1/4 taza de aceite de oliva virgen extra.
+        5. 1/2 taza de vino blanco seco. 6. Perejil fresco picado.
+        7. Sal y pimienta al gusto." 
+        data-instrucciones="Lava bien las almejas bajo agua fría para eliminar 
+        la arena y los residuos. Hierve agua en una olla grande y añade sal. 
+        Cocina los espaguetis según las instrucciones del paquete hasta que 
+        estén al dente. Mientras tanto, en una sartén grande, calienta el 
+        aceite de oliva a fuego medio y agrega el ajo picado. Cocina hasta que 
+        esté fragante pero no dorado. Agrega las almejas a la sartén y vierte 
+        el vino blanco sobre ellas. Tapa la sartén y cocina a fuego medio-alto 
+        hasta que las almejas se abran, aproximadamente 5 minutos. Desecha las 
+        almejas que no se abran. Cuando los espaguetis estén listos, escúrrelos y 
+        añádelos a la sartén con las almejas. Agrega el perejil fresco picado 
+        y mezcla bien. Sazona con sal y pimienta al gusto. Sirve caliente, 
+        acompañado de un poco de vino blanco.">
+            <img src="img/ComidaRoma2.png" alt="Risotto al Nero di Seppia" class="plato-img">
+        </div>
+        <!-- Plato 3 -->
+        <div class="plato-item" data-titulo="GELATO ROMANO" data-ingredientes="
+        1. 500 ml de leche entera. 2. 250 ml de nata para montar (crema de leche).
+        3. 150 g de azúcar.
+        4. 4 yemas de huevo.
+        5. 1 cucharadita de esencia de vainilla.
+        6. Ingredientes para el sabor deseado: pistachos, limón, chocolate (para el stracciatella).
+        " data-instrucciones="En una cacerola, calienta la leche y la nata a fuego 
+        medio hasta que esté caliente pero no hirviendo. En un tazón aparte, 
+        bate las yemas de huevo con el azúcar hasta que estén cremosas y ligeras. 
+        Vierte lentamente la mezcla de leche caliente sobre las yemas batidas, 
+        batiendo constantemente para evitar que los huevos se cocinen. Vierte 
+        la mezcla de vuelta en la cacerola y cocina a fuego medio-bajo, 
+        revolviendo constantemente, hasta que la mezcla espese lo suficiente 
+        para cubrir la parte posterior de una cuchara. Retira la mezcla del 
+        fuego y añade la esencia de vainilla. Deja enfriar completamente. 
+        Si vas a hacer gelato de pistacho, limón o chocolate, añade los 
+        ingredientes a la mezcla enfriada y bátelos hasta que estén bien 
+        combinados. Vierte la mezcla en tu máquina de helado y sigue las 
+        instrucciones del fabricante para hacer el helado. Si estás haciendo 
+        stracciatella, derrite el chocolate y viértelo.">
+            <img src="img/ComidaFlorencia3.png" alt="Tiramisu" class="plato-img">
+        </div>
+    </div>
+</section>
+
+<!-- Modal para Platos Típicos -->
+<div id="modalPlato" class="modal-plato">
+    <div class="modal-plato-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modalTituloPlato" class="titulo-modal-plato"></h3>
+        <p><strong>INGREDIENTES:</strong></p>
+        <ul id="modalIngredientesPlato" class="ingredientes-lista"></ul>
+        <p><strong>INSTRUCCIONES:</strong></p>
+        <p id="modalInstruccionesPlato" class="instrucciones-modal"></p>
+    </div>
+</div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    <!-- Footer Section -->
+<footer class="custom-footer text-white">
+    <div class="container py-5">
+        <div class="row text-center text-md-start">
+
+            <!-- Logo y Descripción -->
+            <div class="col-md-4 mb-4" data-aos="fade-right">
+                <h4 class="text-uppercase text-light mb-3">Europa 360º</h4>
+                <p>Explora Europa con nosotros. Encuentra los destinos más espectaculares y experiencias únicas para recordar siempre. Vive la aventura.</p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <h5 class="text-uppercase text-info mb-3">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white link-hover">Inicio</a></li>
+                    <li><a href="italia.html" class="text-white link-hover">Italia</a></li>
+                    <li><a href="francia.html" class="text-white link-hover">Francia</a></li>
+                </ul>
+            </div>
+
+            <!-- Contáctanos -->
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h5 class="text-uppercase text-info mb-3">Contáctanos</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Madrid, España</p>
+                <p><i class="fas fa-envelope me-2"></i> info@europa360.com</p>
+                <p><i class="fas fa-phone me-2"></i> +34 123 456 789</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-md-3 mb-4 text-center text-md-start" data-aos="fade-left" data-aos-delay="300">
+                <h5 class="text-uppercase text-info mb-3">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#" class="btn-floating"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn-floating"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p>© 2024 Europa 360º. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="JS/scripts.js"></script>
+</body>
+
+
+
+</html>
