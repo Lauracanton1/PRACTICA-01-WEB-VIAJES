@@ -185,3 +185,56 @@ function cerrarReceta(id) {
     document.getElementById(id).classList.remove('active');
 }
 
+
+
+
+
+//COMIDA ITALIA
+
+document.addEventListener("DOMContentLoaded", function() {
+    const platoItems = document.querySelectorAll('.plato-item');
+    const modal = document.getElementById('modalPlato');
+    const modalTitulo = document.getElementById('modalTituloPlato');
+    const modalIngredientes = document.getElementById('modalIngredientesPlato');
+    const modalInstrucciones = document.getElementById('modalInstruccionesPlato');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Mostrar modal con información del plato al hacer clic
+    platoItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Obtener datos del plato
+            const titulo = this.getAttribute('data-titulo');
+            const ingredientes = this.getAttribute('data-ingredientes');
+            const instrucciones = this.getAttribute('data-instrucciones');
+            
+            // Llenar el modal con la información
+            modalTitulo.textContent = titulo;
+            modalIngredientes.innerHTML = ingredientes.split('\n').map(ing => `<li>${ing.trim()}</li>`).join('');
+            modalInstrucciones.textContent = instrucciones;
+
+            // Mostrar el modal
+            modal.style.display = 'flex'; // Mostrar el modal
+            setTimeout(() => {
+                modal.style.opacity = 1; // Para la transición de aparición
+            }, 10);
+        });
+    });
+
+    // Cerrar el modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.opacity = 0; // Para la transición de desaparición
+        setTimeout(() => {
+            modal.style.display = 'none'; // Ocultar el modal después de la transición
+        }, 300);
+    });
+
+    // Cerrar el modal al hacer clic fuera de la caja
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.opacity = 0; // Para la transición de desaparición
+            setTimeout(() => {
+                modal.style.display = 'none'; // Ocultar el modal después de la transición
+            }, 300);
+        }
+    });
+});

@@ -1404,63 +1404,178 @@ body {
 
 
 
-/* COMIDA VENECIA */
-.delicias-venecianas-section {
-    padding: 50px 20px;
-    background-color: #b9d4f7;
+/* COMIDA ITALIA */
+
+/* Estilos generales para la sección */
+.platos-tipicos-section {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
     text-align: center;
 }
 
-.delicias-venecianas-title {
-    font-family: 'Roboto Slab', serif;
-    font-size: 3rem;
-    color: #293291;
-    margin-bottom: 40px;
+.titulo-platos-tipicos {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.delicias-venecianas-grid {
+/* Estilo de la cuadrícula de platos */
+.platos-grid {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
-.delicia-veneciana-card {
-    width: 350px;
-    height: 350px;
+/* Estilo de cada plato */
+.plato-item {
+    position: relative;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-.delicia-title {
-    position: absolute;
-    bottom: 10px; /* Ajusta según sea necesario */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ffffff; /* Cambia según el diseño */
-    font-weight: bold;
-    font-size: 1.5rem; /* Cambia el tamaño según sea necesario */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Para mejorar la legibilidad */
-    z-index: 2; /* Asegúrate de que esté por encima de la imagen */
+.plato-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.delicia-veneciana-imagen {
-    width: 140%;
-    height: 140%;
+/* Imagen del plato */
+.plato-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 1; /* Asegúrate de que la imagen esté detrás del texto */
 }
+
+/* Botón de cierre dentro de la imagen */
+.plato-item .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: background-color 0.3s;
+    display: none; /* Oculto hasta que el modal esté visible */
+}
+
+.plato-item:hover .close-btn {
+    display: block;
+}
+
+.close-btn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+}
+
+/* Estilos del Modal */
+.modal-plato {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-plato.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Contenido del modal */
+.modal-plato-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+/* Botón de cierre para el modal */
+.modal-plato-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.modal-plato-content .close-btn:hover {
+    color: #333;
+}
+
+/* Título del modal */
+.titulo-modal-plato {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Lista de ingredientes e instrucciones */
+.ingredientes-lista,
+.instrucciones-modal {
+    text-align: left;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #555;
+    font-size: 1em;
+}
+
+.ingredientes-lista {
+    padding-left: 20px;
+}
+
+.instrucciones-modal {
+    font-size: 1em;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .titulo-platos-tipicos {
+        font-size: 2em;
+    }
+
+    .plato-item {
+        width: 140px;
+        height: 140px;
+    }
+
+    .modal-plato-content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .titulo-modal-plato {
+        font-size: 1.5em;
+    }
+}
+
+
+
 
 
 
