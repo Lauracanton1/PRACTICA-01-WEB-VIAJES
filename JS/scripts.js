@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (sectionPosition < screenPosition) {
             introSection.classList.add("show");
-            window.removeEventListener("scroll", handleScroll); // Solo ejecuta una vez
+            window.removeEventListener("scroll", handleScroll); 
         }
     }
     
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (sectionPosition < screenPosition) {
             introSection.classList.add("show");
-            window.removeEventListener("scroll", handleScroll); // Ejecuta una vez
+            window.removeEventListener("scroll", handleScroll); 
         }
     }
 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.addEventListener('click', () => {
             // Obtener la información de los atributos de datos de la tarjeta
             const title = card.getAttribute('data-title');
-            const ingredients = card.getAttribute('data-ingredients').split(','); // Convertir ingredientes en lista
+            const ingredients = card.getAttribute('data-ingredients').split(','); 
             const instructions = card.getAttribute('data-instructions');
 
             // Insertar el título de la receta en el modal
@@ -69,10 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Llenar la lista de ingredientes en el modal
             const ingredientesList = document.querySelector('.ingredientes-list');
-            ingredientesList.innerHTML = ''; // Limpiar la lista antes de agregar nuevos ingredientes
+            ingredientesList.innerHTML = ''; 
             ingredients.forEach(ingredient => {
                 const li = document.createElement('li');
-                li.innerText = ingredient.trim(); // Agregar cada ingrediente como un elemento de lista
+                li.innerText = ingredient.trim(); 
                 ingredientesList.appendChild(li);
             });
 
@@ -162,21 +162,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // COMPRA REVISTA FÍSICA
-function confirmPurchase(event) {
-    event.preventDefault(); // Evita el envío del formulario
-    
-    // Oculta el formulario y muestra el mensaje de agradecimiento
-    document.getElementById('purchaseForm').style.display = 'none';
-    document.getElementById('thankYouMessage').style.display = 'block';
+// Mostrar el formulario en acordeón al hacer clic en "Comprar"
+$('#buyButton').on('click', function() {
+    $('#formAccordionItem').fadeIn();
+    $('#formAccordionBody').collapse('show');
+    $('html, body').animate({
+        scrollTop: $('#formAccordionItem').offset().top - 100
+    }, 500);
+});
 
-    // Cierra el modal después de 3 segundos
+// Confirmar compra y mostrar mensaje de agradecimiento
+$('#purchaseForm').on('submit', function(event) {
+    event.preventDefault();
+    $('#purchaseForm').hide();
+    $('#thankYouMessage').fadeIn();
+
+    // Ocultar el formulario y el mensaje de agradecimiento después de 3 segundos
     setTimeout(() => {
-        const modal = new bootstrap.Modal(document.getElementById('purchaseModal'));
-        modal.hide();
+        $('#formAccordionItem').fadeOut();
+        $('#purchaseForm').show();
+        $('#thankYouMessage').hide();
     }, 3000);
-}
+});
 
 
+
+// COMIDA FRANCIA
 function abrirReceta(id) {
     document.getElementById(id).classList.add('active');
 }

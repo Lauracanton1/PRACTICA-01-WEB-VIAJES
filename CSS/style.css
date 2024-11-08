@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(255, 255, 255); /* Fondo suave */
+    background-color: rgb(255, 255, 255); 
     color: #333;
     text-align: center;
 }
@@ -34,7 +34,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* para que no cambie de tamaño poner auto */
+    height: 100%; 
     object-fit: cover; 
     z-index: 0;
 }
@@ -48,10 +48,10 @@ body {
     align-items: flex-start;
     max-width: 90%;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    background: rgba(255, 255, 255, 0.8); 
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+    animation: fadeIn 1s ease-in-out; 
 }
 
 @keyframes fadeIn {
@@ -164,7 +164,7 @@ body {
 
 /* Sección de Bienvenida */
 #bienvenida {
-    background-color: #CDDD42; /* Beige suave */
+    background-color: #CDDD42; 
     padding: 50px;
     text-align: center;
 }
@@ -172,7 +172,7 @@ body {
 #bienvenida h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
-    color: #003366; /* Azul Marca */
+    color: #003366; 
 }
 
 #bienvenida p {
@@ -343,7 +343,7 @@ body {
     max-width: 400px;
     margin: 15px;
     overflow: hidden;
-    border-radius: 0; /* Sin bordes redondeados */
+    border-radius: 0; 
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     background: none; /* Sin fondo */
 }
@@ -353,11 +353,11 @@ body {
     width: 100%;
     height: 100%;
     transition: transform 0.4s ease, filter 0.4s ease;
-    border: none; /* Sin borde */
+    border: none; 
 }
 
 .destino-card:hover .destino-imagen {
-    filter: brightness(0.8) contrast(1.1); /* Oscurecimiento sutil para hacer el texto más visible */
+    filter: brightness(0.8) contrast(1.1); 
     transform: scale(1.05);
 }
 
@@ -383,14 +383,14 @@ body {
     font-family: 'Great Vibes', cursive;
     font-size: 2rem;
     margin: 0;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra para visibilidad */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); 
 }
 
 .destino-info p {
     font-family: 'Pacifico', cursive;
     font-size: 1.7rem;
     margin: 8px 0 0;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra para visibilidad */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); 
 }
 
 /* Efecto de fondo en movimiento */
@@ -398,6 +398,268 @@ body {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+
+
+/* REVISTA FÍSICA */
+/* Estilo general */
+.carousel-section {
+    padding: 60px 0;
+    text-align: center;
+    
+}
+
+.magazine-section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #e88f90;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrusel */
+#revistaCarousel {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Miniaturas */
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Botón de compra */
+.btn-buy {
+    margin-top: 1rem;
+    background: #9DE0E8;
+    color: #ffffff;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px #9DE0E8;
+}
+
+.btn-buy:hover {
+    background: #78d1db;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px #9DE0E8;
+}
+
+/* Acordeón */
+.accordion-button {
+    background-color: #64bbc5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #9DE0E8;
+}
+
+.accordion-body {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #48B3CC(0, 0, 0, 0.1);
+}
+
+/* Campos del formulario */
+.form-control {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #48B3CC;
+    box-shadow: 0 0 5px #48B3CC;
+}
+
+/* Botón de confirmación */
+.btn-success {
+    background-color: #48B3CC;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #3a93a7;
+    box-shadow: 0 4px 10px #F7F5C8;
+}
+
+/* Mensaje de agradecimiento */
+#thankYouMessage {
+    color: #48B3CC;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .carousel-section {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .thumbnail-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: auto;
+    }
+
+    .btn-buy {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .accordion-button {
+        padding: 10px 15px;
+    }
+
+    .accordion-body {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    .carousel-item img {
+        width: 20%;
+        height: auto;
+        
+    }
+
+    .thumbnail-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: auto;
+    }
+
+    .btn-buy {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+
+/* TIEMPO */
+#clima-y-epoca {
+    background:  #f7f5cd;
+    padding: 60px 0;
+    font-family: 'Righteous', sans-serif;
+}
+
+#clima-y-epoca h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#clima-y-epoca .lead {
+    color: #666;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* CSS Grid para una cuadrícula uniforme */
+.clima-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos de la tarjeta de clima */
+.clima-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.clima-card:hover {
+    transform: scale(1.05);
+}
+
+.clima-card h3 {
+    background-color: #b4e1e3;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.clima-card .card-body {
+    padding: 20px;
+    color: #333;
+    flex-grow: 1; 
+}
+
+.clima-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 
@@ -476,31 +738,31 @@ body {
 #francia-section h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
-    color: #E53B2C; /* Rojo vivo */
+    color: #E53B2C; 
 }
 
 #francia-section p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    color: #FE7C86; /* Rosa fuerte */
+    color: #FE7C86; 
 }
 
 
 /* Botón personalizado para la sección de Francia (París, Niza, Lyon) */
 .btn-ciudades-francia {
-    background-color: #C4E6FF; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: white; /* Color del texto */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 25px; /* Botones redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    transition: background-color 0.3s ease; /* Animación suave en hover */
+    background-color: #C4E6FF; 
+    border: none; 
+    color: white; 
+    font-weight: bold; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease; 
 }
 
 .btn-ciudades-francia:hover {
-    background-color: #92cef9; /* Color de fondo al pasar el mouse */
-    color: white; /* Asegura que el texto siga siendo blanco */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+    background-color: #92cef9; 
+    color: white; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -509,7 +771,7 @@ body {
 
 /* Sección de Mochila de Francia */
 .mochila-section-francia {
-    background: #C4E6FF; /* Fondo en un tono azul muy suave */
+    background: #C4E6FF; 
     color: #2B2D42;
     padding: 60px 0;
     text-align: center;
@@ -517,7 +779,7 @@ body {
 
 /* Títulos */
 .mochila-section-francia .mochila-title {
-    color: #3eacfa; /* Tono azul suave */
+    color: #3eacfa; 
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 10px;
@@ -569,133 +831,13 @@ body {
     line-height: 1.4;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Sección de Italia */
-#italia-section {
-    background-color: #EFE8C1; /* Beige suave */
-    color: #333;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#italia-section h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    color: #E9724C; /* Naranja vibrante */
-}
-
-#italia-section p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: #8BC3B5; /* Verde azulado */
-}
-
-
-
-/* Botón personalizado para la sección de Italia (Venecia, Florencia, Roma) */
-.btn-ciudades-italia {
-    background-color: #EFE8C1; /* Cambia el color de fondo */
-    border: none; /* Elimina el borde */
-    color: white; /* Color del texto */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 25px; /* Botones redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    transition: background-color 0.3s ease; /* Animación suave en hover */
-}
-
-.btn-ciudades-italia:hover {
-    background-color: #f0e39b; /* Color de fondo al pasar el mouse */
-    color: white; /* Asegura que el texto siga siendo blanco */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
-}
-
-
-
-
-
-
-
-
-
-/* Sección de Mochila ITALIA */
-.mochila-section {
-    background: #F4E3B7;
-    color: #ffffff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-/* Títulos */
-.mochila-title {
-    color: #43B4A9;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-family: 'Righteous', sans-serif;
-}
-
-.mochila-subtitle {
-    color: #2d2d2d;
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-}
-
-/* Tarjetas de Mochila */
-.mochila-card {
-    background-color: #ffffff;
-    color: #333;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mochila-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Iconos */
-.mochila-icon {
-    color: #F1731F;
-}
-
-/* Imagen de Mochila */
-.mochila-imagen {
-    max-width: 100%;
-    width: 300px;
-    height: auto;
-    margin: 20px 0;
-}
-
-/* Texto */
-.mochila-card h5 {
-    font-weight: 600;
-    color: #f08d4b;
-}
-
-.mochila-card p {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-
-
 /* PARIS */
 
 
 /* Sección de Entrada a París */
 #entrada-paris {
-    background-color: #d8efff; /* Fondo azul suave */
-    padding: 60px 20px; /* Espaciado superior e inferior */
+    background-color: #d8efff; 
+    padding: 60px 20px; 
 }
 
 
@@ -716,7 +858,7 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #4a4e69; /* Gris suave */
+    color: #4a4e69; 
 }
 
 /* Estilo de los Botones */
@@ -755,43 +897,43 @@ body {
 }
 
 .btn-terciary-francia {
-    background-color: #a5d7fb; /* Color de fondo del botón terciario */
-    color: #333; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 1.1rem; /* Tamaño de la fuente */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    background-color: #a5d7fb; 
+    color: #333; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 1.1rem; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 .btn-terciary-francia:hover {
-    background-color: #a3d1ff; /* Color de fondo al pasar el ratón */
-    transform: translateY(-2px); /* Efecto de elevación */
+    background-color: #a3d1ff; 
+    transform: translateY(-2px); 
 }
 
 
 
 /* SECCIÓN A DÓNDE IR - FRANCIA */
 #donde-ir-francia {
-    background-color: #f8f1e8; /* Fondo en tono cálido pastel */
-    padding: 60px 20px; /* Espaciado superior e inferior */
-    position: relative; /* Posicionamiento relativo para efectos */
+    background-color: #f8f1e8; 
+    padding: 60px 20px; 
+    position: relative; 
 }
 /* Título de la Sección para Francia */
 .donde-ir-francia .titulo-francia {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografía moderna */
-    font-size: 3.5rem; /* Tamaño del título */
-    color: #C4E6FF; /* Color cálido personalizado */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 40px; /* Espacio inferior */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 3.5rem; 
+    color: #C4E6FF; 
+    text-align: center; 
+    margin-bottom: 40px; 
 }
 
 /* Subtítulo de los Lugares en Francia */
 .subtitulo-francia {
-    font-family: 'Playfair Display', serif; /* Tipografía elegante */
-    font-size: 1.8rem; /* Tamaño del subtítulo */
-    color: #FFDE7B; /* Color rojo oscuro personalizado */
-    margin: 0 0 10px; /* Espacio inferior */
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.8rem; 
+    color: #FFDE7B; 
+    margin: 0 0 10px; 
 }
 
 
@@ -879,47 +1021,7 @@ body {
     transform: translateY(0);
 }
 
-
-
-
-
-
-
-
-
-
-/* Estilo del modal de las imagenes*/
-.modal {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-}
-
-/* Contenido del modal */
-.modal-content {
-    position: relative;
-    background-color: #ffffe0; /* Color de fondo del modal */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px; /* Ancho máximo */
-    width: auto; /* Ancho responsive */
-    font-family: 'Dancing Script', cursive;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra */
-    animation: fadeIn 0.5s; /* Animación de aparición */
-}
-
-
-
-
-
-/* Estilos Generales */
+/* COMIDA FRANCIA */
 .recetas-comidas-section {
     padding: 50px 20px;
     background-color: #FFF4E1;
@@ -927,11 +1029,11 @@ body {
 }
 
 .titulo-recetas {
-    font-size: 3.5rem; /* Aumentamos un poco más el tamaño */
+    font-size: 3.5rem;
     color: #FEBAC2; 
     margin-bottom: 40px;
     font-family: 'Merriweather', serif;
-    text-align: center; /* Centrado */
+    text-align: center; 
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
@@ -941,15 +1043,39 @@ body {
     content: "";
     position: absolute;
     width: 100%;
-    height: 8px; /* Grosor de la línea */
-    background-color: #ffe9a6; /* Color de línea de contraste */
-    top: -15px; /* Línea encima del título */
+    height: 8px; 
+    background-color: #ffe9a6; 
+    top: -15px; 
     left: 0;
-    border-radius: 4px; /* Bordes redondeados */
+    border-radius: 4px; 
 }
 
+/* Estilo del modal de las imagenes*/
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    justify-content: center; 
+    align-items: center; 
+}
 
-
+/* Contenido del modal */
+.modal-content {
+    position: relative;
+    background-color: #ffffe0; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; 
+    width: auto; 
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    animation: fadeIn 0.5s; 
+}
 
 
 .contenedor-tarjetas {
@@ -1099,92 +1225,202 @@ body {
 
 
 
+
+
+
+
+
+/* Sección de Italia */
+#italia-section {
+    background-color: #EFE8C1; 
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#italia-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #E9724C; 
+}
+
+#italia-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #8BC3B5; 
+}
+
+
+
+/* Botón personalizado para la sección de Italia (Venecia, Florencia, Roma) */
+.btn-ciudades-italia {
+    background-color: #EFE8C1; 
+    border: none; 
+    color: white; 
+    font-weight: bold; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-ciudades-italia:hover {
+    background-color: #f0e39b; 
+    color: white; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+/* Sección de Mochila ITALIA */
+.mochila-section {
+    background: #F4E3B7;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Títulos */
+.mochila-title {
+    color: #43B4A9;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Righteous', sans-serif;
+}
+
+.mochila-subtitle {
+    color: #2d2d2d;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas de Mochila */
+.mochila-card {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mochila-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos */
+.mochila-icon {
+    color: #F1731F;
+}
+
+/* Imagen de Mochila */
+.mochila-imagen {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Texto */
+.mochila-card h5 {
+    font-weight: 600;
+    color: #f08d4b;
+}
+
+.mochila-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+
 /* VENECIA */
 
 /* Sección de Entrada */
 #entrada-venecia {
-    background-color: #e8f8f5; /* Color de fondo suave para la sección */
-    padding: 60px 20px; /* Espaciado superior e inferior */
+    background-color: #e8f8f5; 
+    padding: 60px 20px; 
 }
 
 /* Contenedor de la Sección */
 .container {
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centrar el contenedor */
+    max-width: 1200px; 
+    margin: 0 auto; 
     
-    flex-direction: row; /* Alinear en fila */
-    align-items: center; /* Centrar verticalmente */
-    gap: 50px; /* Espacio entre imagen y texto */
+    flex-direction: row; 
+    align-items: center; 
+    gap: 50px; 
 }
 
 /* Imagen */
 .imagen-lado {
-    flex: 1; /* Ocupa una parte proporcional del contenedor */
-    max-width: 500px; /* Aumentar el ancho máximo de la imagen */
-    height: auto; /* Mantener la proporción de la imagen */
-    border-radius: 20px; /* Bordes redondeados */
+    flex: 1; 
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 20px; 
 }
 
 /* Contenedor del Texto */
 .texto-contenedor {
-    flex: 1; /* Ocupa una parte proporcional del contenedor */
-    display: flex; /* Flexbox para centrar verticalmente */
-    flex-direction: column; /* Colocar elementos en columna */
-    justify-content: center; /* Centrar verticalmente */
-    text-align: center; /* Centrar texto */
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
 }
 
 /* Estilos del Título */
 .titulo {
-    font-family: 'Dancing Script', cursive; /* Tipografía elegante */
-    font-size: 3.5rem; /* Tamaño más grande para el título */
-    color: #1a837f; /* Color azul más intenso */
-    margin: 0 0 15px; /* Espacio inferior */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra del texto */
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3.5rem; 
+    color: #1a837f; 
+    margin: 0 0 15px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilos del Texto Descriptivo */
 .descripcion {
-    font-family: 'Open Sans', sans-serif; /* Tipografía moderna */
-    font-size: 1rem; /* Tamaño del texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin-bottom: 20px; /* Espacio inferior para separación */
-    color: #34495e; /* Color del texto */
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    color: #34495e; 
 }
 
 /* Estilo de los Botones */
 .botones {
-    display: flex; /* Flexbox para alinear botones */
-    justify-content: center; /* Centrar botones */
-    gap: 20px; /* Espacio entre botones */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
 }
 
 .btn {
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border-radius: 30px; /* Bordes redondeados */
-    text-decoration: none; /* Sin subrayado */
-    color: white; /* Color del texto */
-    font-weight: bold; /* Negrita para el texto del botón */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
-    cursor: pointer; /* Cambiar cursor en hover */
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    cursor: pointer; 
 }
 
 .btn-primary {
-    background-color: #f1deac; /* Color de fondo claro */
+    background-color: #f1deac; 
 }
 
 .btn-primary:hover {
-    background-color: #dfb959; /* Color de fondo más oscuro al pasar el ratón */
-    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+    background-color: #dfb959; 
+    transform: translateY(-2px); 
 }
 
 .btn-secondary {
-    background-color: #f1deac; /* Color de fondo claro */
+    background-color: #f1deac; 
 }
 
 .btn-secondary:hover {
-    background-color: #dfb959; /* Color de fondo más oscuro al pasar el ratón */
-    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+    background-color: #dfb959; 
+    transform: translateY(-2px); 
 }
 
 
@@ -1192,111 +1428,111 @@ body {
 
 /* SECCIÓN A DONDE IR */
 #donde-ir {
-    background-color: #e8f0f2; /* Fondo azul claro para suavizar la sección */
-    padding: 60px 20px; /* Espaciado superior e inferior */
-    position: relative; /* Posicionamiento relativo para efectos */
+    background-color: #e8f0f2; 
+    padding: 60px 20px; 
+    position: relative; 
 }
 
 /* Título de la Sección */
 .donde-ir-section .titulo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografía moderna */
-    font-size: 3.5rem; /* Tamaño del título */
-    color: #34495e; /* Color oscuro */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 40px; /* Espacio inferior */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 3.5rem; 
+    color: #34495e; 
+    text-align: center; 
+    margin-bottom: 40px; 
 }
 
 /* Contenedor de la Galería de Lugares */
 .lugares {
-    display: flex; /* Usar flex para el diseño de lugares */
-    flex-direction: column; /* Columna */
-    gap: 30px; /* Espacio entre lugares */
-    align-items: center; /* Centrar horizontalmente las cajas */
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
+    align-items: center; 
 }
 /* Estilo de Cada Lugar */
 .lugar {
-    display: flex; /* Usar flex para el diseño de lugar */
-    align-items: center; /* Alinear verticalmente al centro */
-    justify-content: space-between; /* Espacio entre texto e imagen */
-    background: white; /* Fondo blanco */
-    border-radius: 30px; /* Bordes redondeados */
-    overflow: hidden; /* Ocultar desbordes */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease; /* Transiciones suaves */
-    padding: 20px; /* Espaciado interno */
-    width: 100%; /* Ancho de la caja ajustado */
-    max-width: 1000px; /* Ancho máximo de la caja */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background: white; 
+    border-radius: 30px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+    padding: 20px; 
+    width: 100%; 
+    max-width: 1000px; 
 }
 
 .lugar:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    transform: translateY(-5px); 
 }
 
 /* Imagen del Lugar */
 .imagen-lugar {
-    flex: 1.5; /* Imagen ocupa espacio flexible */
-    border-radius: 10px; /* Bordes redondeados */
-    height: 300px; /* Altura fija para uniformidad */
-    object-fit: cover; /* Cubrir el área sin distorsionar la imagen */
-    transition: transform 0.3s ease; /* Transición suave */
+    flex: 1.5; 
+    border-radius: 10px; 
+    height: 300px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
 }
 
 /* Efecto en imagen al pasar el ratón */
 .lugar:hover .imagen-lugar {
-    transform: scale(1.05); /* Aumentar la imagen al pasar el ratón */
+    transform: scale(1.05); 
 }
 
 /* Estilo del Texto del Lugar */
 .texto-lugar {
-    flex: 2; /* Texto ocupa espacio flexible */
-    padding: 0 20px; /* Espaciado interno */
+    flex: 2; 
+    padding: 0 20px; 
 }
 
 /* Subtítulo de los Lugares */
 .subtitulo {
-    font-family: 'Playfair Display', serif;/* Tipografía moderna */
-    font-size: 1.8rem; /* Tamaño del subtítulo */
-    color: #f99557; /* Color del subtítulo */
-    margin: 0 0 10px; /* Espacio inferior */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; 
+    color: #f99557; 
+    margin: 0 0 10px; 
 }
 
 /* Estilos del Texto Descriptivo */
 .descripcion {
-    font-family: 'Open Sans', sans-serif; /* Tipografía moderna */
-    font-size: 0.8rem; /* Tamaño del texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #34495e; /* Color del texto */
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 0.8rem; 
+    line-height: 1.6; 
+    color: #34495e; 
 }
 
 /* Estilo del Modal */
 .modal {
-    display: none; /* Inicialmente oculto */
-    position: fixed; /* Fijo para cubrir toda la pantalla */
-    z-index: 1000; /* En la parte superior */
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
     left: 0;
     top: 0;
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Contenido del Modal */
 .modal-content {
-    max-width: 70%; /* Máximo ancho del contenido */
-    max-height: 70%; /* Máxima altura del contenido */
-    border-radius: 10px; /* Bordes redondeados */
+    max-width: 70%; 
+    max-height: 70%; 
+    border-radius: 10px; 
 }
 
 /* Botón de cerrar */
 .close-button {
-    position: absolute; /* Posición absoluta */
-    top: 20px; /* Espacio desde arriba */
-    right: 20px; /* Espacio desde la derecha */
-    color: white; /* Color blanco */
-    font-size: 30px; /* Tamaño grande */
-    cursor: pointer; /* Cambia el cursor a puntero */
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    color: white; 
+    font-size: 30px; 
+    cursor: pointer; 
 }
 
 
@@ -1333,20 +1569,20 @@ body {
 .actividades-grid {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajusta automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
 }
 
 /* Tarjeta de actividad */
 .actividad-card {
     position: relative;
-    width: 100%; /* Tamaño flexible */
+    width: 100%; 
     max-width: 350px;
     height: 450px;
     overflow: hidden;
     border-radius: 30px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
-    margin: auto; /* Centrado automático */
+    margin: auto; 
 }
 
 .actividad-card:hover {
@@ -1458,7 +1694,7 @@ body {
 
 /* Estilos para el modal */
 .modal-plato {
-    display: none; /* Inicialmente oculto */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -1475,10 +1711,10 @@ body {
     padding: 20px;
     border-radius: 8px;
     width: 80%;
-    max-width: 600px; /* Tamaño ajustado para pantallas grandes */
+    max-width: 600px; 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Permite scroll vertical cuando el contenido sea largo */
-    max-height: 80%; /* Limita la altura del modal */
+    overflow-y: auto; 
+    max-height: 80%; 
 }
 
 .titulo-modal-plato {
@@ -1497,14 +1733,14 @@ body {
     font-size: 1rem;
     margin-bottom: 20px;
     color: #555;
-    line-height: 1.5; /* Mejor separación entre los ingredientes */
+    line-height: 1.5;
 }
 
 .ingredientes-lista li {
     font-size: 1rem;
     color: #555;
     margin-bottom: 5px;
-    word-wrap: break-word; /* Asegura que el texto largo no se desborde */
+    word-wrap: break-word; 
 }
 
 .instrucciones-modal {
@@ -1513,7 +1749,7 @@ body {
     line-height: 1.6;
     font-family: 'Pacifico', cursive;
     margin-bottom: 20px;
-    word-wrap: break-word; /* Evita que el texto largo se desborde */
+    word-wrap: break-word; 
 }
 
 /* Estilo para el botón de cierre */
@@ -1536,202 +1772,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* TIEMPO */
-#clima-y-epoca {
-    background:  #f7f5cd;
-    padding: 60px 0;
-    font-family: 'Righteous', sans-serif;
-}
-
-#clima-y-epoca h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#clima-y-epoca .lead {
-    color: #666;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* CSS Grid para una cuadrícula uniforme */
-.clima-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* Estilos de la tarjeta de clima */
-.clima-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* Uniformiza la altura */
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background: #fff;
-    transition: transform 0.3s ease;
-}
-
-.clima-card:hover {
-    transform: scale(1.05);
-}
-
-.clima-card h3 {
-    background-color: #b4e1e3;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.clima-card .card-body {
-    padding: 20px;
-    color: #333;
-    flex-grow: 1; /* Para estirar el contenido del cuerpo */
-}
-
-.clima-card p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* REVISTA FÍSICA */
-/* Título de la sección */
-h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    color: #e88f90;
-    margin-bottom: 20px;
-}
-
-/* Estilo del carrusel */
-#revistaCarousel {
-    position: relative;
-    margin: 0 auto;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-/* Estilo de las imágenes del carrusel */
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Estilo de las miniaturas */
-.thumbnail-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.thumbnail:hover {
-    transform: scale(1.05);
-}
-
-/* Estilo del botón de compra */
-.btn-success {
-    background-color: #e88f90;
-    border: none;
-    font-weight: bold;
-    padding: 15px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-.btn-success:hover {
-    background-color: #d4787d;
-}
-/* Modal centrado con estilo limpio */
-.modal-content {
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    border: none;
-}
-
-/* Título del Modal */
-.modal-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 0;
-}
-
-/* Botón de cierre del modal */
-.btn-close {
-    background-color: transparent;
-    border: none;
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
-}
-.btn-close:hover {
-    opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsividad para dispositivos móviles */
 @media (max-width: 768px) {
     .section-title {
@@ -1746,11 +1786,11 @@ h2 {
     }
 
     .actividad-card {
-        height: 400px; /* Altura ajustada para pantallas más pequeñas */
+        height: 400px; 
     }
 
     .actividad-info {
-        font-size: 0.85rem; /* Tamaño de texto más pequeño */
+        font-size: 0.85rem; 
     }
 }
 
@@ -1770,119 +1810,57 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Adaptabilidad para dispositivos móviles */
 @media (max-width: 768px) {
     .actividad-card {
         width: 90%;
-        height: auto; /* Ajusta la altura para pantallas pequeñas */
+        height: auto; 
     }
 
     .section-title {
-        font-size: 2.5rem; /* Tamaño de fuente más pequeño para móviles */
+        font-size: 2.5rem; 
     }
 
     .actividad-info {
-        width: 95%; /* Ancho del 95% en móviles */
+        width: 95%; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     #donde-ir {
-        padding: 40px 10px; /* Espaciado en móviles */
+        padding: 40px 10px; 
     }
 
     .titulo {
-        font-size: 2.5rem; /* Tamaño del título en móviles */
+        font-size: 2.5rem; 
     }
 
     .lugar {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: flex-start; /* Alinear a la izquierda */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .imagen-lugar {
-        width: 100%; /* Imagen ocupa el 100% en móviles */
-        height: auto; /* Altura automática para mantener proporciones */
+        width: 100%; 
+        height: auto; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* Estilos Responsivos */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: center; /* Centrar en pantallas pequeñas */
+        flex-direction: column; 
+        align-items: center; 
     }
     .imagen-lado {
-        max-width: 90%; /* Ajustar el ancho máximo de la imagen en pantallas pequeñas */
+        max-width: 90%; 
     }
     .texto-contenedor {
-        width: 100%; /* Ocupa el 100% en pantallas pequeñas */
+        width: 100%; 
     }
 }
 
@@ -1891,14 +1869,14 @@ h2 {
 /* Adaptabilidad para dispositivos móviles */
 @media (max-width: 768px) {
     .overlay h1 {
-        font-size: 4rem; /* Tamaño ajustado en móviles */
+        font-size: 4rem; 
     }
 
     .overlay p {
-        font-size: 1.5rem; /* Tamaño ajustado en móviles */
+        font-size: 1.5rem; 
     }
 
     .btn-custom {
-        padding: 10px 20px; /* Tamaño del botón en móviles */
+        padding: 10px 20px; 
     }
 }
