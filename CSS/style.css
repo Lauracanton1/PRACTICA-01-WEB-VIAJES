@@ -1643,17 +1643,60 @@ body {
 /* COMIDA ITALIA */
 
 
-/* Estilos para la sección de platos típicos */
+/* Estilo general para la sección de platos típicos */
 .platos-tipicos-section {
-    padding: 40px;
-    background-color: #87b5c6;
+    padding: 50px 20px;
+    background-color: #FFF4E1;
     text-align: center;
 }
 
 .titulo-platos-tipicos {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #305b88;
+    font-size: 3.5rem;
+    color: #FEBAC2; 
+    margin-bottom: 40px;
+    font-family: 'Merriweather', serif;
+    text-align: center; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.titulo-platos-tipicos::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px; 
+    background-color: #ffe9a6; 
+    top: -15px; 
+    left: 0;
+    border-radius: 4px; 
+}
+
+/* Estilo del modal de los platos */
+.modal-plato {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Contenido del modal */
+.modal-plato-content {
+    position: relative;
+    background-color: #ffffe0; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; 
+    width: auto; 
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    animation: fadeIn 0.5s; 
 }
 
 .platos-grid {
@@ -1661,222 +1704,73 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .plato-item {
+    perspective: 1000px;
     width: 250px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    height: 350px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.plato-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .plato-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.6s ease;
 }
 
 .plato-item:hover .plato-img {
     transform: scale(1.1);
 }
 
-/* Estilos para el modal */
-.modal-plato {
-    display: none; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
+/* Estilos para el contenido del modal */
 .modal-plato-content {
-    background-color: #eddeb7;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px; 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; 
-    max-height: 80%; 
-}
-
-.titulo-modal-plato {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #FEBAC2;
-    text-align: center;
-}
-
-.ingredientes-lista {
-    list-style-type: none;
-    padding: 0;
-    font-family: 'Pacifico', cursive;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #555;
-    line-height: 1.5;
-}
-
-.ingredientes-lista li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 5px;
-    word-wrap: break-word; 
-}
-
-.instrucciones-modal {
-    font-size: 1rem;
+    background: #FEF8F5;
+    padding: 35px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 550px;
+    text-align: left;
     color: #333;
-    line-height: 1.6;
-    font-family: 'Pacifico', cursive;
-    margin-bottom: 20px;
-    word-wrap: break-word; 
+    font-family: 'Merriweather', serif;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-top: 8px solid #FE3334;
 }
 
-/* Estilo para el botón de cierre */
 .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 1.5rem;
-    color: #FEBAC2;
-    background: transparent;
-    border: none;
+    font-size: 1.8rem;
+    color: #FE3334;
     cursor: pointer;
-    transition: color 0.3s ease;
 }
 
-.close-btn:hover {
-    color: #e67c88;
+.titulo-modal-plato {
+    font-size: 2rem;
+    color: #FE7C86;
+    margin-bottom: 20px;
 }
 
+.modal-plato-content ul, .modal-plato-content p {
+    color: #4e342e;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+}
 
-
-
-/* Responsividad para dispositivos móviles */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
     }
-
-    .section-decorative-image {
-        position: relative;
-        width: 250px;
-        margin: 0 auto 20px;
-        top: 0;
-    }
-
-    .actividad-card {
-        height: 400px; 
-    }
-
-    .actividad-info {
-        font-size: 0.85rem; 
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-@media (max-width: 480px) {
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .actividad-card {
-        height: 380px;
-    }
-
-    .actividad-info {
-        padding: 15px;
-        font-size: 0.8rem;
-    }
-}
-
-
-/* Adaptabilidad para dispositivos móviles */
-@media (max-width: 768px) {
-    .actividad-card {
-        width: 90%;
-        height: auto; 
-    }
-
-    .section-title {
-        font-size: 2.5rem; 
-    }
-
-    .actividad-info {
-        width: 95%; 
-    }
-}
-
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    #donde-ir {
-        padding: 40px 10px; 
-    }
-
-    .titulo {
-        font-size: 2.5rem; 
-    }
-
-    .lugar {
-        flex-direction: column; 
-        align-items: flex-start; 
-    }
-
-    .imagen-lugar {
-        width: 100%; 
-        height: auto; 
-    }
-}
-
-
-
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .imagen-lado {
-        max-width: 90%; 
-    }
-    .texto-contenedor {
-        width: 100%; 
-    }
-}
-
-
-
-/* Adaptabilidad para dispositivos móviles */
-@media (max-width: 768px) {
-    .overlay h1 {
-        font-size: 4rem; 
-    }
-
-    .overlay p {
-        font-size: 1.5rem; 
-    }
-
-    .btn-custom {
-        padding: 10px 20px; 
-    }
-}

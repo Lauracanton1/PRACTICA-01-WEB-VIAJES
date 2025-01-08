@@ -202,37 +202,11 @@ function cerrarReceta(id) {
 
 //COMIDA ITALIA
 
-// Función para abrir el modal
-function abrirModal(plato) {
-    var modal = document.getElementById("modalPlato");
-    var modalTitulo = document.getElementById("modalTituloPlato");
-    var modalIngredientes = document.getElementById("modalIngredientesPlato");
-    var modalInstrucciones = document.getElementById("modalInstruccionesPlato");
-
-    // Configuración de los datos del plato
-    modalTitulo.innerHTML = plato.getAttribute('data-titulo');
-    modalIngredientes.innerHTML = plato.getAttribute('data-ingredientes').replace(/\n/g, '<br>');
-    modalInstrucciones.innerHTML = plato.getAttribute('data-instrucciones').replace(/\n/g, '<br>');
-
-    // Mostrar el modal
-    modal.style.display = "flex";
+// PLATOS TÍPICOS
+function abrirPlato(id) {
+    document.getElementById(id).classList.add('active');
 }
 
-// Función para cerrar el modal
-function cerrarModal() {
-    var modal = document.getElementById("modalPlato");
-    modal.style.display = "none";
+function cerrarPlato(id) {
+    document.getElementById(id).classList.remove('active');
 }
-
-// Añadir los event listeners a los platos
-var platos = document.querySelectorAll('.plato-item');
-platos.forEach(function(plato) {
-    plato.addEventListener('click', function() {
-        abrirModal(plato);
-    });
-});
-
-// Añadir el evento de cierre al botón "X"
-var closeBtn = document.querySelector('.close-btn');
-closeBtn.addEventListener('click', cerrarModal);
-

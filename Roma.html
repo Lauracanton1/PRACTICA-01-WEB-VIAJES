@@ -218,91 +218,98 @@
 
 
 
-<!-- Sección de Platos Típicos -->
-<section id="platos-tipicos" class="platos-tipicos-section">
-    <h2 class="titulo-platos-tipicos text-center mb-4">Platos Típicos</h2>
-    <div class="platos-grid d-flex justify-content-center">
-        <!-- Plato 1 -->
-        <div class="plato-item" data-titulo="CACIO E PEPE" data-ingredientes="
-        1. 350 g de espaguetis.
-        2. 150 g de queso Pecorino Romano rallado.
-        3. 1 cucharada de pimienta negra recién molida.
-        4. Sal." 
-        data-instrucciones="
-        Hierve agua en una olla grande y añade sal generosamente. Cocina 
-        los espaguetis siguiendo las instrucciones del paquete hasta que 
-        estén al dente. Mientras tanto, en una sartén grande, tuesta la 
-        pimienta negra molida a fuego medio durante 1-2 minutos hasta que 
-        esté fragante. Cuando los espaguetis estén listos, reserva una taza 
-        del agua de cocción y escúrrelos. Transfiere los espaguetis a la 
-        sartén con la pimienta tostada y agrega aproximadamente 3/4 de taza 
-        de agua de cocción reservada. Agrega el queso Pecorino Romano rallado 
-        y mezcla bien hasta que se derrita y se forme una salsa cremosa. Ajusta 
-        la consistencia de la salsa agregando más agua de cocción si es 
-        necesario. Sirve caliente con un poco más de pimienta negra molida por 
-        encima y queso Pecorino Romano rallado adicional.">
-            <img src="img/ComidaRoma1.png" alt="Sarde in Saor" class="plato-img">
+<section id="recetas-comidas" class="recetas-comidas-section">
+    <h2 class="titulo-recetas">Ñam Ñam!!</h2>
+    
+    <div class="contenedor-tarjetas">
+        <!-- Tarjeta 1: Cacio e Pepe -->
+        <div class="tarjeta-receta" onclick="abrirReceta('recetaCacioePepe')">
+            <div class="frente">
+                <img src="img/ComidaRoma1.png" alt="Cacio e Pepe" class="imagen-receta">
+            </div>
+            <div class="reverso">
+                <p>El Cacio e Pepe es un plato simple pero elegante, que combina la riqueza del queso Pecorino Romano con el toque picante de la pimienta negra.</p>
+            </div>
         </div>
-        <!-- Plato 2 -->
-        <div class="plato-item" data-titulo="SPAGHETTI ALLE VONGALE" 
-        data-ingredientes="
-        1. 350 g de espaguetis.
-        2. 500 g de almejas frescas.
-        3. 4 dientes de ajo, picados.
-        4. 1/4 taza de aceite de oliva virgen extra.
-        5. 1/2 taza de vino blanco seco. 6. Perejil fresco picado.
-        7. Sal y pimienta al gusto." 
-        data-instrucciones="Lava bien las almejas bajo agua fría para eliminar 
-        la arena y los residuos. Hierve agua en una olla grande y añade sal. 
-        Cocina los espaguetis según las instrucciones del paquete hasta que 
-        estén al dente. Mientras tanto, en una sartén grande, calienta el 
-        aceite de oliva a fuego medio y agrega el ajo picado. Cocina hasta que 
-        esté fragante pero no dorado. Agrega las almejas a la sartén y vierte 
-        el vino blanco sobre ellas. Tapa la sartén y cocina a fuego medio-alto 
-        hasta que las almejas se abran, aproximadamente 5 minutos. Desecha las 
-        almejas que no se abran. Cuando los espaguetis estén listos, escúrrelos y 
-        añádelos a la sartén con las almejas. Agrega el perejil fresco picado 
-        y mezcla bien. Sazona con sal y pimienta al gusto. Sirve caliente, 
-        acompañado de un poco de vino blanco.">
-            <img src="img/ComidaRoma2.png" alt="Risotto al Nero di Seppia" class="plato-img">
+        <div class="modal-receta" id="recetaCacioePepe">
+            <div class="contenido-modal">
+                <span class="cerrar-modal" onclick="cerrarReceta('recetaCacioePepe')">✖</span>
+                <h3 class="titulo-modal">Cacio e Pepe</h3>
+                <h4>Ingredientes:</h4>
+                <ul>
+                    <li>350 g de espaguetis.</li>
+                    <li>150 g de queso Pecorino Romano rallado.</li>
+                    <li>1 cucharada de pimienta negra recién molida.</li>
+                    <li>Sal.</li>
+                </ul>
+                <h4>Instrucciones:</h4>
+                <p>1. Hierve agua en una olla grande y añade sal. Cocina los espaguetis hasta que estén al dente.</p>
+                <p>2. Tuesta la pimienta negra en una sartén a fuego medio hasta que esté fragante.</p>
+                <p>3. Mezcla los espaguetis con el queso Pecorino Romano y la pimienta tostada. Ajusta con agua de cocción para formar una salsa cremosa.</p>
+            </div>
         </div>
-        <!-- Plato 3 -->
-        <div class="plato-item" data-titulo="GELATO ROMANO" data-ingredientes="
-        1. 500 ml de leche entera. 2. 250 ml de nata para montar (crema de leche).
-        3. 150 g de azúcar.
-        4. 4 yemas de huevo.
-        5. 1 cucharadita de esencia de vainilla.
-        6. Ingredientes para el sabor deseado: pistachos, limón, chocolate (para el stracciatella).
-        " data-instrucciones="En una cacerola, calienta la leche y la nata a fuego 
-        medio hasta que esté caliente pero no hirviendo. En un tazón aparte, 
-        bate las yemas de huevo con el azúcar hasta que estén cremosas y ligeras. 
-        Vierte lentamente la mezcla de leche caliente sobre las yemas batidas, 
-        batiendo constantemente para evitar que los huevos se cocinen. Vierte 
-        la mezcla de vuelta en la cacerola y cocina a fuego medio-bajo, 
-        revolviendo constantemente, hasta que la mezcla espese lo suficiente 
-        para cubrir la parte posterior de una cuchara. Retira la mezcla del 
-        fuego y añade la esencia de vainilla. Deja enfriar completamente. 
-        Si vas a hacer gelato de pistacho, limón o chocolate, añade los 
-        ingredientes a la mezcla enfriada y bátelos hasta que estén bien 
-        combinados. Vierte la mezcla en tu máquina de helado y sigue las 
-        instrucciones del fabricante para hacer el helado. Si estás haciendo 
-        stracciatella, derrite el chocolate y viértelo.">
-            <img src="img/ComidaFlorencia3.png" alt="Tiramisu" class="plato-img">
+
+        <!-- Tarjeta 2: Spaghetti alle Vongole -->
+        <div class="tarjeta-receta" onclick="abrirReceta('recetaSpaghettiVongole')">
+            <div class="frente">
+                <img src="img/ComidaRoma2.png" alt="Spaghetti alle Vongole" class="imagen-receta">
+            </div>
+            <div class="reverso">
+                <p>El Spaghetti alle Vongole es un plato fresco y delicioso que combina la delicadeza de las almejas con el aroma del ajo y el perejil.</p>
+            </div>
+        </div>
+        <div class="modal-receta" id="recetaSpaghettiVongole">
+            <div class="contenido-modal">
+                <span class="cerrar-modal" onclick="cerrarReceta('recetaSpaghettiVongole')">✖</span>
+                <h3 class="titulo-modal">Spaghetti alle Vongole</h3>
+                <h4>Ingredientes:</h4>
+                <ul>
+                    <li>350 g de espaguetis.</li>
+                    <li>500 g de almejas frescas.</li>
+                    <li>4 dientes de ajo, picados.</li>
+                    <li>1/4 taza de aceite de oliva virgen extra.</li>
+                    <li>1/2 taza de vino blanco seco.</li>
+                    <li>Perejil fresco picado.</li>
+                    <li>Sal y pimienta al gusto.</li>
+                </ul>
+                <h4>Instrucciones:</h4>
+                <p>1. Lava las almejas bajo agua fría para eliminar la arena. Cocina los espaguetis al dente.</p>
+                <p>2. Sofríe el ajo en aceite de oliva. Agrega las almejas y el vino blanco, cocina hasta que se abran.</p>
+                <p>3. Mezcla los espaguetis con las almejas y el perejil picado. Sazona al gusto y sirve caliente.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3: Gelato Romano -->
+        <div class="tarjeta-receta" onclick="abrirReceta('recetaGelatoRomano')">
+            <div class="frente">
+                <img src="img/ComidaFlorencia3.png" alt="Gelato Romano" class="imagen-receta">
+            </div>
+            <div class="reverso">
+                <p>El Gelato Romano es un postre cremoso y refrescante que captura la esencia de la tradición italiana con cada bocado.</p>
+            </div>
+        </div>
+        <div class="modal-receta" id="recetaGelatoRomano">
+            <div class="contenido-modal">
+                <span class="cerrar-modal" onclick="cerrarReceta('recetaGelatoRomano')">✖</span>
+                <h3 class="titulo-modal">Gelato Romano</h3>
+                <h4>Ingredientes:</h4>
+                <ul>
+                    <li>500 ml de leche entera.</li>
+                    <li>250 ml de nata para montar (crema de leche).</li>
+                    <li>150 g de azúcar.</li>
+                    <li>4 yemas de huevo.</li>
+                    <li>1 cucharadita de esencia de vainilla.</li>
+                    <li>Ingredientes para sabores: pistachos, limón, chocolate.</li>
+                </ul>
+                <h4>Instrucciones:</h4>
+                <p>1. Calienta la leche y la nata a fuego medio. Bate las yemas con el azúcar.</p>
+                <p>2. Combina la mezcla caliente con las yemas batidas, cocinando hasta que espese. Agrega la vainilla.</p>
+                <p>3. Enfría la mezcla, agrega el sabor deseado y procesa en la máquina de helados según las instrucciones.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Modal para Platos Típicos -->
-<div id="modalPlato" class="modal-plato">
-    <div class="modal-plato-content">
-        <span class="close-btn">&times;</span>
-        <h3 id="modalTituloPlato" class="titulo-modal-plato"></h3>
-        <p><strong>INGREDIENTES:</strong></p>
-        <ul id="modalIngredientesPlato" class="ingredientes-lista"></ul>
-        <p><strong>INSTRUCCIONES:</strong></p>
-        <p id="modalInstruccionesPlato" class="instrucciones-modal"></p>
-    </div>
-</div>
 
 
 

@@ -210,90 +210,94 @@
 
 
 
+<section id="recetas-comidas" class="recetas-comidas-section">
+    <h2 class="titulo-recetas">Ñam Ñam!!</h2>
+    <div class="contenedor-tarjetas">
+        <!-- Tarjeta 1: Bistecca alla Fiorentina -->
+        <div class="tarjeta-receta" onclick="abrirReceta('recetaBistecca')">
+            <div class="frente">
+                <img src="img/ComidaFlorencia1.png" alt="Bistecca alla Fiorentina" class="imagen-receta">
+            </div>
+            <div class="reverso">
+                <p>La Bistecca alla Fiorentina es un jugoso corte de carne toscano, asado a la perfección, ideal para los amantes de la parrilla.</p>
+            </div>
+        </div>
+        <div class="modal-receta" id="recetaBistecca">
+            <div class="contenido-modal">
+                <span class="cerrar-modal" onclick="cerrarReceta('recetaBistecca')">✖</span>
+                <h3 class="titulo-modal">Bistecca alla Fiorentina</h3>
+                <h4>Ingredientes:</h4>
+                <ul>
+                    <li>Un corte grueso de carne de res (aproximadamente 1.5 a 2 pulgadas de grosor).</li>
+                    <li>Sal gruesa.</li>
+                    <li>Pimienta negra recién molida.</li>
+                </ul>
+                <h4>Instrucciones:</h4>
+                <p>1. Saca la carne del refrigerador y deja reposar a temperatura ambiente durante 1 hora.</p>
+                <p>2. Precalienta la parrilla a fuego medio-alto, sazona la carne con sal y pimienta.</p>
+                <p>3. Cocina 5-7 minutos por cada lado y deja reposar antes de servir.</p>
+            </div>
+        </div>
 
-<!-- Sección de Platos Típicos -->
-<section id="platos-tipicos" class="platos-tipicos-section">
-    <h2 class="titulo-platos-tipicos text-center mb-4">Platos Típicos</h2>
-    <div class="platos-grid d-flex justify-content-center">
-        <!-- Plato 1 -->
-        <div class="plato-item" data-titulo="BISTECCA ALLA FIORENTINA" data-ingredientes="
-        1. Un corte grueso de carne de res (preferiblemente de la raza Chianina), 
-        de aproximadamente 1.5 a 2 pulgadas de grosor.
-        2. Sal gruesa.
-        3. Pimienta negra recién molida." 
-        data-instrucciones="
-        Saca la carne de res del refrigerador y déjala reposar a temperatura ambiente 
-        durante al menos 1 hora antes de cocinar. Precalienta la parrilla a fuego 
-        medio-alto. Sazona generosamente la carne por ambos lados con sal gruesa y 
-        pimienta negra recién molida. Coloca la carne en la parrilla caliente y cocina 
-        durante 5-7 minutos por cada lado, o hasta que alcance el punto de cocción 
-        deseado (usualmente se prefiere al punto o al punto medio). Retira la carne de 
-        la parrilla y deja que repose durante unos minutos antes de cortarla en rodajas 
-        gruesas. Sirve caliente y disfruta de esta deliciosa y jugosa especialidad
-        toscana.">
-            <img src="img/ComidaFlorencia1.png" alt="Sarde in Saor" class="plato-img">
+        <!-- Tarjeta 2: Pappa al Pomodoro -->
+        <div class="tarjeta-receta" onclick="abrirReceta('recetaPappa')">
+            <div class="frente">
+                <img src="img/ComidaFlorencia2.png" alt="Pappa al Pomodoro" class="imagen-receta">
+            </div>
+            <div class="reverso">
+                <p>La Pappa al Pomodoro es una sopa toscana rica y reconfortante hecha a base de tomate y pan rústico.</p>
+            </div>
         </div>
-        <!-- Plato 2 -->
-        <div class="plato-item" data-titulo="PAPPA AL POMODORO" 
-        data-ingredientes="
-        1. 500 g de tomates maduros, pelados y picados.
-        2. 4 tazas de pan toscano duro, cortado en cubos pequeños.
-        3. 3 dientes de ajo, picados.
-        4. 1/4 taza de aceite de oliva virgen
-        extra.
-        5. 1 taza de caldo de verduras.
-        6. 1 manojo de albahaca fresca, picada.
-        7. Sal y pimienta al gusto." 
-        data-instrucciones="En una cacerola grande, calienta el aceite de oliva a 
-        fuego medio. Agrega el ajo picado y saltea hasta que esté fragante, pero no 
-        dorado. Agrega los tomates picados y cocina a fuego medio-alto durante unos 
-        10 minutos, o hasta que los tomates se deshagan y la salsa comience a espesar 
-        ligeramente. Agrega el pan toscano cortado en cubos y mezcla bien con la salsa 
-        de tomate. Añade el caldo de verduras y cocina a fuego lento durante unos 15-20 
-        minutos, o hasta que el pan se haya ablandado y la sopa tenga una consistencia 
-        espesa y reconfortante. Retira la sopa del fuego y agrega la albahaca fresca 
-        picada. Sazona con sal y pimienta al gusto. Sirve caliente, acompañada de un 
-        generoso chorrito de aceite de oliva virgen extra">
-            <img src="img/ComidaFlorencia2.png" alt="Risotto al Nero di Seppia" class="plato-img">
+        <div class="modal-receta" id="recetaPappa">
+            <div class="contenido-modal">
+                <span class="cerrar-modal" onclick="cerrarReceta('recetaPappa')">✖</span>
+                <h3 class="titulo-modal">Pappa al Pomodoro</h3>
+                <h4>Ingredientes:</h4>
+                <ul>
+                    <li>500 g de tomates maduros, pelados y picados.</li>
+                    <li>4 tazas de pan toscano duro, cortado en cubos pequeños.</li>
+                    <li>3 dientes de ajo, picados.</li>
+                    <li>1/4 taza de aceite de oliva virgen extra.</li>
+                    <li>1 taza de caldo de verduras.</li>
+                    <li>1 manojo de albahaca fresca, picada.</li>
+                    <li>Sal y pimienta al gusto.</li>
+                </ul>
+                <h4>Instrucciones:</h4>
+                <p>1. Saltea el ajo en aceite, agrega los tomates y cocina hasta que se deshagan.</p>
+                <p>2. Añade pan, caldo de verduras, cocina 20 minutos, incorpora albahaca y sazona al gusto.</p>
+            </div>
         </div>
-        <!-- Plato 3 -->
-        <div class="plato-item" data-titulo="GELATO FIORENTINO" data-ingredientes="
-        1. 500 ml de leche entera. 2. 200 ml de nata para montar (crema de leche).
-        3. 150 g de azúcar.
-        4. 4 yemas de huevo.
-        5. 1 cucharadita de extracto de vainilla.
-        6. Opcional: nueces, pistachos, chocolate rallado, frutas confitadas, etc.
-        " data-instrucciones="En una cacerola, calienta la leche y la nata a fuego 
-        medio hasta que estén calientes pero no hirviendo. En un tazón aparte, bate 
-        las yemas de huevo con el azúcar hasta que la mezcla esté suave y cremosa. 
-        Vierte lentamente la mezcla de leche caliente sobre las yemas batidas, 
-        batiendo constantemente para evitar que los huevos se cocinen. Vierte la 
-        mezcla de huevo y leche de nuevo en la cacerola y calienta a fuego lento, 
-        revolviendo constantemente, hasta que la mezcla espese lo suficiente para 
-        cubrir la parte posterior de una cuchara. Retira la mezcla del fuego y añade 
-        el extracto de vainilla. Deja que la mezcla se enfríe por completo, luego 
-        refrigérala durante al menos 4 horas o durante toda la noche. Vierte la 
-        mezcla en tu máquina de hacer helados y sigue las instrucciones del fabricante 
-        para hacer el helado. Una vez que el helado esté listo, puedes servirlo tal 
-        cual o personalizarlo con tus ingredientes favoritos, como nueces, pistachos, 
-        chocolate rallado o frutas confitadas. ¡Disfruta de este cremoso y delicioso 
-        helado fiorentino! ">
-            <img src="img/ComidaFlorencia3.png" alt="Tiramisu" class="plato-img">
+
+        <!-- Tarjeta 3: Gelato Fiorentino -->
+        <div class="tarjeta-receta" onclick="abrirReceta('recetaGelato')">
+            <div class="frente">
+                <img src="img/ComidaFlorencia3.png" alt="Gelato Fiorentino" class="imagen-receta">
+            </div>
+            <div class="reverso">
+                <p>El Gelato Fiorentino es un helado artesanal cremoso, perfecto para refrescarte en los días cálidos.</p>
+            </div>
+        </div>
+        <div class="modal-receta" id="recetaGelato">
+            <div class="contenido-modal">
+                <span class="cerrar-modal" onclick="cerrarReceta('recetaGelato')">✖</span>
+                <h3 class="titulo-modal">Gelato Fiorentino</h3>
+                <h4>Ingredientes:</h4>
+                <ul>
+                    <li>500 ml de leche entera.</li>
+                    <li>200 ml de nata para montar.</li>
+                    <li>150 g de azúcar.</li>
+                    <li>4 yemas de huevo.</li>
+                    <li>1 cucharadita de extracto de vainilla.</li>
+                    <li>Opcional: nueces, pistachos, chocolate rallado, frutas confitadas, etc.</li>
+                </ul>
+                <h4>Instrucciones:</h4>
+                <p>1. Calienta leche y nata. Bate yemas con azúcar hasta que estén cremosas.</p>
+                <p>2. Combina la mezcla de leche y huevo, cocina a fuego lento hasta que espese.</p>
+                <p>3. Enfría, refrigera y luego usa una máquina para hacer helados.</p>
+            </div>
         </div>
     </div>
 </section>
-
-<!-- Modal para Platos Típicos -->
-<div id="modalPlato" class="modal-plato">
-    <div class="modal-plato-content">
-        <span class="close-btn">&times;</span>
-        <h3 id="modalTituloPlato" class="titulo-modal-plato"></h3>
-        <p><strong>INGREDIENTES:</strong></p>
-        <ul id="modalIngredientesPlato" class="ingredientes-lista"></ul>
-        <p><strong>INSTRUCCIONES:</strong></p>
-        <p id="modalInstruccionesPlato" class="instrucciones-modal"></p>
-    </div>
-</div>
 
 
 
