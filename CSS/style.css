@@ -1882,4 +1882,56 @@ body {
 
 
 
+/*COMIDA ITALIA*/
+
+/* Italia - Colores específicos */
+.recetas-comidas-section.italia {
+    background-color: #F4E3B7;
+}
+
+.recetas-comidas-section.italia .titulo-recetas {
+    color: #F1731F;
+}
+
+.recetas-comidas-section.italia .titulo-recetas::before {
+    background-color: #9BB983;
+}
+
+.recetas-comidas-section.italia .frente {
+    background: #9BB983;
+}
+
+.recetas-comidas-section.italia .reverso {
+    background: #F1731F;
+}
+
+/* Estilos específicos para los modales dentro de la clase italia */
+
+
+.recetas-comidas-section.italia .contenido-modal {
+    background: #F9EFEA; /* Fondo del modal */
+    border-top: 8px solid #43B4A9; /* Borde superior */
+   
+}
+
+.recetas-comidas-section.italia .cerrar-modal {
+    color: #F1731F; /* Color del icono de cierre */
+}
+
+.recetas-comidas-section.italia .titulo-modal {
+    color: #F1731F; /* Color del título */
+}
+
+.recetas-comidas-section.italia .contenido-modal h4 {
+    color: #43B4A9; /* Color de los subtítulos */
+}
+
+
+
+
+
+
+
+
+
 
