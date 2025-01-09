@@ -403,7 +403,7 @@ body {
 
 
 /* REVISTA FÍSICA */
-/* Estilo general */
+
 .carousel-section {
     padding: 60px 0;
     text-align: center;
@@ -664,7 +664,7 @@ body {
 
 
 
-/* Estilo general del footer */
+/* FOOTER */
 .custom-footer {
     background-color: #1C4998;
     color: #ffffff;
@@ -727,7 +727,7 @@ body {
 
 
 
-/* Sección de Francia */
+/* FRANCIA */
 #francia-section {
     background-color: #C4E6FF; 
     color: #333;
@@ -831,8 +831,8 @@ body {
     line-height: 1.4;
 }
 
-/* PARIS */
 
+/* PARIS */
 
 /* Sección de Entrada a París */
 #entrada-paris {
@@ -841,7 +841,7 @@ body {
 }
 
 
-/* Estilos del Título */
+
 /* Estilo de Título para París */
 #entrada-paris .titulo {
     color: #FE3334; 
@@ -1021,7 +1021,7 @@ body {
     transform: translateY(0);
 }
 
-/* COMIDA FRANCIA */
+/* COMIDA FRANCIA Y ITALIA */
 .recetas-comidas-section {
     padding: 50px 20px;
     background-color: #FFF4E1;
@@ -1030,7 +1030,7 @@ body {
 
 .titulo-recetas {
     font-size: 3.5rem;
-    color: #FEBAC2; 
+    color: #43B4A9; 
     margin-bottom: 40px;
     font-family: 'Merriweather', serif;
     text-align: center; 
@@ -1335,7 +1335,7 @@ body {
 
 
 
-/* VENECIA */
+/* ITALIA */
 
 /* Sección de Entrada */
 #entrada-venecia {
@@ -1428,117 +1428,226 @@ body {
 
 /* SECCIÓN A DONDE IR */
 #donde-ir {
-    background-color: #e8f0f2; 
-    padding: 60px 20px; 
-    position: relative; 
+    background-color: #e8f0f2;
+    padding: 60px 20px;
+    position: relative;
 }
 
 /* Título de la Sección */
 .donde-ir-section .titulo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    font-size: 3.5rem; 
-    color: #34495e; 
-    text-align: center; 
-    margin-bottom: 40px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.5rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 /* Contenedor de la Galería de Lugares */
 .lugares {
-    display: flex; 
-    flex-direction: column; 
-    gap: 30px; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
 }
+
 /* Estilo de Cada Lugar */
 .lugar {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    background: white; 
-    border-radius: 30px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; 
-    padding: 20px; 
-    width: 100%; 
-    max-width: 1000px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
 }
 
 .lugar:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
 
 /* Imagen del Lugar */
 .imagen-lugar {
-    flex: 1.5; 
-    border-radius: 10px; 
-    height: 300px; 
-    object-fit: cover; 
-    transition: transform 0.3s ease; 
+    flex: 1.5;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
 }
 
 /* Efecto en imagen al pasar el ratón */
 .lugar:hover .imagen-lugar {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 /* Estilo del Texto del Lugar */
 .texto-lugar {
-    flex: 2; 
-    padding: 0 20px; 
+    flex: 2;
+    padding: 0 20px;
+    text-align: left;
+    width: 100%;
 }
 
 /* Subtítulo de los Lugares */
 .subtitulo {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem; 
-    color: #f99557; 
-    margin: 0 0 10px; 
+    font-size: 1.8rem;
+    color: #f99557;
+    margin: 0 0 10px;
 }
 
 /* Estilos del Texto Descriptivo */
 .descripcion {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 0.8rem; 
-    line-height: 1.6; 
-    color: #34495e; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #34495e;
 }
 
-/* Estilo del Modal */
+/* MODAL ESTILOS RESPONSIVE */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
+    display: none;
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    background-color: rgba(0, 0, 0, 0.8); 
-    justify-content: center; 
-    align-items: center; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    box-sizing: border-box;
 }
 
 /* Contenido del Modal */
 .modal-content {
-    max-width: 70%; 
-    max-height: 70%; 
-    border-radius: 10px; 
+    background: white;
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    max-width: 800px; 
+    max-height: 80%;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
 }
 
 /* Botón de cerrar */
 .close-button {
-    position: absolute; 
-    top: 20px; 
-    right: 20px; 
-    color: white; 
-    font-size: 30px; 
-    cursor: pointer; 
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #34495e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos para Texto del Modal */
+.modal h3,
+.modal p {
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Scrollbar Personalizado */
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #f99557;
+    border-radius: 10px;
+}
+
+/* MEDIA QUERIES */
+
+/* Para pantallas de ordenador grandes */
+@media (min-width: 1024px) {
+    .donde-ir-section .titulo {
+        font-size: 3.5rem; 
+    }
+
+    .lugar {
+        flex-direction: row; 
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .imagen-lugar {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .texto-lugar {
+        text-align: left;
+    }
+}
+
+/* Para pantallas de tablets (entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .donde-ir-section .titulo {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+
+    .lugar {
+        flex-direction: row; 
+        gap: 20px;
+    }
+
+    .imagen-lugar {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    .texto-lugar {
+        text-align: left;
+    }
+}
+
+/* Para pantallas de móviles (menos de 768px) */
+@media (max-width: 768px) {
+    .donde-ir-section .titulo {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    .lugar {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .imagen-lugar {
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .texto-lugar {
+        text-align: center; 
+        width: 100%;
+    }
 }
 
 
 
 
-/* SECCIÓN DE ACTIVIDADES VENECIA */
+
+
+/* SECCIÓN DE ACTIVIDADES ITALIA */
 .actividades-section {
     background-color: #e6f7ff;
     padding: 60px 20px;
@@ -1551,9 +1660,10 @@ body {
 /* Título de la sección */
 .section-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.5rem;  
     color: #2c3e50;
-    margin-bottom: 40px;
+    margin-bottom: 10px;  
+    line-height: 1.3; 
 }
 
 /* Imagen decorativa */
@@ -1568,7 +1678,7 @@ body {
 /* Cuadrícula de actividades */
 .actividades-grid {
     display: grid;
-    gap: 30px;
+    gap: 100px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
 }
 
@@ -1576,8 +1686,8 @@ body {
 .actividad-card {
     position: relative;
     width: 100%; 
-    max-width: 350px;
-    height: 450px;
+    max-width: 350px; 
+    height: 450px; 
     overflow: hidden;
     border-radius: 30px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -1590,11 +1700,12 @@ body {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen de actividad */
+/* Imagen de actividad (Ajuste correcto) */
 .actividad-imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; 
+    height: 60%; 
+    object-fit: cover; 
+    object-position: center; 
     border-radius: 15px 15px 0 0;
 }
 
@@ -1638,139 +1749,137 @@ body {
     text-align: justify;
 }
 
+/* MEDIA QUERIES */
 
-
-/* COMIDA ITALIA */
-
-
-/* Estilo general para la sección de platos típicos */
-.platos-tipicos-section {
-    padding: 50px 20px;
-    background-color: #e62284;
-    text-align: center;
-}
-
-.titulo-platos-tipicos {
-    font-size: 3.5rem;
-    color: #FEBAC2; 
-    margin-bottom: 40px;
-    font-family: 'Merriweather', serif;
-    text-align: center; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-}
-
-.titulo-platos-tipicos::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 8px; 
-    background-color: #ffe9a6; 
-    top: -15px; 
-    left: 0;
-    border-radius: 4px; 
-}
-
-/* Estilo del modal de los platos */
-.modal-plato {
-    display: none; 
-    position: fixed;
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
-    justify-content: center; 
-    align-items: center; 
-}
-
-/* Contenido del modal */
-.modal-plato-content {
-    position: relative;
-    background-color: #ffffe0; 
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px; 
-    width: auto; 
-    font-family: 'Dancing Script', cursive;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
-    animation: fadeIn 0.5s; 
-}
-
-.platos-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.plato-item {
-    perspective: 1000px;
-    width: 250px;
-    height: 350px;
-    cursor: pointer;
-    position: relative;
-}
-
-.plato-img {
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.6s ease;
-}
-
-.plato-item:hover .plato-img {
-    transform: scale(1.1);
-}
-
-/* Estilos para el contenido del modal */
-.modal-plato-content {
-    background: #FEF8F5;
-    padding: 35px;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 550px;
-    text-align: left;
-    color: #333;
-    font-family: 'Merriweather', serif;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    border-top: 8px solid #FE3334;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.8rem;
-    color: #FE3334;
-    cursor: pointer;
-}
-
-.titulo-modal-plato {
-    font-size: 2rem;
-    color: #FE7C86;
-    margin-bottom: 20px;
-}
-
-.modal-plato-content ul, .modal-plato-content p {
-    color: #4e342e;
-    line-height: 1.6;
-    font-family: 'Lato', sans-serif;
-}
-
-/* Animación */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
+/* Pantallas Grandes (Desktops) */
+@media (min-width: 1025px) {
+    .actividades-section {
+        padding: 80px 40px;
     }
-    to {
-        opacity: 1;
-        transform: scale(1);
+
+    .section-title {
+        font-size: 3rem;  
+    }
+
+    .actividades-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .actividad-card {
+        height: 500px; 
+    }
+
+    .actividad-info {
+        font-size: 1rem;
+    }
+
+    .section-decorative-image {
+        width: 350px; 
+        position: absolute; 
+        right: 20px;
+        top: -40px;
     }
 }
+
+/* Tablets y Pantallas Medianas */
+@media (max-width: 1024px) {
+    .actividades-section {
+        padding: 60px 30px;
+    }
+
+    .section-title {
+        font-size: 2.2rem; 
+    }
+
+    .actividades-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .actividad-card {
+        height: 400px;
+    }
+
+    .actividad-info {
+        font-size: 0.95rem;
+    }
+
+    .section-decorative-image {
+        width: 250px;
+        position: relative; 
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Smartphones (Pantallas pequeñas) */
+@media (max-width: 768px) {
+    .actividades-section {
+        padding: 40px 20px;
+    }
+
+    .section-title {
+        font-size: 2rem; 
+        margin-bottom: 30px;
+    }
+
+    .actividades-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+
+    .actividad-card {
+        max-width: 100%;
+        height: 400px; 
+    }
+
+    .actividad-info {
+        font-size: 0.9rem;
+    }
+
+    .section-decorative-image {
+        width: 200px;
+        position: relative; 
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Móviles Pequeños (320px - 480px) */
+@media (max-width: 480px) {
+    .actividades-section {
+        padding: 30px 15px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;  
+        margin-bottom: 20px;
+    }
+
+    .actividades-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .actividad-card {
+        height: 350px;
+    }
+
+    .actividad-info {
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+
+    .section-decorative-image {
+        width: 150px;
+        position: relative; 
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
 
