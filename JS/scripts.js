@@ -113,17 +113,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Venecia A DONDE IR
+// Función para abrir el modal y mostrar la imagen
 function openModal(imageSrc) {
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
-    modal.style.display = "flex"; // Muestra el modal
-    modalImg.src = imageSrc; // Cambia la fuente de la imagen
+    
+    // Asegura que el modal y la imagen existen
+    if (modal && modalImg) {
+        modal.style.display = "flex"; // Muestra el modal
+        modalImg.src = imageSrc; // Cambia la fuente de la imagen
+    } else {
+        console.error("Modal o imagen no encontrados.");
+    }
 }
 
+// Función para cerrar el modal
 function closeModal() {
     const modal = document.getElementById('modal');
-    modal.style.display = "none"; // Oculta el modal
+    
+    // Asegura que el modal exista antes de intentar cerrarlo
+    if (modal) {
+        modal.style.display = "none"; // Oculta el modal
+    } else {
+        console.error("Modal no encontrado.");
+    }
 }
+
 
 
 
